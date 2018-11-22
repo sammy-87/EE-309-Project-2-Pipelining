@@ -2,14 +2,16 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity  controlword is 
- port (ir : in std_logic_vector(15 downto 0); Q: out std_logic_vector(24 downto 0)); --controlsignal is the Enable signal
+ port (ir : in std_logic_vector(15 downto 0);
+  		reset : in std_logic;
+  		Q: out std_logic_vector(25 downto 0)); --controlsignal is the Enable signal
 end  controlword;
 
 architecture WhatDoYouCare of controlword is
 begin
 
 process(clk, reset, ir)
-	variable control_variable :  std_logic_vector(24 DOWNTO 0) => (others <= '0');
+	variable control_variable :  std_logic_vector(25 DOWNTO 0) => (others <= '0');
 begin
 	
 
@@ -74,10 +76,11 @@ begin
 		control_variable(3) := '1';
 		control_variable(2) := '1';
 
-
-
-
-
+	elsif ir(15 downto 12) = "0111" then
+		control_variable := (others <= '0');
+		control_variable(22) := '1';
+		control_variable(10) := '1';
+		control_variable(8) := '1';
 
 	elsif ir(15 downto 12) = "1100" then
 		control_variable := (others <= '0');
