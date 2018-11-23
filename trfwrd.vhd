@@ -5,7 +5,7 @@ entity  trfwrd is
  port (pr3ir, pr4ir, pr5ir : in std_logic_vector(15 downto 0);
  		pr4c, pr4z, pr5c, pr5z, muxzout, pr4trfwr, pr5trfwr, c, z : in std_logic;
   		reset : in std_logic;
-  		trfwr: out std_logic_vector(24 downto 0)); --controlsignal is the Enable signal
+  		trfwr: out std_logic); --controlsignal is the Enable signal
 end trfwrd;
 
 architecture WhatDoYouCare of trfwrd is
@@ -15,6 +15,7 @@ process(reset, pr3ir, pr4c, pr4z, pr5c, pr5z, muxzout, pr5trfwr,  pr4trfwr, c, z
 	variable trfwr_var : std_logic := '0';
 
 begin
+	trfwr_var := '0';
 	
 	if (pr3ir(15 downto 12) = "0000" or pr3ir(15 downto 12) = "0010") and pr3ir(1 downto 0) = "10" then -- current instruction is ADC,NDC
 		if (((pr4ir(15 downto 12) = "0000" or pr4ir(15 downto 12) = "0010") and pr4ir(1 downto 0) = "00") or pr4ir(15 downto 12) = "0001") or ( (pr4ir(15 downto 12) = "0000" or pr4ir(15 downto 12) = "0010") and (pr4ir(1 downto 0) = "01" or pr4ir(1 downto 0) = "10") and pr4trfwr = '1' ) then --prev is ADD,NDU,ADI,ADC,ADZ,NDC,NDZ (conditional being executed)
@@ -56,6 +57,12 @@ begin
 		end if;
 
 	end if;
+
+	if reset = '1' then
+		trfwr_var := '0';
+	end if;
+
+	trfwr <= trfwr_var;
 
 end process;
 end WhatDoYouCare;	
