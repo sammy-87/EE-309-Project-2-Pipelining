@@ -1,0 +1,45 @@
+# do comp_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Copying /home/pranil/altera_lite/16.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/ALU/comp.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 23:27:22 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/ALU/comp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity comp
+# -- Compiling architecture Struct of comp
+# End time: 23:27:22 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+vsim work.comp
+# vsim work.comp 
+# Start time: 23:27:26 on Nov 23,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.comp(struct)
+add wave -position insertpoint sim:/comp/*
+force -freeze sim:/comp/alu_a 0000111100001111 0
+force -freeze sim:/comp/alu_b 0000111100001111 0
+run
+run
+force -freeze sim:/comp/alu_b 0000111100001011 0
+run
+# End time: 23:28:25 on Nov 23,2018, Elapsed time: 0:00:59
+# Errors: 0, Warnings: 0

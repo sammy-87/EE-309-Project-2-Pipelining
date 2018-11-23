@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Nov 23 23:20:26 2018
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : alu
+Top-level Entity Name : comp
+Family : Cyclone IV E
+Device : EP4CE30F29C6
+Timing Models : Final
+Total logic elements : 11 / 28,848 ( < 1 % )
+    Total combinational functions : 11 / 28,848 ( < 1 % )
+    Dedicated logic registers : 0 / 28,848 ( 0 % )
+Total registers : 0
+Total pins : 33 / 533 ( 6 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

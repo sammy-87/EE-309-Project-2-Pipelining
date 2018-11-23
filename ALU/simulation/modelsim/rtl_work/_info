@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/ALU/simulation/modelsim
+Ecomp
+Z1 w1542995795
+Z2 DPx8 synopsys 10 attributes 0 22 liCm]LV3<lX4Zl>o6^8IV1
+Z3 DPx4 ieee 14 std_logic_misc 0 22 BLzBaQbXS>Q1z>5YO]m[52
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/ALU/comp.vhd
+Z7 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/ALU/comp.vhd
+l0
+L8
+V6;Z[LF3?SFzmWLLa4TTHb1
+!s100 MlhP;^efbblH5kEk]`ka`2
+Z8 OV;C;10.4d;61
+31
+Z9 !s110 1542995842
+!i10b 1
+Z10 !s108 1542995842.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/ALU/comp.vhd|
+Z12 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/ALU/comp.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1
+Astruct
+R2
+R3
+R4
+R5
+DEx4 work 4 comp 0 22 6;Z[LF3?SFzmWLLa4TTHb1
+l15
+L13
+VT0YZCiP7<h=H?JbX8]P4W3
+!s100 V[36SZAOXUonU`JHbk:cG0
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14

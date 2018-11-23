@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Fri Nov 23 23:26:48 2018
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : comp
+Top-level Entity Name : comp
+Family : Cyclone IV GX
+Total logic elements : 11
+    Total combinational functions : 11
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 33
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

@@ -1,0 +1,25 @@
+library std;
+use std.standard.all;
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity comp is
+   port(alu_a, alu_b : in std_logic_vector(15 downto 0);
+		tz : out std_logic );
+end entity;
+
+architecture Struct of comp is
+signal temp : std_logic_vector(15 downto 0);
+begin
+	temp <= alu_a xor alu_b; 
+	process(alu_a,alu_b,temp)
+	begin
+		if temp = "0000000000000000" then
+			tz <= '1';
+		else 
+			tz <= '0';
+		end if;
+	end process;
+end Struct;

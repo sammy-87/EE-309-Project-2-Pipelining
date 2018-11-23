@@ -1,0 +1,141 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "tz",
+					"strict" : false
+				},
+				{
+					"name" : "alu_a[0]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_b[0]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_a[1]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_b[1]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_a[2]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_b[2]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_a[3]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_b[3]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_a[4]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_b[4]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_a[5]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_b[5]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_a[6]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_b[6]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_a[7]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_b[7]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_a[8]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_b[8]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_a[9]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_b[9]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_a[10]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_b[10]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_a[11]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_b[11]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_a[12]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_b[12]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_a[13]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_b[13]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_a[14]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_b[14]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_a[15]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_b[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
