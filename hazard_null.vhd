@@ -31,18 +31,18 @@ begin
 		pr2en_var := '1';
 	end if;
 
-	if pr2ir(15 downto 12) = "0011" or pr2ir(15 downto 12) = "1000" then --current instruction is LHI,JAL 
+	if pr2ir(15 downto 12) = "0011" or pr2ir(15 downto 12) = "1000" then --current instruction is LHI,JAL (require no operand - so no hazard)
 		temp_control_variable := controlword;
 
-	elsif pr2ir(15 downto 12) = "0001" or pr2ir(15 downto 13) = "011" then -- current instruction is ADI,LM,SM
+	elsif pr2ir(15 downto 12) = "0001" or pr2ir(15 downto 13) = "011" then -- current instruction is ADI,LM,SM (require ra as operand)
 		temp_control_variable:=controlword;
 		
-		if pr2ir(15 downto 13) = "011" then --if current instruction is LM/SM then - stall pr2, pr1, disable pc
-			if pennew = "00000000" then  --end of LM/SM
+		if pr2ir(15 downto 13) = "011" then --if current instruction is LM/SM
+			if pennew = "00000000" then  --end of LM/SM - destall pr1, pr2, enable pc
 				pr1en_var := '1';
 				pr2en_var := '1';
 				pcen_var := '1';
-			else
+			else --stall pr2, pr1, disable pc
 				pr1en_var := '0';
 				pr2en_var := '0';
 				pcen_var := '0';
@@ -90,14 +90,10 @@ begin
 							temp_control_variable(21 downto 16) := "010000";  -- operand from mem2d
 						end if;
 
-					elsif ( pr4ir(15 downto 12) = "0000" or pr4ir(15 downto 12) = "0010" ) and ( pr4ir(1 downto 0) = "10" or pr4ir(1 downto 0) = "01" ) and pr4invalid = '0' then -- p2p instruction id ADC,ADZ,NDC,NDZ
+					elsif ( pr4ir(15 downto 12) = "0000" or pr4ir(15 downto 12) = "0010" ) and ( pr4ir(1 downto 0) = "10" or pr4ir(1 downto 0) = "01" ) and pr4invalid = '0' then -- p2p instruction is ADC,ADZ,NDC,NDZ
 						if pr2ir(11 downto 9) = pr4ir(5 downto 3) then
 							if pr4trfwr = '1' then
-								temp_control_variable(21 downto 16) := "011000";   --take from pr4a
-
-							else
-								temp_control_variable := controlword;   --take from RF as usual
-
+								temp_control_variable(21 downto 16) := "011000";   --take from pr4a, else take from RF as usual
 							end if;
 						end if;
 					end if ;
@@ -142,10 +138,7 @@ begin
 			elsif ( pr4ir(15 downto 12) = "0000" or pr4ir(15 downto 12) = "0010" ) and ( pr4ir(1 downto 0) = "10" or pr4ir(1 downto 0) = "01" ) and pr4invalid = '0' then -- p2p instruction id ADC,ADZ,NDC,NDZ
 				if pr2ir(11 downto 9) = pr4ir(5 downto 3) then
 					if pr4trfwr = '1' then
-						temp_control_variable(21 downto 16) := "011000";   --take from pr4a
-
-					else
-						temp_control_variable := controlword;   --take from RF as usual
+						temp_control_variable(21 downto 16) := "011000";   --take from pr4a, else take from RF as usual
 					end if;
 				end if;
 			end if ;
@@ -284,7 +277,7 @@ begin
 			if pr2ir(11 downto 9) = pr3ir(5 downto 3) then
 				if trfwr ='1' then -- conditional op is going to be executed
 					temp_control_variable(21 downto 19) := "001";
-				else -- conditional operation will 4ot be executed
+				else -- conditional operation will not be executed
 					if (pr4ir(15 downto 12) = "0000" or pr4ir(15 downto 12) = "0010") and pr4ir(2 downto 0) = "000" and pr4invalid = '0' then --p2p is ADD, NDU
 						if pr2ir(11 downto 9) = pr4ir(5 downto 3) then -- source = destination take operand from pr4a
 							temp_control_variable(21 downto 19) := "011";
