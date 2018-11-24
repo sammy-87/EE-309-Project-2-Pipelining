@@ -1,0 +1,77 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Z",
+					"strict" : false
+				},
+				{
+					"name" : "mem2d[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mem2d[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mem2d[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mem2d[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mem2d[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mem2d[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mem2d[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mem2d[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mem2d[8]",
+					"strict" : false
+				},
+				{
+					"name" : "mem2d[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mem2d[10]",
+					"strict" : false
+				},
+				{
+					"name" : "mem2d[11]",
+					"strict" : false
+				},
+				{
+					"name" : "mem2d[12]",
+					"strict" : false
+				},
+				{
+					"name" : "mem2d[13]",
+					"strict" : false
+				},
+				{
+					"name" : "mem2d[14]",
+					"strict" : false
+				},
+				{
+					"name" : "mem2d[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

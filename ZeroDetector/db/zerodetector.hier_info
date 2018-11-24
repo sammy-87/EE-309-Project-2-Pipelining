@@ -1,0 +1,20 @@
+|zerodetector
+mem2d[0] => Equal0.IN15
+mem2d[1] => Equal0.IN14
+mem2d[2] => Equal0.IN13
+mem2d[3] => Equal0.IN12
+mem2d[4] => Equal0.IN11
+mem2d[5] => Equal0.IN10
+mem2d[6] => Equal0.IN9
+mem2d[7] => Equal0.IN8
+mem2d[8] => Equal0.IN7
+mem2d[9] => Equal0.IN6
+mem2d[10] => Equal0.IN5
+mem2d[11] => Equal0.IN4
+mem2d[12] => Equal0.IN3
+mem2d[13] => Equal0.IN2
+mem2d[14] => Equal0.IN1
+mem2d[15] => Equal0.IN0
+Z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,46 @@
+# do zerodetector_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Copying /home/pranil/altera_lite/16.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/ZeroDetector/zerodetector.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 11:30:52 on Nov 24,2018
+# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/ZeroDetector/zerodetector.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity zerodetector
+# -- Compiling architecture data of zerodetector
+# End time: 11:30:52 on Nov 24,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+vsim work.zerodetector
+# vsim work.zerodetector 
+# Start time: 11:30:55 on Nov 24,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.zerodetector(data)
+add wave -position insertpoint sim:/zerodetector/*
+force -freeze sim:/zerodetector/mem2d 00000000000000 0
+# Value length (14) does not equal array index length (16).
+# 
+# ** Error: (vsim-4011) Invalid force value: 00000000000000 0.
+# 
+force -freeze sim:/zerodetector/mem2d 0000000000000000 0
+run
+force -freeze sim:/zerodetector/mem2d 0000000001100000 0
+run
+force -freeze sim:/zerodetector/mem2d 0000000000000000 0
+run
+# End time: 11:31:45 on Nov 24,2018, Elapsed time: 0:00:50
+# Errors: 1, Warnings: 0
