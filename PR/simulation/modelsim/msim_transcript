@@ -1,0 +1,53 @@
+# do pr1_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Copying /home/pranil/altera_lite/16.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/PR/pr1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:26:53 on Nov 24,2018
+# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/PR/pr1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity pr1
+# -- Compiling architecture description of pr1
+# End time: 18:26:54 on Nov 24,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+vsim work.pr1
+# vsim work.pr1 
+# Start time: 18:27:00 on Nov 24,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.pr1(description)
+add wave -position insertpoint sim:/pr1/*
+force -freeze sim:/pr1/rst 1 0
+force -freeze sim:/pr1/clk 0 0, 1 {50 ps} -r 100
+run
+force -freeze sim:/pr1/pc_i 1010101010101010 0
+force -freeze sim:/pr1/ir_i 1111111111111111 0
+run
+force -freeze sim:/pr1/invalid_i 1 0
+force -freeze sim:/pr1/en 1 0
+run
+force -freeze sim:/pr1/rst 0 0
+run
+force -freeze sim:/pr1/en 0 0
+run
+run
+force -freeze sim:/pr1/invalid_i 0 0
+run
+force -freeze sim:/pr1/en 1 0
+run
+# End time: 18:29:04 on Nov 24,2018, Elapsed time: 0:02:04
+# Errors: 0, Warnings: 0

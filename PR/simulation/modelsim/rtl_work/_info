@@ -1,0 +1,49 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/PR/simulation/modelsim
+Epr1
+Z1 w1543064067
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/PR/pr1.vhd
+Z5 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/PR/pr1.vhd
+l0
+L7
+VX>aPDk[E`RNg]9NblCU[12
+!s100 9afE8i38;GN<5g40@[nNb3
+Z6 OV;C;10.4d;61
+31
+Z7 !s110 1543064214
+!i10b 1
+Z8 !s108 1543064213.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/PR/pr1.vhd|
+Z10 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/PR/pr1.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1
+Adescription
+R2
+R3
+DEx4 work 3 pr1 0 22 X>aPDk[E`RNg]9NblCU[12
+l22
+L20
+VkLela<<>Cmz_1I3fb^:J<2
+!s100 b3S`53GSS`WnV2A^NTZ6X3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
