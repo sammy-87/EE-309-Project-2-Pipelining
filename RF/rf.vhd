@@ -7,30 +7,18 @@ use ieee.numeric_std.all;
 
 entity rf is 
 	port(
-			 rf_a1, rf_a2, rf_a3   : in std_logic_vector(2 DOWNTO 0);
-			 m : in std_logic_vector(2 downto 0);
+			 rfa1, rfa2, rfa3   : in std_logic_vector(2 DOWNTO 0);
 			 rst : in std_logic; -- async. clear.
 			 clk : in std_logic; -- clock.
-			 wr_rf  : in std_logic; -- write
-			 en7 : in std_logic; -- enable for register 7
-			 alu_out, t2_out, PC_out, t3_out, rf_d3 : in std_logic_vector(15 downto 0);
-			 rf_d1,rf_d2, R7_out  : out std_logic_vector(15 DOWNTO 0)); -- output
+			 rfwr  : in std_logic; -- write
+			 pr5invalid, pr5trfwr : in std_logic; -- enable for register 7
+			 newpc, rfd3, pr5ir : in std_logic_vector(15 downto 0);
+			 rfd1,rfd2 : out std_logic_vector(15 DOWNTO 0)); -- output
 end rf;
 
 architecture behave of rf is
 
-component R7 is 
-	port(
-			 alu_out, t2_out, PC_out, t3_out, rf_d3  : in std_logic_vector(15 DOWNTO 0);
-			 m : in std_logic_vector(2 downto 0);
-			 rst : in std_logic; -- async. clear.
-			 clk : in std_logic; -- clock.
-			 wr  : in std_logic; -- write
-			 q : out std_logic_vector(15 downto 0) );
-end component;
-
-
-component Reg is 
+component Reg16 is 
 	port(
 		 d   : in std_logic_vector(15 DOWNTO 0);
 		 en  : in std_logic; -- load/enable.
@@ -42,43 +30,77 @@ end component;
 type registerFile is array(0 to 7) of std_logic_vector(15 downto 0);
 signal registers : registerFile;
 type bitarr is array(0 to 7) of std_logic;
-signal wr_7 : std_logic;
+signal wr_rf : std_logic;
 signal wrarr1 : bitarr := "00000000";
-signal temp1,temp2 : std_logic_vector(15 downto 0);
-
+signal reg7 : std_logic_vector(15 downto 0);
+signal wrarr7 : std_logic;
 begin
 
 inst_reg : for i in 0 to 6 generate
-R: Reg port map (d => rf_d3, en => wrarr1(i), rst => rst, clk => clk, q => registers(i));
+R: Reg16 port map (d => rfd3, en => wrarr1(i), rst => rst, clk => clk, q => registers(i));
 end generate inst_reg;
 
-wr_7 <= (wrarr1(7) or en7); 
-R_7 : R7 port map (alu_out => alu_out, t2_out => t2_out, PC_out => PC_out, t3_out => t3_out, rf_d3 => rf_d3, m => m, rst => rst, clk => clk, wr => wr_7, q => registers(7));
+R7 :Reg16 port map (d => reg7, en => wrarr7, rst => rst, clk => clk, q => registers(7));
 
 
-reg_file : process (clk, rst, wr_rf,rf_a3,rf_a1,rf_a2)
-	variable wrarr_temp: bitarr:="00000000";
+wr_rf <= rfwr and (not(pr5invalid)) and (not(((not(pr5ir(15))) and (not(pr5ir(14))) and (not(pr5ir(12))) and (pr5ir(0) xor pr5ir(1))) and (not(pr5trfwr)) ) ); 
+
+
+process (clk, rst, wr_rf,rfa3,rfa1,rfa2,rfd3,pr5invalid,pr5trfwr,pr5ir, registers,wrarr1,newpc)
+
+	variable wrarr_temp : bitarr := "00000000";
+	variable rfd1_var, rfd2_var : std_logic_vector(15 downto 0);
+	variable r7_var : std_logic_vector(15 downto 0);
+
 	begin	
 		
+		r7_var := newpc;
+		wrarr_temp := (others =>'0');
+
 		if wr_rf = '1' then
 			wrarr_temp := (others =>'0');
-			wrarr_temp(to_integer(unsigned(rf_a3))) := '1';
-			temp1 <= (others => '0');
-			temp2 <= (others => '0');
-			
+			wrarr_temp(to_integer(unsigned(rfa3))) := '1';
+			rfd1_var := (others => '0');
+			rfd2_var := (others => '0');
+
+			if rfa3 = "111" then
+				r7_var := rfd3;
+			end if;
+
+			if rfa3 = rfa1 then
+				rfd1_var := rfd3;
+			end if;
+
+			if rfa3 = rfa2 then
+				rfd2_var := rfd3;				
+			end if ;
+		end if;	
+
+		if rfa1 = "111" then
+			rfd1_var := newpc;
+		else
+			rfd1_var := registers(to_integer(unsigned(rfa1)));	
+		end if ;
 		
-		else 
-			wrarr_temp := (others =>'0');
-			temp1 <= registers(to_integer(unsigned(rf_a1)));
-			temp2 <= registers(to_integer(unsigned(rf_a2)));
-			
-		end if;
+		if rfa2 = "111" then
+			rfd2_var := newpc;
+		else
+			rfd2_var := registers(to_integer(unsigned(rfa2)));	
+		end if ;
 		
+		--if rst = '1' then
+		--	wrarr_temp := "00000000";
+		--	r7_var := (others => '0');
+		--	rfd1_var := (others => '0');
+		--	rfd2_var := (others => '0');
+		--end if ;
+
+		reg7 <= r7_var;
 		wrarr1 <= wrarr_temp;
-		
-	end process reg_file;
-		
-		rf_d1 <= temp1;
-		rf_d2 <= temp2;
-		R7_out <= registers(7);
+		wrarr7 <= not(pr5invalid);
+		rfd1 <= rfd1_var;
+		rfd2 <= rfd2_var;
+
+
+	end process;
 end behave;

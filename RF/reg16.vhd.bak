@@ -6,11 +6,11 @@ use ieee.std_logic_1164.all;
 
 entity Reg16 is 
 	port(
-		 d   : in std_logic_vector(15 DOWNTO 0);
+		 d   : inout std_logic_vector(15 DOWNTO 0);
 		 en  : in std_logic; -- load/enable.
 		 rst : in std_logic; -- async. clear.
 		 clk : in std_logic; -- clock.
-		 q   : out std_logic_vector(15 DOWNTO 0)); -- output
+		 q   : inout std_logic_vector(15 DOWNTO 0)); -- output
 end Reg16;
 
 architecture description of Reg16 is

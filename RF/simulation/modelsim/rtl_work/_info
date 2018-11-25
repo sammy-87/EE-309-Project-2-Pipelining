@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/RF/simulation/modelsim
+Ereg16
+Z1 w1543135352
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/RF/reg16.vhd
+Z5 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/RF/reg16.vhd
+l0
+L7
+VmRoJ;[V8Ugam7^<6[MJ5;0
+!s100 KKOz?F?hgC6lQN=6A`j782
+Z6 OV;C;10.4d;61
+31
+Z7 !s110 1543142795
+!i10b 1
+Z8 !s108 1543142795.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/RF/reg16.vhd|
+Z10 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/RF/reg16.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1
+Adescription
+R2
+R3
+DEx4 work 5 reg16 0 22 mRoJ;[V8Ugam7^<6[MJ5;0
+l18
+L16
+VDkC0;Al9F<a0NYS63AT]R2
+!s100 _Z>O[1:RJY2@VjGob8_TJ3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Erf
+Z13 w1543142742
+Z14 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R0
+Z15 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/RF/rf.vhd
+Z16 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/RF/rf.vhd
+l0
+L8
+VL@_chC?1lBc5PV]?b]EGE1
+!s100 F1Bhob[nTRSH:bziIOaeS2
+R6
+31
+R7
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/RF/rf.vhd|
+Z18 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/RF/rf.vhd|
+!i113 1
+R11
+R12
+Abehave
+R14
+R2
+R3
+DEx4 work 2 rf 0 22 L@_chC?1lBc5PV]?b]EGE1
+l37
+L19
+V9:a3VnQ7;FG<Q^ePz:7VR0
+!s100 fi=_8]HZET7Y^GCdRJmOJ1
+R6
+31
+R7
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
