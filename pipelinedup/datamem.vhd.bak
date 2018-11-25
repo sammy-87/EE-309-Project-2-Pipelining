@@ -28,7 +28,7 @@ begin
 
 addr <= mem_a(4 downto 0);
 
-	mem_proc : process(rst, wr_bar, rd_bar, clk, addr, RAM)
+	mem_proc : process(rst, wr_bar, rd_bar, clk, addr)
 
 		begin
 				
