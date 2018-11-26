@@ -628,7 +628,7 @@ for line in lines:
 		output = output1+output2+output3
 
 	elif words[0] == "JLR":
-		output1 = "1100"
+		output1 = "1001"
 
 		if words[1] == "R0":
 			output2 = "000"
