@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipelinedup
-Mon Nov 26 22:31:21 2018
+Mon Nov 26 23:01:43 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -10,7 +10,20 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "pr5:pr5_inst"
+ 10. Port Connectivity Checks: "pr4:pr4_inst"
+ 11. Port Connectivity Checks: "pr3:pr3_inst"
+ 12. Port Connectivity Checks: "Reg16:t1_inst"
+ 13. Port Connectivity Checks: "Reg8:pen_reg"
+ 14. Port Connectivity Checks: "add1:add1_pc|Add:A1|FullAdder:F0"
+ 15. Port Connectivity Checks: "add1:add1_pc|Add:A1"
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -37,20 +50,20 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Nov 26 22:31:21 2018           ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 26 23:01:43 2018       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; pipelinedup                                 ;
 ; Top-level Entity Name              ; pipelinedup                                 ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 2                                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -151,13 +164,198 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                  ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------+---------+
+; zerodetector.vhd                 ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd ;         ;
+; trfwrd.vhd                       ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd       ;         ;
+; shift7.vhd                       ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd       ;         ;
+; se9.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd          ;         ;
+; se6.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd          ;         ;
+; rf.vhd                           ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd           ;         ;
+; reg16.vhd                        ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd        ;         ;
+; Reg8.vhd                         ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd         ;         ;
+; pr5.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd          ;         ;
+; pr4.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd          ;         ;
+; pr3.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd          ;         ;
+; pr2.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd          ;         ;
+; pr1.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd          ;         ;
+; pipelinedup.vhd                  ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd  ;         ;
+; pen.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd          ;         ;
+; pc_mux.vhd                       ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd       ;         ;
+; mux6_16.vhd                      ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd      ;         ;
+; mux4_16.vhd                      ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd      ;         ;
+; mux4_3.vhd                       ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd       ;         ;
+; mux3_16.vhd                      ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd      ;         ;
+; mux2_16.vhd                      ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd      ;         ;
+; mux2_8.vhd                       ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd       ;         ;
+; mux2_3.vhd                       ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd       ;         ;
+; mux2_1.vhd                       ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd       ;         ;
+; hazard_null.vhd                  ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd  ;         ;
+; FullAdder.vhd                    ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd    ;         ;
+; datamem.vhd                      ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd      ;         ;
+; controlword.vhd                  ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd  ;         ;
+; comp.vhd                         ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd         ;         ;
+; codemem.vhd                      ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd      ;         ;
+; bit_reg.vhd                      ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd      ;         ;
+; alu.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd          ;         ;
+; add1.vhd                         ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd         ;         ;
+; add.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add.vhd          ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 2     ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 2     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                       ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |pipelinedup               ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |pipelinedup        ; pipelinedup ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pr5:pr5_inst"                                                                              ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; en          ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; cw_o[24..7] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------+
+; Port Connectivity Checks: "pr4:pr4_inst" ;
++------+-------+----------+----------------+
+; Port ; Type  ; Severity ; Details        ;
++------+-------+----------+----------------+
+; en   ; Input ; Info     ; Stuck at VCC   ;
++------+-------+----------+----------------+
+
+
++------------------------------------------+
+; Port Connectivity Checks: "pr3:pr3_inst" ;
++------+-------+----------+----------------+
+; Port ; Type  ; Severity ; Details        ;
++------+-------+----------+----------------+
+; en   ; Input ; Info     ; Stuck at VCC   ;
++------+-------+----------+----------------+
+
+
++-------------------------------------------+
+; Port Connectivity Checks: "Reg16:t1_inst" ;
++------+-------+----------+-----------------+
+; Port ; Type  ; Severity ; Details         ;
++------+-------+----------+-----------------+
+; en   ; Input ; Info     ; Stuck at VCC    ;
++------+-------+----------+-----------------+
+
+
++------------------------------------------+
+; Port Connectivity Checks: "Reg8:pen_reg" ;
++------+-------+----------+----------------+
+; Port ; Type  ; Severity ; Details        ;
++------+-------+----------+----------------+
+; en   ; Input ; Info     ; Stuck at VCC   ;
++------+-------+----------+----------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "add1:add1_pc|Add:A1|FullAdder:F0" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "add1:add1_pc|Add:A1"                                                                    ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; y[15..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; y[0]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; c_out    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 2                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Mon Nov 26 22:31:10 2018
+    Info: Processing started: Mon Nov 26 23:01:31 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipelinedup -c pipelinedup
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file zerodetector.vhd
@@ -265,11 +463,53 @@ Info (12021): Found 2 design units, including 1 entities, in source file add1.vh
 Info (12021): Found 2 design units, including 1 entities, in source file add.vhd
     Info (12022): Found design unit 1: Add-Struct File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add.vhd Line: 14
     Info (12023): Found entity 1: Add File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add.vhd Line: 7
-Error (10482): VHDL error at hazard_null.vhd(188): object "operand_1" is used but not declared File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd Line: 188
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 1228 megabytes
-    Error: Processing ended: Mon Nov 26 22:31:21 2018
-    Error: Elapsed time: 00:00:11
-    Error: Total CPU time (on all processors): 00:00:27
+Info (12127): Elaborating entity "pipelinedup" for the top level hierarchy
+Info (12128): Elaborating entity "codemem" for hierarchy "codemem:codemem_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 339
+Info (12128): Elaborating entity "add1" for hierarchy "add1:add1_pc" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 340
+Warning (10036): Verilog HDL or VHDL warning at add1.vhd(21): object "c_out" assigned a value but never read File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd Line: 21
+Info (12128): Elaborating entity "Add" for hierarchy "add1:add1_pc|Add:A1" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd Line: 24
+Info (12128): Elaborating entity "FullAdder" for hierarchy "add1:add1_pc|Add:A1|FullAdder:F0" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add.vhd Line: 25
+Info (12128): Elaborating entity "Reg16" for hierarchy "Reg16:pc_i" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 341
+Info (12128): Elaborating entity "pc_mux" for hierarchy "pc_mux:pc_mux_i" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 342
+Info (12128): Elaborating entity "pr1" for hierarchy "pr1:pr1_i" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 343
+Info (12128): Elaborating entity "controlword" for hierarchy "controlword:controlword_i" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 346
+Info (12128): Elaborating entity "mux2_8" for hierarchy "mux2_8:pen_mux" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 347
+Info (12128): Elaborating entity "Reg8" for hierarchy "Reg8:pen_reg" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 348
+Info (12128): Elaborating entity "PEN" for hierarchy "PEN:pen_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 349
+Info (12128): Elaborating entity "pr2" for hierarchy "pr2:pr2_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 350
+Info (12128): Elaborating entity "Shift7" for hierarchy "Shift7:shift7_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 353
+Info (12128): Elaborating entity "mux2_3" for hierarchy "mux2_3:rfa1_mux" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 354
+Info (12128): Elaborating entity "rf" for hierarchy "rf:rf_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 355
+Info (12128): Elaborating entity "mux6_16" for hierarchy "mux6_16:pr3a_mux" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 356
+Info (12128): Elaborating entity "comp" for hierarchy "comp:comparator" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 358
+Info (12128): Elaborating entity "mux2_16" for hierarchy "mux2_16:t1_mux" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 359
+Info (12128): Elaborating entity "hazard_null" for hierarchy "hazard_null:hazard_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 361
+Info (12128): Elaborating entity "pr3" for hierarchy "pr3:pr3_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 363
+Info (12128): Elaborating entity "mux3_16" for hierarchy "mux3_16:alu_a_mux" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 366
+Info (12128): Elaborating entity "SE9" for hierarchy "SE9:se9_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 368
+Info (12128): Elaborating entity "SE6" for hierarchy "SE6:se6_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 369
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu2" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 370
+Info (12128): Elaborating entity "trfwrd" for hierarchy "trfwrd:trfwrd_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 371
+Info (12128): Elaborating entity "pr4" for hierarchy "pr4:pr4_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 372
+Info (12128): Elaborating entity "datamem" for hierarchy "datamem:datamem_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 376
+Info (12128): Elaborating entity "zerodetector" for hierarchy "zerodetector:zd" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 377
+Info (12128): Elaborating entity "mux2_1" for hierarchy "mux2_1:muxz" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 378
+Info (12128): Elaborating entity "pr5" for hierarchy "pr5:pr5_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 379
+Info (12128): Elaborating entity "mux4_16" for hierarchy "mux4_16:rfd3_mux" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 382
+Info (12128): Elaborating entity "mux4_3" for hierarchy "mux4_3:rfa3_mux" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 383
+Info (12128): Elaborating entity "bit_reg" for hierarchy "bit_reg:c_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 384
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 8
+    Warning (15610): No output dependent on input pin "rst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 8
+Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 1247 megabytes
+    Info: Processing ended: Mon Nov 26 23:01:43 2018
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:30
 
 
