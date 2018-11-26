@@ -316,7 +316,7 @@ component  bit_reg is
 end  component;
 -------------------------------------------------------------------------------------
 signal temp_invalid1,temp_invalid2,temp_invalid3,temp_invalid4,pr4_en,pr2_en,tz,pr3tz,pr3_en,pr4c_i,pr4z_i,pr4c,pr4z,pr5z,pr5c,pr5z_i,pr4trfwr,pr5trfwr,zd_out,pr5_en,c,z, pr1invalid_hazard,pr2invalid_hazard,pr3invalid_hazard, pr1_en,trfwr,pr1invalid_pc,pr2invalid_pc,pr3invalid_pc,pr4invalid_pc,pr1invalid,pr2invalid,pr3invalid,pr4invalid,pr5invalid, pc_en : std_logic;
-signal pr3a_i,pr2pc,add1_r7_out,rf_d3,rf_d2,rf_d1,pr4a,add1_t1_out,t1_i,t1,pr3t1,pr3pc,pr3a,pr3b,alu2_a,alu2_b,alu2_out,se9_out,se6_out,pr3shift7_out,pr4t1,pr4pc,pr4d,pr4shift7_out,datamem_a,pr5pc,pr5a,pr5b,pr5shift7_out, pr1ir,pr1pc,pr3ir,pr4ir,pr2ir,pr5ir,pr3b_i,datamem_out,shift7_out,codemem_out,pc_out,add1_pc_out,pc_in : std_logic_vector(15 downto 0);
+signal pc_out,codemem_out,add1_pc_out,pr3a_i,pr2pc,add1_r7_out,rf_d3,rf_d2,rf_d1,pr4a,add1_t1_out,t1_i,t1,pr3t1,pr3pc,pr3a,pr3b,alu2_a,alu2_b,alu2_out,se9_out,se6_out,pr3shift7_out,pr4t1,pr4pc,pr4d,pr4shift7_out,datamem_a,pr5pc,pr5a,pr5b,pr5shift7_out, pr1ir,pr1pc,pr3ir,pr4ir,pr2ir,pr5ir,pr3b_i,datamem_out,shift7_out,pc_in : std_logic_vector(15 downto 0);
 signal pr4pen,pen_out, rf_a1, rf_a2, rf_a3, pr3pen,pr5pen : std_logic_vector(2 downto 0);
 signal newpen, penupdate, pen_mux_out : std_logic_vector(7 downto 0);
 signal controlword_out, pr2cw, pr3cw, pr3cw_i, pr4cw, pr5cw : std_logic_vector(24 downto 0); 
@@ -337,12 +337,14 @@ add1_pc : add1 port map(alu_a=>pc_out, alu_out=>add1_pc_out);
 pc_i : Reg16 port map(d=>pc_in,en=>pc_en,rst=>rst,clk=>clk,q=>pc_out);
 pc_mux_i : pc_mux port map(pc_in=>add1_pc_out, pr3ir=>pr3ir, pr4ir=>pr4ir, pr2ir=>pr2ir, b=>pr3b_i, alu_out=>alu2_out, mem2_out=>datamem_out, shift7out=>shift7_out, trfwr=>trfwr, pr2invalid=>pr2invalid, pr3invalid=>pr3invalid, pr4invalid=>pr4invalid, pr4penout=>pr4pen, reset=>rst, pc_out=>pc_in, pr1invalid_o=>pr1invalid_pc, pr2invalid_o=>pr2invalid_pc, pr3invalid_o=>pr3invalid_pc, pr4invalid_o=>pr4invalid_pc);  --b is output of rfd2 mux
 pr1_i : pr1 port map(pc_i=>pc_out, ir_i=>codemem_out, invalid_i=>temp_invalid1, en=>pr1_en, rst=>rst, clk=>clk, pc_o=>pr1pc, ir_o=>pr1ir, invalid_o=>pr1invalid);
+
 --ID
 controlword_i : controlword port map(ir=>pr1ir,reset=>rst, q=>controlword_out);
 pen_mux : mux2_8 port map(S0=>controlword_out(24),D0=>pr1ir(7 downto 0),D1=>penupdate,Y=>pen_mux_out);
 pen_reg : Reg8 port map(d=>pen_mux_out,en=>'1',rst=>rst,clk=>clk,q=>newpen);
 pen_inst : pen port map(penin=>newpen, pennext=>penupdate, penout=>pen_out);
 pr2_inst : pr2 port map(pc_i=>pr1pc, ir_i=>pr1ir, invalid_i=>temp_invalid2, cw_i=>controlword_out, en=>pr2_en, rst=>rst, clk=>clk, pc_o=>pr2pc, ir_o=>pr2ir, invalid_o=>pr2invalid, cw_o=>pr2cw);
+
 --OR
 shift7_inst : Shift7 port map(ip=>pr2ir(8 downto 0), op=>shift7_out);
 rfa1_mux : mux2_3 port map(S0=>pr2cw(22), D0=>pr2ir(11 downto 9), D1=>pen_out, Y=>rf_a1);
@@ -355,6 +357,7 @@ t1_inst : Reg16 port map(d=>t1_i,en=>'1',rst=>rst,clk=>clk,q=>t1);
 hazard_inst : hazard_null port map(pr2ir=>pr2ir, pr3ir=>pr3ir, pr4ir=>pr4ir, pr2invalid=>pr2invalid, pr3invalid=>pr3invalid, pr4invalid=>pr4invalid, trfwr=>trfwr, pr3tz=>pr3tz, pr4trfwr=>pr4trfwr, pennew=>penupdate, reset=>rst, controlword=>pr2cw, Q=>pr3cw_i, pr1en=>pr1_en, pr2en=>pr2_en, pcen=>pc_en, pr1invalid_o=>pr1invalid_hazard, pr2invalid_o=>pr2invalid_hazard, pr3invalid_o=>pr3invalid_hazard);
 add1_t1 : add1 port map(alu_a=>t1, alu_out=>add1_t1_out);
 pr3_inst : pr3 port map(t1_i=>t1, pr3pen_i=>pen_out, pc_i=>pr2pc, ir_i=>pr2ir, invalid_i=>temp_invalid3, cw_i=>pr3cw_i, pr3a_i=>pr3a_i, pr3b_i=>pr3b_i, tz_i=>tz, pr3shift7out_i=>shift7_out, en=>pr3_en, rst=>rst, clk=>clk, t1_o=>pr3t1, pr3pen_o=>pr3pen, pc_o=>pr3pc, ir_o=>pr3ir, invalid_o=>pr3invalid, cw_o=>pr3cw, pr3a_o=>pr3a, pr3b_o=>pr3b, tz_o=>pr3tz, pr3shift7out_o=>pr3shift7_out);
+
 --EX
 alu_a_mux : mux3_16 port map(S1=>pr3cw(15), S0=>pr3cw(14), D0=>pr3a, D1=>pr3b, D2=>pr3pc, Y=>alu2_a);
 alu_b_mux : mux3_16 port map(S1=>pr3cw(13), S0=>pr3cw(12), D0=>pr3b, D1=>se9_out, D2=>se6_out, Y=>alu2_b);
@@ -363,12 +366,15 @@ se6_inst  : SE6 port map(ip=>pr3ir(5 downto 0), op=> se6_out);
 alu2 : ALU port map(alu_a=>alu2_a, alu_b=>alu2_b, op=>pr3cw(11), alu_out=>alu2_out, c_out=>pr4c_i, z_out=> pr4z_i);
 trfwrd_inst : trfwrd port map(pr3ir=>pr3ir, pr4ir=>pr4ir, pr5ir=>pr5ir, pr4c=>pr4c, pr4z=>pr4z, pr5c=>pr5c, pr5z=>pr5z, muxzout=>pr5z_i, pr4trfwr=>pr4trfwr, pr5trfwr=>pr5trfwr, c=>c, z=>z, reset=>rst, trfwr=>trfwr);
 pr4_inst : pr4 port map(t1_i=>pr3t1, pr4pen_i=>pr3pen, pc_i=>pr3pc, ir_i=>pr3ir, invalid_i=>temp_invalid4, cw_i=>pr3cw, pr4a_i=>alu2_out, pr4d_i=>pr3a, pr4c_i=>pr4c_i, pr4z_i=>pr4z_i, pr4trfwr_i=>trfwr, pr4shift7out_i=>pr3shift7_out, en=>pr4_en, rst=>rst, clk=>clk, t1_o=>pr4t1, pr4pen_o=>pr4pen, pc_o=>pr4pc, ir_o=>pr4ir, invalid_o=>pr4invalid, cw_o=>pr4cw, pr4a_o=>pr4a, pr4d_o=>pr4d, pr4c_o=>pr4c, pr4z_o=>pr4z, pr4trfwr_o=>pr4trfwr, pr4shift7out_o=>pr4shift7_out);
+
 --MEM
 datamem_a_mux : mux2_16 port map(S0=>pr4cw(10), D0=>pr4a, D1=>pr4t1, Y=>datamem_a);
 datamem_inst : datamem port map(mem_d=>pr4d, mem_a=>datamem_a, rd_bar=>pr4cw(8), wr_bar=>pr4cw(7), rst=>rst, clk=>clk, mem_out=>datamem_out);
 zd : zerodetector port map(mem2d=>datamem_out, z=>zd_out);
 muxz : mux2_1 port map(n1=>zd_out, n0=>pr4z, s=>pr4cw(9), b=>pr5z_i);
 pr5_inst : pr5 port map(pr5pen_i=>pr4pen, pc_i=>pr4pc, ir_i=>pr4ir, invalid_i=>pr4invalid, cw_i=>pr4cw, pr5a_i=>pr4a, pr5b_i=>datamem_out, pr5c_i=>pr4c, pr5z_i=>pr5z_i, pr5trfwr_i=>pr4trfwr, pr5shift7out_i=>pr4shift7_out, en=>pr5_en, rst=>rst, clk=>clk, pr5pen_o=>pr5pen, pc_o=>pr5pc, ir_o=>pr5ir, invalid_o=>pr5invalid, cw_o=>pr5cw, pr5a_o=>pr5a, pr5b_o=>pr5b, pr5c_o=>pr5c, pr5z_o=>pr5z, pr5trfwr_o=>pr5trfwr, pr5shift7out_o=>pr5shift7_out);
+
+--WB
 rfd3_mux : mux4_16 port map(S0=>pr5cw(5), S1=>pr5cw(6), D0=>pr5b, D1=>pr5a, D2=>pr5shift7_out, D3=>pr5pc, Y=>rf_d3);
 rfa3_mux : mux4_3 port map(S0=>pr5cw(3), S1=>pr5cw(4), D0=>pr5ir(5 downto 3), D1=>pr5ir(11 downto 9), D2=>pr5ir(8 downto 6), D3=>pr5pen, Y=>rf_a3);
 add1_r7 : add1 port map(alu_a=>pr5pc, alu_out=>add1_r7_out);

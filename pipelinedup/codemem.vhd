@@ -15,7 +15,7 @@ architecture structure of codemem is
 
 
 type memarr is array(0 to 31) of std_logic_vector(15 downto 0);
-signal RAM : memarr := ("0011001110110110", "0011010011011011", "0000001010011000", "0101011101000000",others => X"F000");
+signal RAM : memarr := ("0011001111111100", "0011010000000001", "0000001010011000", others => X"F000");
 signal addr : std_logic_vector(4 downto 0);
 
 begin

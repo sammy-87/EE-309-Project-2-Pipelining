@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipelinedup
-Mon Nov 26 01:56:25 2018
+Mon Nov 26 10:44:12 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -50,7 +50,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 26 01:56:25 2018       ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 26 10:44:12 2018       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; pipelinedup                                 ;
 ; Top-level Entity Name              ; pipelinedup                                 ;
@@ -355,7 +355,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Mon Nov 26 01:56:12 2018
+    Info: Processing started: Mon Nov 26 10:43:57 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipelinedup -c pipelinedup
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file zerodetector.vhd
@@ -507,9 +507,9 @@ Info (21057): Implemented 2 device resources after synthesis - the final resourc
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1245 megabytes
-    Info: Processing ended: Mon Nov 26 01:56:25 2018
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Peak virtual memory: 1246 megabytes
+    Info: Processing ended: Mon Nov 26 10:44:12 2018
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:32
 
 
