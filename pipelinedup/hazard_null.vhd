@@ -63,8 +63,8 @@ begin
 				pr2en_var := '1';
 				pcen_var := '1';
 				temp_control_variable(24 downto 23) := "00";
-			   pr4invalid_o_var := '0';
-			   pr5invalid_o_var := '0';
+			   pr4invalid_o_var := '1';
+			   pr3invalid_o_var := '1';
 			else --stall pr2, pr1, disable pc, change inputs of T1 and PENreg
 				pr1en_var := '0';
 				pr2en_var := '0';
