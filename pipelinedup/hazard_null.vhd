@@ -208,7 +208,7 @@ begin
 			pr2invalid_o_var := '0';
 		
 
-		elsif pr3invalid = '1' and pr4ir(15 downto 12) = "0100" then --previous is invalid and p2p is LW, then destall pr1, pr2, enable pc. Fetch operand from mem2d
+		elsif pr3invalid = '1' and pr4ir(15 downto 12) = "0100" and pr2ir(11 downto 9) = pr4ir(11 downto 9) then --previous is invalid and p2p is LW, then destall pr1, pr2, enable pc. Fetch operand from mem2d
 			pr1en_var := '1';
 			pr2en_var := '1';
 			pcen_var := '1';
@@ -259,7 +259,7 @@ begin
 			pr2invalid_o_var := '0';
 
 
-		elsif pr3invalid = '1' and pr4ir(15 downto 12) = "0100" then --previous is invalid and p2p is LW, then destall pr1, pr2, enable pc. Fetch operand from mem2d
+		elsif pr3invalid = '1' and pr4ir(15 downto 12) = "0100" and pr2ir(8 downto 6) = pr4ir(11 downto 9) then --previous is invalid and p2p is LW, then destall pr1, pr2, enable pc. Fetch operand from mem2d
 			pr1en_var := '1';
 			pr2en_var := '1';
 			pcen_var := '1';
