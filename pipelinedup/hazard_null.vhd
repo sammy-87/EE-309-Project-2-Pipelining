@@ -186,104 +186,107 @@ begin
 		pr2invalid_o_var := '0';
 		pr3invalid_o_var := '0';
 
+		if (pr3ir(15 downto 12) = "0000" or pr3ir(15 downto 12) = "0010") and pr3ir(2 downto 0) = "000" and (pr3invalid = '0') and (pr2ir(11 downto 9) = pr3ir(5 downto 3)) then  -- previous instruction is ADD,NDU 
+			temp_control_variable(21 downto 19) := "001"; --take operand from alu2out
 
-		if (pr3ir(15 downto 12) = "0000" or pr3ir(15 downto 12) = "0010") and pr3ir(2 downto 0) = "000" and pr3invalid = '0' and (pr2ir(11 downto 9) = pr3ir(5 downto 3) or pr2ir(8 downto 6) = pr3ir(5 downto 3)) then  -- previous instruction is ADD,NDU 
-			if pr2ir(11 downto 9) = pr3ir(5 downto 3) then -- source = destination take operand from alu2out
-				temp_control_variable(21 downto 19) := "001";
-			end if;
-			if pr2ir(8 downto 6) = pr3ir(5 downto 3) then -- source = destination take operand from alu2out
-				temp_control_variable(18 downto 16) := "001";
-			end if;
-		end if;
+		elsif pr3ir(15 downto 12) = "0001" and pr3invalid = '0' and pr2ir(11 downto 9) = pr3ir(8 downto 6) then -- previous instruction is ADI
+			temp_control_variable(21 downto 19) := "001"; --operand from alu2out
 
-		if pr3ir(15 downto 12) = "0001" and pr3invalid = '0' and (pr2ir(11 downto 9) = pr3ir(8 downto 6) or pr2ir(8 downto 6) = pr3ir(8 downto 6)) then -- previous instruction is ADI
-			if pr2ir(11 downto 9) = pr3ir(8 downto 6) then 
-				temp_control_variable(21 downto 19) := "001"; --operand from alu2out
-			end if;
-			if pr2ir(8 downto 6) = pr3ir(8 downto 6) then 
-				temp_control_variable(18 downto 16) := "001"; --operand from alu2out
-			end if;
-		end if;
+		elsif pr3ir(15 downto 12) = "0011" and pr3invalid = '0' and pr2ir(11 downto 9) = pr3ir(11 downto 9) then --previous instr is LHI
+			temp_control_variable(21 downto 19) := "100"; -- operand from 7S
 
-		if pr3ir(15 downto 12) = "0011" and pr3invalid = '0' and (pr2ir(11 downto 9) = pr3ir(11 downto 9) or pr2ir(8 downto 6) = pr3ir(11 downto 9)) then --previous instr is LHI
-			if pr2ir(11 downto 9) = pr3ir(11 downto 9) then
-				temp_control_variable(21 downto 19) := "100"; -- operand from 7S
-			end if;
-			if pr2ir(8 downto 6) = pr3ir(11 downto 9) then
-				temp_control_variable(18 downto 16) := "100"; -- operand from 7S
-			end if;
-		end if;
+		elsif (pr3ir(15 downto 12) = "0000" or pr3ir(15 downto 12) = "0010" ) and ( pr3ir(1 downto 0) = "10" or pr3ir(1 downto 0) = "01" ) and pr3invalid = '0' and pr2ir(11 downto 9) = pr3ir(5 downto 3) and trfwr ='1' then -- previous instruction is ADC,ADZ,NDC,NDZ, which are going to be executed	
+			temp_control_variable(21 downto 19) := "001";
+				
 
-		if (pr3ir(15 downto 12) = "0000" or pr3ir(15 downto 12) = "0010" ) and ( pr3ir(1 downto 0) = "10" or pr3ir(1 downto 0) = "01" ) and pr3invalid = '0' and (pr2ir(11 downto 9) = pr3ir(5 downto 3) or pr2ir(8 downto 6) = pr3ir(5 downto 3)) and trfwr ='1' then -- previous instruction is ADC,ADZ,NDC,NDZ, which are going to be executed	
-			if pr2ir(11 downto 9) = pr3ir(5 downto 3) then
-				temp_control_variable(21 downto 19) := "001";
-			end if;
-			if pr2ir(8 downto 6) = pr3ir(5 downto 3) then
-				temp_control_variable(18 downto 16) := "001";
-			end if;
-		end if;
-
-		if pr3ir(15 downto 12) = "0100" and pr3invalid = '0' and (pr2ir(11 downto 9) = pr3ir(11 downto 9) or pr2ir(8 downto 6) = pr3ir(11 downto 9)) then --previous instr is LW  --stall pr1 & pr2, invalidate pr3, disable pc
+		elsif pr3ir(15 downto 12) = "0100" and pr3invalid = '0' and pr2ir(11 downto 9) = pr3ir(11 downto 9) then --previous instr is LW -  stall pr1 & pr2, invalidate pr3, disable pc
 			pr1en_var := '0';
 			pr2en_var := '0';
 			pr3invalid_o_var := '1';
 			pcen_var := '0';
 			pr1invalid_o_var := '0';
 			pr2invalid_o_var := '0';
-		end if;
+		
 
-		if pr3invalid = '1' and pr4ir(15 downto 12) = "0100" then --previous is invalid and p2p is LW, then destall pr1, pr2, enable pc. Fetch operand from mem2d
+		elsif pr3invalid = '1' and pr4ir(15 downto 12) = "0100" then --previous is invalid and p2p is LW, then destall pr1, pr2, enable pc. Fetch operand from mem2d
 			pr1en_var := '1';
 			pr2en_var := '1';
 			pcen_var := '1';
-			temp_control_variable(18 downto 16) := "010";
 			pr1invalid_o_var := '0';
 			pr2invalid_o_var := '0';
 			pr3invalid_o_var := '0';
-		end if;
+
+			temp_control_variable(21 downto 19):= "010";
 		
-		if (not((pr3ir(15 downto 12) = "0000" or pr3ir(15 downto 12) = "0010") and pr3ir(2 downto 0) = "000" and pr3invalid = '0' and (pr2ir(11 downto 9) = pr3ir(5 downto 3) or pr2ir(8 downto 6) = pr3ir(5 downto 3)))    or    (pr3ir(15 downto 12) = "0001" and pr3invalid = '0' and (pr2ir(11 downto 9) = pr3ir(8 downto 6) or pr2ir(8 downto 6) = pr3ir(8 downto 6)))    or    (pr3ir(15 downto 12) = "0011" and pr3invalid = '0' and (pr2ir(11 downto 9) = pr3ir(11 downto 9) or pr2ir(8 downto 6) = pr3ir(11 downto 9)))    or    ((pr3ir(15 downto 12) = "0000" or pr3ir(15 downto 12) = "0010" ) and ( pr3ir(1 downto 0) = "10" or pr3ir(1 downto 0) = "01" ) and pr3invalid = '0' and (pr2ir(11 downto 9) = pr3ir(5 downto 3) or pr2ir(8 downto 6) = pr3ir(5 downto 3)) and trfwr ='1')    or    (pr3ir(15 downto 12) = "0100" and pr3invalid = '0' and (pr2ir(11 downto 9) = pr3ir(11 downto 9) or pr2ir(8 downto 6) = pr3ir(11 downto 9)))    or    (pr3invalid = '1' and pr4ir(15 downto 12) = "0100")) then
-			if (pr4ir(15 downto 12) = "0000" or pr4ir(15 downto 12) = "0010") and pr4ir(2 downto 0) = "000" and pr4invalid = '0' and (pr2ir(11 downto 9) = pr4ir(5 downto 3) or pr2ir(8 downto 6) = pr4ir(5 downto 3)) then --p2p is ADD, NDU
-				if pr2ir(11 downto 9) = pr4ir(5 downto 3) then -- source = destination take operand from pr4a
-					temp_control_variable(21 downto 19) := "011";
-				end if;
-				if pr2ir(8 downto 6) = pr4ir(5 downto 3) then -- source = destination take operand from pr4a
-					temp_control_variable(18 downto 16) := "011";
-				end if;
+		else
+			if (pr4ir(15 downto 12) = "0000" or pr4ir(15 downto 12) = "0010") and pr4ir(2 downto 0) = "000" and pr4invalid = '0' and pr2ir(11 downto 9) = pr4ir(5 downto 3) then --p2p is ADD, NDU 
+				temp_control_variable(21 downto 19) := "011"; -- take operand from pr4a
 					
-			elsif pr4ir(15 downto 12) = "0001" and pr4invalid = '0' and (pr2ir(11 downto 9) = pr4ir(8 downto 6) or pr2ir(8 downto 6) = pr4ir(8 downto 6)) then -- p2p instruction is ADI
-				if pr2ir(11 downto 9) = pr4ir(8 downto 6) then 
-					temp_control_variable(21 downto 19) := "011"; --operand from pr4a
-				end if;
-				if pr2ir(8 downto 6) = pr4ir(8 downto 6) then 
-					temp_control_variable(18 downto 16) := "011"; --operand from pr4a
-				end if;
+			elsif pr4ir(15 downto 12) = "0001" and pr4invalid = '0' and pr2ir(11 downto 9) = pr4ir(8 downto 6) then -- p2p instruction is ADI
+				temp_control_variable(21 downto 19) := "011"; --operand from pr4a
 
-			elsif pr4ir(15 downto 12) = "0011" and pr4invalid = '0' and (pr2ir(11 downto 9) = pr4ir(11 downto 9) or pr2ir(8 downto 6) = pr4ir(11 downto 9)) then --p2p instr is LHI
-				if pr2ir(11 downto 9) = pr4ir(11 downto 9) then
-					temp_control_variable(21 downto 19) := "101"; -- operand from pr47S
-				end if;
-				if pr2ir(8 downto 6) = pr4ir(11 downto 9) then
-					temp_control_variable(18 downto 16) := "101"; -- operand from pr47S
-				end if;
+			elsif pr4ir(15 downto 12) = "0011" and pr4invalid = '0' and pr2ir(11 downto 9) = pr4ir(11 downto 9) then --p2p instr is LHI
+				temp_control_variable(21 downto 19) := "101"; -- operand from pr47S
+			
+			elsif pr4ir(15 downto 12) = "0100" and pr4invalid = '0' and pr2ir(11 downto 9) = pr4ir(11 downto 9) then --p2p is LW
+				temp_control_variable(21 downto 19) := "010";  -- operand from mem2d
 
-			elsif pr4ir(15 downto 12) = "0100" and pr4invalid = '0' and (pr2ir(11 downto 9) = pr4ir(11 downto 9) or pr2ir(8 downto 6) = pr4ir(11 downto 9)) then --p2p is LW
-				if pr2ir(11 downto 9) = pr4ir(11 downto 9) then
-					temp_control_variable(21 downto 19) := "010";  -- operand from mem2d
-				end if;
-				if pr2ir(8 downto 6) = pr4ir(11 downto 9) then
-					temp_control_variable(18 downto 16) := "010";  -- operand from mem2d
-				end if;
-
-			elsif ( pr4ir(15 downto 12) = "0000" or pr4ir(15 downto 12) = "0010" ) and ( pr4ir(1 downto 0) = "10" or pr4ir(1 downto 0) = "01" ) and pr4invalid = '0' and (pr2ir(11 downto 9) = pr4ir(5 downto 3) or pr2ir(8 downto 6) = pr4ir(5 downto 3)) and pr4trfwr = '1' then -- p2p instruction id ADC,ADZ,NDC,NDZ, which are going to be executed
-				if pr2ir(11 downto 9) = pr4ir(5 downto 3) then
-					temp_control_variable(21 downto 19) := "011";   --take from pr4a, else take from RF as usual
-				end if;
-				if pr2ir(8 downto 6) = pr4ir(5 downto 3) then
-					temp_control_variable(18 downto 16) := "011";   --take from pr4a, else take from RF as usual
-				end if;
+			elsif ( pr4ir(15 downto 12) = "0000" or pr4ir(15 downto 12) = "0010" ) and ( pr4ir(1 downto 0) = "10" or pr4ir(1 downto 0) = "01" ) and pr4invalid = '0' and pr2ir(11 downto 9) = pr4ir(5 downto 3) and pr4trfwr = '1' then -- p2p instruction id ADC,ADZ,NDC,NDZ, which are going to be exexuted
+				temp_control_variable(21 downto 19) := "011";   --take from pr4a, else take from RF as usual
 			end if ;
 		end if;
+
+		-------------------
+
+		if (pr3ir(15 downto 12) = "0000" or pr3ir(15 downto 12) = "0010") and pr3ir(2 downto 0) = "000" and pr3invalid = '0' and pr2ir(8 downto 6) = pr3ir(5 downto 3) then  -- previous instruction is ADD,NDU 
+			temp_control_variable(18 downto 16) := "001"; --operand from alu2out
+
+		elsif pr3ir(15 downto 12) = "0001" and pr3invalid = '0' and pr2ir(8 downto 6) = pr3ir(8 downto 6) then -- previous instruction is ADI
+			temp_control_variable(18 downto 16) := "001"; --operand from alu2out
+
+		elsif pr3ir(15 downto 12) = "0011" and pr3invalid = '0' and pr2ir(8 downto 6) = pr3ir(11 downto 9) then --previous instr is LHI
+			temp_control_variable(18 downto 16) := "100"; -- operand from 7S
+
+		elsif (pr3ir(15 downto 12) = "0000" or pr3ir(15 downto 12) = "0010" ) and ( pr3ir(1 downto 0) = "10" or pr3ir(1 downto 0) = "01" ) and pr3invalid = '0' and pr2ir(8 downto 6) = pr3ir(5 downto 3) and trfwr ='1' then -- previous instruction is ADC,ADZ,NDC,NDZ, which are going to be executed	
+			temp_control_variable(18 downto 16) := "001";
+
+		elsif pr3ir(15 downto 12) = "0100" and pr3invalid = '0' and pr2ir(8 downto 6) = pr3ir(11 downto 9) then --previous instr is LW --stall pr1 & pr2, invalidate pr3, disable pc
+			pr1en_var := '0';
+			pr2en_var := '0';
+			pr3invalid_o_var := '1';
+			pcen_var := '0';
+			pr1invalid_o_var := '0';
+			pr2invalid_o_var := '0';
+
+
+		elsif pr3invalid = '1' and pr4ir(15 downto 12) = "0100" then --previous is invalid and p2p is LW, then destall pr1, pr2, enable pc. Fetch operand from mem2d
+			pr1en_var := '1';
+			pr2en_var := '1';
+			pcen_var := '1';
+			pr1invalid_o_var := '0';
+			pr2invalid_o_var := '0';
+			pr3invalid_o_var := '0';
+			temp_control_variable(18 downto 16):= "010";
+		
+		else
+			if (pr4ir(15 downto 12) = "0000" or pr4ir(15 downto 12) = "0010") and pr4ir(2 downto 0) = "000" and pr4invalid = '0' and pr2ir(8 downto 6) = pr4ir(5 downto 3) then --p2p is ADD, NDU
+				temp_control_variable(18 downto 16) := "011"; --operand from pr4a
+					
+			elsif pr4ir(15 downto 12) = "0001" and pr4invalid = '0' and pr2ir(8 downto 6) = pr4ir(8 downto 6) then -- p2p instruction is ADI
+				temp_control_variable(18 downto 16) := "011"; --operand from pr4a
+
+			elsif pr4ir(15 downto 12) = "0011" and pr4invalid = '0' and pr2ir(8 downto 6) = pr4ir(11 downto 9) then --p2p instr is LHI
+				temp_control_variable(18 downto 16) := "101"; -- operand from pr47S
+			
+			elsif pr4ir(15 downto 12) = "0100" and pr4invalid = '0' and pr2ir(8 downto 6) = pr4ir(11 downto 9) then --p2p is LW
+				temp_control_variable(18 downto 16) := "010";  -- operand from mem2d
+
+			elsif ( pr4ir(15 downto 12) = "0000" or pr4ir(15 downto 12) = "0010" ) and ( pr4ir(1 downto 0) = "10" or pr4ir(1 downto 0) = "01" ) and pr4invalid = '0' and pr2ir(8 downto 6) = pr4ir(5 downto 3) and pr4trfwr = '1' then -- p2p instruction id ADC,ADZ,NDC,NDZ, which are going to be executed
+				temp_control_variable(18 downto 16) := "011";   --take from pr4a, else take from RF as usual
+
+			end if ;
+		end if;
+
 	end if;
 	
 	if pr3ir(15 downto 12) = "1000" and pr3invalid = '0' then -- instruction in pr3 is JAL
