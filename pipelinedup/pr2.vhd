@@ -26,7 +26,7 @@ begin
     begin
         if rst = '1' then
             pc_o <= "0000000000000000";
-            ir_o <= "0000000000000000";
+            ir_o <= "1111000000000000";
             invalid_o <= '1';
             cw_o <= "0000000000000000110000000";
         elsif rising_edge(clk) then

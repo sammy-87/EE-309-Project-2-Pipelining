@@ -24,7 +24,7 @@ begin
     begin
         if rst = '1' then
             pc_o <= "0000000000000000";
-            ir_o <= "0000000000000000";
+            ir_o <= "1111000000000000";
             invalid_o <= '1';
         elsif rising_edge(clk) then
             if en = '1' then

@@ -53,12 +53,9 @@ begin
 		else 
 			if z ='1' then
 				trfwr_var := '1';
-			else 
-				trfwr_var:= '0';
 			end if;
 		end if;
-	else 
-		trfwr_var := '0';
+
 	end if;
 
 	if reset = '1' then

@@ -1,5 +1,5 @@
 Flow report for pipelinedup
-Mon Nov 26 14:49:18 2018
+Mon Nov 26 16:08:04 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Nov 26 14:49:18 2018       ;
+; Flow Status                        ; Successful - Mon Nov 26 16:08:04 2018       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; pipelinedup                                 ;
 ; Top-level Entity Name              ; pipelinedup                                 ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/26/2018 14:48:53 ;
+; Start date & time ; 11/26/2018 16:07:38 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pipelinedup         ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 220295154634473.154322393313112 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 220295154634473.154322865816096 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                            ; --            ; --          ; eda_simulation ;
@@ -92,12 +92,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:13     ; 1.0                     ; 5034 MB             ; 00:00:29                           ;
-; Fitter                    ; 00:00:04     ; 1.0                     ; 5521 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:14     ; 1.0                     ; 5032 MB             ; 00:00:30                           ;
+; Fitter                    ; 00:00:04     ; 1.0                     ; 5520 MB             ; 00:00:05                           ;
 ; Assembler                 ; 00:00:01     ; 1.0                     ; 4898 MB             ; 00:00:01                           ;
 ; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4999 MB             ; 00:00:02                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4872 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:21     ; --                      ; --                  ; 00:00:37                           ;
+; Total                     ; 00:00:22     ; --                      ; --                  ; 00:00:39                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

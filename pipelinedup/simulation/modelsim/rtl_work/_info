@@ -21,9 +21,9 @@ V1l@Wh5BSTdL9bK@cZdFeY2
 !s100 k[;;V6b>1jONmC6CdRCmh1
 Z6 OV;C;10.4d;61
 31
-Z7 !s110 1543223982
+Z7 !s110 1543228723
 !i10b 1
-Z8 !s108 1543223982.000000
+Z8 !s108 1543228723.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add.vhd|
 Z10 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add.vhd|
 !i113 1
@@ -165,7 +165,7 @@ R24
 R11
 R12
 Ecodemem
-Z25 w1543217332
+Z25 w1543227487
 Z26 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R2
 R3
@@ -193,8 +193,8 @@ R3
 DEx4 work 7 codemem 0 22 gN>mA8?3PUEaIJjD5IKRX2
 l21
 L14
-V?C;`hY626ZM_iDOVYF;?X0
-!s100 A`QTPma[bY]Z9B:k^kDOl1
+V;T;;Pl4T`9i=70TYROl550
+!s100 ]NJ34?Kc_h2:`=VknIYBh3
 R6
 31
 R7
@@ -222,7 +222,7 @@ R6
 31
 R7
 !i10b 1
-Z35 !s108 1543223981.000000
+Z35 !s108 1543228722.000000
 Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd|
 Z37 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd|
 !i113 1
@@ -261,7 +261,7 @@ V0ghHaKV]o[KzAQFEhEC>L3
 !s100 `8ZmgD80_F=ZzgFHfc[QL3
 R6
 31
-Z41 !s110 1543223981
+Z41 !s110 1543228722
 !i10b 1
 R35
 Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd|
@@ -421,9 +421,9 @@ R6
 31
 R41
 !i10b 1
-Z59 !s108 1543223980.000000
-Z60 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd|
-Z61 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd|
+R35
+Z59 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd|
+Z60 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd|
 !i113 1
 R11
 R12
@@ -439,9 +439,9 @@ R6
 31
 R41
 !i10b 1
+R35
 R59
 R60
-R61
 !i113 1
 R11
 R12
@@ -450,17 +450,17 @@ R1
 R2
 R3
 R0
-Z62 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd
-Z63 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd
+Z61 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd
+Z62 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd
 l0
 L7
 V0bM9^BULIz4<iKJRDP[=N3
 !s100 za9TCOVTMQ=DdQNnNM1B^2
 R6
 31
-Z64 !s110 1543223980
+Z63 !s110 1543228721
 !i10b 1
-R59
+Z64 !s108 1543228721.000000
 Z65 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd|
 Z66 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd|
 !i113 1
@@ -476,9 +476,9 @@ VT@2UdUD^7RaT2C_74Lk[_0
 !s100 fEGT>zKzQMAmd2z8eSX`n1
 R6
 31
-R64
+R63
 !i10b 1
-R59
+R64
 R65
 R66
 !i113 1
@@ -497,9 +497,9 @@ V2:G9b3iI?gOgP:T0gjeZV0
 !s100 To=Yk9l0`Q>J_XRDCZ1B92
 R6
 31
-R64
+R41
 !i10b 1
-R59
+R64
 Z69 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd|
 Z70 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd|
 !i113 1
@@ -515,9 +515,9 @@ VZ8WIgZQ?_2oVKN0l95<3C1
 !s100 UROAbR4@J`gT?<B8c[9b51
 R6
 31
-R64
+R41
 !i10b 1
-R59
+R64
 R69
 R70
 !i113 1
@@ -536,9 +536,9 @@ VF`KNk38e2fjN<zXeUd_Tm3
 !s100 2<8=^TNS]ZjQPVEeIhHZI1
 R6
 31
-R64
+R63
 !i10b 1
-R59
+R64
 Z73 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd|
 Z74 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd|
 !i113 1
@@ -554,9 +554,9 @@ Vaf8>b=V`cmh=L]4o>^YFK0
 !s100 H7zWVPDALn8?zQfnAj4?30
 R6
 31
-R64
+R63
 !i10b 1
-R59
+R64
 R73
 R74
 !i113 1
@@ -575,9 +575,9 @@ V>B<Q>^CVQeTSQL>kT00:71
 !s100 d=Mg7`gQ@OafWKGeYXfN=3
 R6
 31
-R64
+R63
 !i10b 1
-R59
+R64
 Z77 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd|
 Z78 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd|
 !i113 1
@@ -593,9 +593,9 @@ VUg:[b;Y?2VWo9PeUc;GIb3
 !s100 3?2SV5C5gg:EFDn2YkDbo0
 R6
 31
-R64
+R63
 !i10b 1
-R59
+R64
 R77
 R78
 !i113 1
@@ -614,11 +614,11 @@ VMTlZ:nJnA4<Eg1Gj[NQH91
 !s100 MbzWiK>`0Q>eINUd7M9l;3
 R6
 31
-Z81 !s110 1543223979
+R63
 !i10b 1
-Z82 !s108 1543223979.000000
-Z83 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd|
-Z84 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd|
+R64
+Z81 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd|
+Z82 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd|
 !i113 1
 R11
 R12
@@ -632,11 +632,11 @@ V09n7QIYT]5[<7B[7[<EMa3
 !s100 7Lz9EgK4<CM5DGVE6FD`12
 R6
 31
-R81
+R63
 !i10b 1
+R64
+R81
 R82
-R83
-R84
 !i113 1
 R11
 R12
@@ -645,19 +645,19 @@ R1
 R2
 R3
 R0
-Z85 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd
-Z86 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd
+Z83 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd
+Z84 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd
 l0
 L7
 V_^aS_nh9k?Ce96og<k[N=1
 !s100 eS3Pei]YF=ee0SeY86`O^0
 R6
 31
-R64
+R63
 !i10b 1
-R59
-Z87 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd|
-Z88 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd|
+R64
+Z85 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd|
+Z86 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd|
 !i113 1
 R11
 R12
@@ -671,32 +671,32 @@ VE`PJTS=^hUHIY2gaoZ0mA1
 !s100 :P^SEO2;AUTfIo8h6XA8D0
 R6
 31
-R64
+R63
 !i10b 1
-R59
-R87
-R88
+R64
+R85
+R86
 !i113 1
 R11
 R12
 Emux6_16
-Z89 w1543202550
+Z87 w1543202550
 R2
 R3
 R0
-Z90 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd
-Z91 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd
+Z88 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd
+Z89 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd
 l0
 L7
 V^D@T?[l?<?`k^JE3Ea=?k2
 !s100 <W3<>=b_nTni0:FTzc=J63
 R6
 31
-R81
+R63
 !i10b 1
-R82
-Z92 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd|
-Z93 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd|
+Z90 !s108 1543228720.000000
+Z91 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd|
+Z92 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd|
 !i113 1
 R11
 R12
@@ -710,30 +710,30 @@ VY`WM;23mEmlbG4SlT0dKQ2
 !s100 k8T5Zc]^V73IfWBnIQ`>@2
 R6
 31
-R81
+R63
 !i10b 1
-R82
+R90
+R91
 R92
-R93
 !i113 1
 R11
 R12
 Epc_mux
-Z94 w1543223296
+Z93 w1543223296
 R2
 R3
 R0
-Z95 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd
-Z96 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd
+Z94 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd
+Z95 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd
 l0
 L4
 V<X`[=zIL1YDA1<;9M<FW=3
 !s100 X15Xcfl^VlC<nc0Fl0N;W1
 R6
 31
-R81
+Z96 !s110 1543228720
 !i10b 1
-R82
+R90
 Z97 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd|
 Z98 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd|
 !i113 1
@@ -749,16 +749,16 @@ VXlO4Jb4LLjU5`BnYzUMBN1
 !s100 <ZznbESSf@olP;RF57>kJ1
 R6
 31
-R81
+R96
 !i10b 1
-R82
+R90
 R97
 R98
 !i113 1
 R11
 R12
 Epen
-R89
+R87
 R2
 R3
 R0
@@ -770,9 +770,9 @@ VH13l71iNQf=bbSjg<>>0Y3
 !s100 7zN^58KU2L7VQVBVg]d`G2
 R6
 31
-R81
+R96
 !i10b 1
-R82
+R90
 Z101 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd|
 Z102 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd|
 !i113 1
@@ -788,9 +788,9 @@ VMih;jlViZG0@@FEHg@hdG3
 !s100 UXnbmLG^G<]iI;jLeXi_=2
 R6
 31
-R81
+R96
 !i10b 1
-R82
+R90
 R101
 R102
 !i113 1
@@ -809,9 +809,9 @@ VCXLF_I4UIWXJMfgA;affh1
 !s100 dcLN:MkV3=]SPl<_VNiR>2
 R6
 31
-R81
+R96
 !i10b 1
-R82
+R90
 Z106 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd|
 Z107 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd|
 !i113 1
@@ -827,30 +827,30 @@ V@FVe@7;BML3bRj?K6FIU01
 !s100 T8ib@l;?@C_A@@3Ug6e=c1
 R6
 31
-R81
+R96
 !i10b 1
-R82
+R90
 R106
 R107
 !i113 1
 R11
 R12
 Epr1
-R38
+Z108 w1543228551
 R2
 R3
 R0
-Z108 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd
-Z109 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd
+Z109 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd
+Z110 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd
 l0
 L7
 VX>aPDk[E`RNg]9NblCU[12
 !s100 9afE8i38;GN<5g40@[nNb3
 R6
 31
-R81
+R96
 !i10b 1
-Z110 !s108 1543223978.000000
+R90
 Z111 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd|
 Z112 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd|
 !i113 1
@@ -862,20 +862,20 @@ R3
 DEx4 work 3 pr1 0 22 X>aPDk[E`RNg]9NblCU[12
 l22
 L20
-V>QF0z_MAnhWJElNZ^lnoN3
-!s100 7]k1TLkn[;5f_^Kokb][81
+VUVeFT40F?3O`LV8bkJ`;c3
+!s100 >BlKk7mCcXNfdTVnU88ET1
 R6
 31
-R81
+R96
 !i10b 1
-R110
+R90
 R111
 R112
 !i113 1
 R11
 R12
 Epr2
-Z113 w1543206445
+Z113 w1543228616
 R2
 R3
 R0
@@ -887,11 +887,11 @@ V`QWFZ=TKYXcdhl0Ma5IoZ1
 !s100 =V^i=>Nld1UC>^>:7[Xc10
 R6
 31
-Z116 !s110 1543223978
+R96
 !i10b 1
-R110
-Z117 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd|
-Z118 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd|
+R90
+Z116 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd|
+Z117 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd|
 !i113 1
 R11
 R12
@@ -901,36 +901,36 @@ R3
 DEx4 work 3 pr2 0 22 `QWFZ=TKYXcdhl0Ma5IoZ1
 l24
 L22
-VO>;n^]U]CK8MXUoT_VkG@3
-!s100 FJkJJH?mgS;LoMzU@3Cm_2
+VJSV[DGEgGY?E9effiUXez2
+!s100 [PKO`gQSbNn;jaW^mK27X1
 R6
 31
-R116
+R96
 !i10b 1
-R110
+R90
+R116
 R117
-R118
 !i113 1
 R11
 R12
 Epr3
-Z119 w1543206425
+R113
 R2
 R3
 R0
-Z120 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd
-Z121 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd
+Z118 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd
+Z119 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd
 l0
 L7
 V2T97Y9GfC=k6mLEVeg>f:3
 !s100 MC[U2zT7`8PR@Sh36M6PE3
 R6
 31
-R116
+R96
 !i10b 1
-R110
-Z122 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd|
-Z123 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd|
+R90
+Z120 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd|
+Z121 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd|
 !i113 1
 R11
 R12
@@ -940,36 +940,36 @@ R3
 DEx4 work 3 pr3 0 22 2T97Y9GfC=k6mLEVeg>f:3
 l38
 L36
-VBodL0b]TFL_ZCUg:=aoRH0
-!s100 IJz6ICXOcWVVOz`UVj5Mo1
+V:N9RF2:NT3I9XN=oT?RGm2
+!s100 ZllEI71T6_XRAn31YP[nf0
 R6
 31
-R116
+R96
 !i10b 1
-R110
-R122
-R123
+R90
+R120
+R121
 !i113 1
 R11
 R12
 Epr4
-Z124 w1543206402
+Z122 w1543228617
 R2
 R3
 R0
-Z125 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd
-Z126 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd
+Z123 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd
+Z124 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd
 l0
 L7
 V6fcSW2FFGCF_ST`@545LW1
 !s100 B>F34Y_nd:M0E3eAH@b=S1
 R6
 31
-R116
+R96
 !i10b 1
-R110
-Z127 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd|
-Z128 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd|
+R90
+Z125 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd|
+Z126 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd|
 !i113 1
 R11
 R12
@@ -979,36 +979,36 @@ R3
 DEx4 work 3 pr4 0 22 6fcSW2FFGCF_ST`@545LW1
 l42
 L40
-V8A89]`=7VW58XMBI>YcZ@1
-!s100 ?K=V6XTaW6_>?a2NHda571
+VPaOFmfjQ=_2MH6h<@T59?0
+!s100 b9Nf@n86VUN8m0iINFI0W2
 R6
 31
-R116
+R96
 !i10b 1
-R110
-R127
-R128
+R90
+R125
+R126
 !i113 1
 R11
 R12
 Epr5
-Z129 w1543206387
+Z127 w1543228609
 R2
 R3
 R0
-Z130 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd
-Z131 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd
+Z128 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd
+Z129 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd
 l0
 L7
 VOE[?EG8UPl3ek07E[[N1@1
 !s100 QTdzAUY2Y8GP^]o4Nc;ja3
 R6
 31
-R116
+R96
 !i10b 1
-R110
-Z132 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd|
-Z133 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd|
+Z130 !s108 1543228719.000000
+Z131 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd|
+Z132 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd|
 !i113 1
 R11
 R12
@@ -1018,34 +1018,34 @@ R3
 DEx4 work 3 pr5 0 22 OE[?EG8UPl3ek07E[[N1@1
 l40
 L38
-VmRE5Q>m^b?n@>ULSUPP`Q3
-!s100 LFh64?]^j]f0Q<=B0LgC70
+VXJ[9n?n]<fU;2Qmbzg1AR3
+!s100 O<DdlPodJ>O[KM]DmGmDm0
 R6
 31
-R116
+R96
 !i10b 1
-R110
+R130
+R131
 R132
-R133
 !i113 1
 R11
 R12
 Ereg16
-R89
+R87
 R2
 R3
 R0
-Z134 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd
-Z135 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd
+Z133 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd
+Z134 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd
 l0
 L7
 VmRoJ;[V8Ugam7^<6[MJ5;0
 !s100 KKOz?F?hgC6lQN=6A`j782
 R6
 31
-R116
+Z135 !s110 1543228719
 !i10b 1
-R110
+R130
 Z136 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd|
 Z137 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd|
 !i113 1
@@ -1061,9 +1061,9 @@ VDkC0;Al9F<a0NYS63AT]R2
 !s100 _Z>O[1:RJY2@VjGob8_TJ3
 R6
 31
-R116
+R135
 !i10b 1
-R110
+R130
 R136
 R137
 !i113 1
@@ -1082,9 +1082,9 @@ VFRKdNSRmn=]X]95KQOOYc0
 !s100 KzX00c;EU[zj7T]G5UF9M2
 R6
 31
-R116
+R135
 !i10b 1
-R110
+R130
 Z140 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd|
 Z141 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd|
 !i113 1
@@ -1100,9 +1100,9 @@ VoScQDj;GIncBYM;C0W>W^1
 !s100 gHa2JNhzn[PeNK6P5J0R10
 R6
 31
-R116
+R135
 !i10b 1
-R110
+R130
 R140
 R141
 !i113 1
@@ -1122,9 +1122,9 @@ VYLB[?JiVZn1008^ISE31D0
 !s100 ozIB2`Wgd7K7l9[?cfJ3`0
 R6
 31
-R116
+R135
 !i10b 1
-R110
+R130
 Z145 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd|
 Z146 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd|
 !i113 1
@@ -1141,16 +1141,16 @@ V[MJizm=:QEEafgko]aP=m0
 !s100 JSI7FkJ@gXadSK@S`iC2W1
 R6
 31
-R116
+R135
 !i10b 1
-R110
+R130
 R145
 R146
 !i113 1
 R11
 R12
 Ese6
-R89
+R87
 R2
 R3
 R0
@@ -1162,9 +1162,9 @@ VV^_zJ1CNRCGoX8Ba7INO@1
 !s100 DNRmDdJSfBW8Yhi3aSGDD2
 R6
 31
-R116
+R135
 !i10b 1
-R110
+R130
 Z149 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd|
 Z150 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd|
 !i113 1
@@ -1180,16 +1180,16 @@ VT^eMKdNXdb]m?Z2Jf4Q=W2
 !s100 >O2]5A1DjkhVE_gn7gH;@2
 R6
 31
-R116
+R135
 !i10b 1
-R110
+R130
 R149
 R150
 !i113 1
 R11
 R12
 Ese9
-R89
+R87
 R2
 R3
 R0
@@ -1201,9 +1201,9 @@ Va]GN8D>?BXD7=<8R?PPRY1
 !s100 :V3Gi:Yia1R;LF:=TE6Mc3
 R6
 31
-R116
+R135
 !i10b 1
-R110
+R130
 Z153 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd|
 Z154 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd|
 !i113 1
@@ -1219,16 +1219,16 @@ VCnN=;]cC=8bZHLEYUMH;62
 !s100 n56gH>=HK2cMR7T>JQkBf0
 R6
 31
-R116
+R135
 !i10b 1
-R110
+R130
 R153
 R154
 !i113 1
 R11
 R12
 Eshift7
-R89
+R87
 R2
 R3
 R0
@@ -1240,9 +1240,9 @@ V0F>:hXHU=4ahX0HQBIUHN2
 !s100 S0^2:B^]7Q4gCKHTdgm[z2
 R6
 31
-R116
+R135
 !i10b 1
-R110
+R130
 Z157 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd|
 Z158 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd|
 !i113 1
@@ -1258,32 +1258,32 @@ Vc=iGZY1=c@0UMI3KPM:Z`1
 !s100 Fmb]_z:3hBnT0jC92SUTQ3
 R6
 31
-R116
+R135
 !i10b 1
-R110
+R130
 R157
 R158
 !i113 1
 R11
 R12
 Etrfwrd
-R89
+Z159 w1543228654
 R2
 R3
 R0
-Z159 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd
-Z160 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd
+Z160 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd
+Z161 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd
 l0
 L4
 V^;A9_]c<6XKLjlZ^ZHN1_0
 !s100 _9<hz]QNaa[2;zWAEVTg:1
 R6
 31
-R116
+R135
 !i10b 1
-R110
-Z161 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd|
-Z162 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd|
+R130
+Z162 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd|
+Z163 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd|
 !i113 1
 R11
 R12
@@ -1293,36 +1293,36 @@ R3
 DEx4 work 6 trfwrd 0 22 ^;A9_]c<6XKLjlZ^ZHN1_0
 l12
 L11
-Vce>ATLAE4]nm@]njEgX1K3
-!s100 Rffg8Yd4`XHzA:=dDOLFO3
+VTW92?icHbFR2SM=E<A15P0
+!s100 OT[MbBZMe:Pe^NIa@4hNd1
 R6
 31
-R116
+R135
 !i10b 1
-R110
-R161
+R130
 R162
+R163
 !i113 1
 R11
 R12
 Ezerodetector
-R89
+R87
 R2
 R3
 R0
-Z163 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd
-Z164 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd
+Z164 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd
+Z165 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd
 l0
 L7
 Vc55KeEaISE4czMeXU6ek@3
 !s100 cf8YRRi92;Z38a0J=TTg[3
 R6
 31
-R116
+R135
 !i10b 1
-R110
-Z165 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd|
-Z166 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd|
+R130
+Z166 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd|
+Z167 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd|
 !i113 1
 R11
 R12
@@ -1336,11 +1336,11 @@ VUk<XIDL1`Di9E3WgoDALE0
 !s100 fn1Eo<[?ZJS<ElMO_];A<3
 R6
 31
-R116
+R135
 !i10b 1
-R110
-R165
+R130
 R166
+R167
 !i113 1
 R11
 R12
