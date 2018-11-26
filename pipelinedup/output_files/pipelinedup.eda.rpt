@@ -1,5 +1,5 @@
 EDA Netlist Writer report for pipelinedup
-Mon Nov 26 10:04:20 2018
+Mon Nov 26 18:06:53 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Nov 26 10:04:20 2018 ;
+; EDA Netlist Writer Status ; Successful - Mon Nov 26 18:06:53 2018 ;
 ; Revision Name             ; pipelinedup                           ;
 ; Top-level Entity Name     ; pipelinedup                           ;
 ; Family                    ; Cyclone IV E                          ;
@@ -67,20 +67,20 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                                                       ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                                                  ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/pipelinedup_6_1200mv_85c_slow.vho      ;
-; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/pipelinedup_6_1200mv_0c_slow.vho       ;
-; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/pipelinedup_min_1200mv_0c_fast.vho     ;
-; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/pipelinedup.vho                        ;
-; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/pipelinedup_6_1200mv_85c_vhd_slow.sdo  ;
-; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/pipelinedup_6_1200mv_0c_vhd_slow.sdo   ;
-; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/pipelinedup_min_1200mv_0c_vhd_fast.sdo ;
-; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/pipelinedup_vhd.sdo                    ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                                              ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                                         ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/pipelinedup_6_1200mv_85c_slow.vho      ;
+; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/pipelinedup_6_1200mv_0c_slow.vho       ;
+; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/pipelinedup_min_1200mv_0c_fast.vho     ;
+; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/pipelinedup.vho                        ;
+; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/pipelinedup_6_1200mv_85c_vhd_slow.sdo  ;
+; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/pipelinedup_6_1200mv_0c_vhd_slow.sdo   ;
+; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/pipelinedup_min_1200mv_0c_vhd_fast.sdo ;
+; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/pipelinedup_vhd.sdo                    ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -89,20 +89,19 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Mon Nov 26 10:04:19 2018
+    Info: Processing started: Mon Nov 26 18:06:52 2018
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off pipelinedup -c pipelinedup
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file pipelinedup_6_1200mv_85c_slow.vho in folder "C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file pipelinedup_6_1200mv_0c_slow.vho in folder "C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file pipelinedup_min_1200mv_0c_fast.vho in folder "C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file pipelinedup.vho in folder "C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file pipelinedup_6_1200mv_85c_vhd_slow.sdo in folder "C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file pipelinedup_6_1200mv_0c_vhd_slow.sdo in folder "C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file pipelinedup_min_1200mv_0c_vhd_fast.sdo in folder "C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file pipelinedup_vhd.sdo in folder "C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/" for EDA simulation tool
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4870 megabytes
-    Info: Processing ended: Mon Nov 26 10:04:20 2018
+Info (204019): Generated file pipelinedup_6_1200mv_85c_slow.vho in folder "/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file pipelinedup_6_1200mv_0c_slow.vho in folder "/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file pipelinedup_min_1200mv_0c_fast.vho in folder "/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file pipelinedup.vho in folder "/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file pipelinedup_6_1200mv_85c_vhd_slow.sdo in folder "/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file pipelinedup_6_1200mv_0c_vhd_slow.sdo in folder "/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file pipelinedup_min_1200mv_0c_vhd_fast.sdo in folder "/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file pipelinedup_vhd.sdo in folder "/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim/" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 1305 megabytes
+    Info: Processing ended: Mon Nov 26 18:06:53 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
