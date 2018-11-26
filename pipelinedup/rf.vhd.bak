@@ -52,7 +52,7 @@ process (clk, rst, wr_rf,rfa3,rfa1,rfa2,rfd3,pr5invalid,pr5trfwr,pr5ir, register
 	variable wrarr_temp : bitarr := "00000000";
 	variable rfd1_var, rfd2_var : std_logic_vector(15 downto 0);
 	variable r7_var : std_logic_vector(15 downto 0);
-	variable temp_var : std_logic := '0';
+	variable temp_var := '0';
 
 	begin	
 		
