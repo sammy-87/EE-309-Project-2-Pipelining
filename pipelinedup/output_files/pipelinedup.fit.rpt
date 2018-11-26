@@ -1,5 +1,5 @@
 Fitter report for pipelinedup
-Mon Nov 26 00:03:19 2018
+Mon Nov 26 01:56:28 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Nov 26 00:03:19 2018       ;
+; Fitter Status                      ; Successful - Mon Nov 26 01:56:28 2018       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; pipelinedup                                 ;
 ; Top-level Entity Name              ; pipelinedup                                 ;
@@ -736,8 +736,8 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/output_files/pipelinedup.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 1360 megabytes
-    Info: Processing ended: Mon Nov 26 00:03:19 2018
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Mon Nov 26 01:56:29 2018
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 
 

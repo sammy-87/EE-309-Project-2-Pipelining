@@ -1,0 +1,1346 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim
+Eadd
+Z1 w1542990800
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add.vhd
+Z5 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add.vhd
+l0
+L7
+V1l@Wh5BSTdL9bK@cZdFeY2
+!s100 k[;;V6b>1jONmC6CdRCmh1
+Z6 OV;C;10.4d;61
+31
+Z7 !s110 1543177601
+!i10b 1
+Z8 !s108 1543177601.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add.vhd|
+Z10 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1
+Astruct
+R2
+R3
+DEx4 work 3 add 0 22 1l@Wh5BSTdL9bK@cZdFeY2
+l23
+L14
+VBn;mNVXik[TfGQ4nZn:7c3
+!s100 OUWGI6KYNDEYkPlklQJWl0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eadd1
+Z13 w1543170680
+R2
+R3
+R0
+Z14 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd
+Z15 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd
+l0
+L7
+V7_Yjo:1N;IK_aCcC_hY>i0
+!s100 QE5[H[mbnhh^]50T=@EW;2
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd|
+Z17 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 4 add1 0 22 7_Yjo:1N;IK_aCcC_hY>i0
+l23
+L12
+VEi8_WHeUkNj56?fmJT^8K1
+!s100 1W7=cS8ZB?S1ea7=P[OWj2
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Ealu
+Z18 w1542993961
+R2
+R3
+R0
+Z19 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd
+Z20 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd
+l0
+L7
+V_SCOhU[3:Xm3_WeUZCTkH3
+!s100 nY>CXQ@c7>4nT0a1U=O_a0
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd|
+Z22 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 3 alu 0 22 _SCOhU[3:Xm3_WeUZCTkH3
+l27
+L15
+V^a0:971aF8h5UTzg9R@HB1
+!s100 GXQ54hz?6en3;FDmjdD0k0
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Ebit_reg
+Z23 w1543167678
+R2
+R3
+R0
+Z24 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd
+Z25 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd
+l0
+L4
+V`GWnHKX_]MOQDo_ccXTIa0
+!s100 UgRYcH[1V3RCIC?nV_C`e1
+R6
+31
+R7
+!i10b 1
+R8
+Z26 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd|
+Z27 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd|
+!i113 1
+R11
+R12
+Awhatdoyoucare
+R2
+R3
+DEx4 work 7 bit_reg 0 22 `GWnHKX_]MOQDo_ccXTIa0
+l10
+L8
+V>0Y]^lQd[Z^RHCXjk8?iR0
+!s100 9BhUDHBoDZJ6ik34<7JF;0
+R6
+31
+R7
+!i10b 1
+R8
+R26
+R27
+!i113 1
+R11
+R12
+Ecodemem
+Z28 w1543177073
+Z29 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R0
+Z30 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd
+Z31 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd
+l0
+L8
+VgN>mA8?3PUEaIJjD5IKRX2
+!s100 9=CQM74UGD_=ag:zDm[SZ0
+R6
+31
+R7
+!i10b 1
+R8
+Z32 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd|
+Z33 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd|
+!i113 1
+R11
+R12
+Astructure
+R29
+R2
+R3
+DEx4 work 7 codemem 0 22 gN>mA8?3PUEaIJjD5IKRX2
+l21
+L14
+VfmY6eBA6ZmTR9^R:hV_<F2
+!s100 Z39fk=9^TDk0`2ODH3:8:3
+R6
+31
+R7
+!i10b 1
+R8
+R32
+R33
+!i113 1
+R11
+R12
+Ecomp
+Z34 w1542995913
+Z35 DPx8 synopsys 10 attributes 0 22 liCm]LV3<lX4Zl>o6^8IV1
+Z36 DPx4 ieee 14 std_logic_misc 0 22 BLzBaQbXS>Q1z>5YO]m[52
+R2
+R3
+R0
+Z37 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd
+Z38 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd
+l0
+L8
+V6;Z[LF3?SFzmWLLa4TTHb1
+!s100 MlhP;^efbblH5kEk]`ka`2
+R6
+31
+R7
+!i10b 1
+R8
+Z39 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd|
+Z40 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd|
+!i113 1
+R11
+R12
+Astruct
+R35
+R36
+R2
+R3
+DEx4 work 4 comp 0 22 6;Z[LF3?SFzmWLLa4TTHb1
+l15
+L13
+VEnlk8Q3LT35`LeA2AoS`[2
+!s100 olPd95FgIXdPNXNECa0z]3
+R6
+31
+R7
+!i10b 1
+R8
+R39
+R40
+!i113 1
+R11
+R12
+Econtrolword
+Z41 w1543169891
+R2
+R3
+R0
+Z42 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd
+Z43 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd
+l0
+L4
+V0ghHaKV]o[KzAQFEhEC>L3
+!s100 `8ZmgD80_F=ZzgFHfc[QL3
+R6
+31
+R7
+!i10b 1
+R8
+Z44 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd|
+Z45 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd|
+!i113 1
+R11
+R12
+Awhatdoyoucare
+R2
+R3
+DEx4 work 11 controlword 0 22 0ghHaKV]o[KzAQFEhEC>L3
+l11
+L10
+V08H2O4BbZeI^=hgn1;7C@1
+!s100 d<W]oYdIN=0<eh?Y<MThl3
+R6
+31
+R7
+!i10b 1
+R8
+R44
+R45
+!i113 1
+R11
+R12
+Edatamem
+Z46 w1543177098
+R29
+R2
+R3
+R0
+Z47 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd
+Z48 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd
+l0
+L8
+VlVMZ5_<7Qi5A6AQgaNDnB2
+!s100 X]_cA1aR_B5fB`ShkhU><3
+R6
+31
+R7
+!i10b 1
+R8
+Z49 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd|
+Z50 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd|
+!i113 1
+R11
+R12
+Astructure
+R29
+R2
+R3
+DEx4 work 7 datamem 0 22 lVMZ5_<7Qi5A6AQgaNDnB2
+l27
+L19
+VFGE80fY13V>Jlf209V9Ql0
+!s100 NTNQkgHGU>g]eWDUi2VDD2
+R6
+31
+R7
+!i10b 1
+R8
+R49
+R50
+!i113 1
+R11
+R12
+Efulladder
+Z51 w1542990826
+R2
+R3
+R0
+Z52 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd
+Z53 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd
+l0
+L7
+V?4A<FNoCc:hh`bVMjK[Kb2
+!s100 gEG0cnmQi[>0]8CVT;NbU2
+R6
+31
+R7
+!i10b 1
+R8
+Z54 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd|
+Z55 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 9 fulladder 0 22 ?4A<FNoCc:hh`bVMjK[Kb2
+l12
+L11
+VC<_=XnLeV=8`HHg0O]B1m3
+!s100 GYaLEWdbhXLHPDPZ1=WC02
+R6
+31
+R7
+!i10b 1
+R8
+R54
+R55
+!i113 1
+R11
+R12
+Ehazard_null
+Z56 w1543160554
+R2
+R3
+R0
+Z57 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd
+Z58 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd
+l0
+L4
+V5S5ODzkTDdX@^T6ITT?nE1
+!s100 _ELldgT3ikG[3;R99=fH^0
+R6
+31
+R7
+!i10b 1
+R8
+Z59 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd|
+Z60 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd|
+!i113 1
+R11
+R12
+Awhatdoyoucare
+R2
+R3
+DEx4 work 11 hazard_null 0 22 5S5ODzkTDdX@^T6ITT?nE1
+l21
+L20
+VHe2=;YhSH?8EcmG`28IhU3
+!s100 JKm5T]0`]9T_M?XdW4[=S0
+R6
+31
+R7
+!i10b 1
+R8
+R59
+R60
+!i113 1
+R11
+R12
+Emux2_1
+Z61 w1543001139
+R2
+R3
+R0
+Z62 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd
+Z63 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd
+l0
+L7
+VfMggkKFoc0O1oVCB;SUDW3
+!s100 BEXK?S>Olo7HYlmPz5>>z2
+R6
+31
+R7
+!i10b 1
+R8
+Z64 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd|
+Z65 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 6 mux2_1 0 22 fMggkKFoc0O1oVCB;SUDW3
+l12
+L11
+VlP;kaW`=2H:JIij;;Cc__3
+!s100 X<;]7]f;QEDD5bcQQJzcD2
+R6
+31
+R7
+!i10b 1
+R8
+R64
+R65
+!i113 1
+R11
+R12
+Emux2_16
+Z66 w1543001315
+R2
+R3
+R0
+Z67 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd
+Z68 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd
+l0
+L7
+V0bM9^BULIz4<iKJRDP[=N3
+!s100 za9TCOVTMQ=DdQNnNM1B^2
+R6
+31
+R7
+!i10b 1
+R8
+Z69 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd|
+Z70 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd|
+!i113 1
+R11
+R12
+Adata
+R2
+R3
+DEx4 work 7 mux2_16 0 22 0bM9^BULIz4<iKJRDP[=N3
+l14
+L13
+VT@2UdUD^7RaT2C_74Lk[_0
+!s100 fEGT>zKzQMAmd2z8eSX`n1
+R6
+31
+R7
+!i10b 1
+R8
+R69
+R70
+!i113 1
+R11
+R12
+Emux2_3
+Z71 w1543001137
+R2
+R3
+R0
+Z72 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd
+Z73 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd
+l0
+L7
+V2:G9b3iI?gOgP:T0gjeZV0
+!s100 To=Yk9l0`Q>J_XRDCZ1B92
+R6
+31
+R7
+!i10b 1
+R8
+Z74 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd|
+Z75 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd|
+!i113 1
+R11
+R12
+Adata
+R2
+R3
+DEx4 work 6 mux2_3 0 22 2:G9b3iI?gOgP:T0gjeZV0
+l14
+L13
+VZ8WIgZQ?_2oVKN0l95<3C1
+!s100 UROAbR4@J`gT?<B8c[9b51
+R6
+31
+R7
+!i10b 1
+R8
+R74
+R75
+!i113 1
+R11
+R12
+Emux2_8
+Z76 w1543001184
+R2
+R3
+R0
+Z77 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd
+Z78 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd
+l0
+L7
+VF`KNk38e2fjN<zXeUd_Tm3
+!s100 2<8=^TNS]ZjQPVEeIhHZI1
+R6
+31
+R7
+!i10b 1
+R8
+Z79 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd|
+Z80 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd|
+!i113 1
+R11
+R12
+Adata
+R2
+R3
+DEx4 work 6 mux2_8 0 22 F`KNk38e2fjN<zXeUd_Tm3
+l14
+L13
+Vaf8>b=V`cmh=L]4o>^YFK0
+!s100 H7zWVPDALn8?zQfnAj4?30
+R6
+31
+R7
+!i10b 1
+R8
+R79
+R80
+!i113 1
+R11
+R12
+Emux3_16
+Z81 w1543001527
+R2
+R3
+R0
+Z82 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd
+Z83 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd
+l0
+L7
+V>B<Q>^CVQeTSQL>kT00:71
+!s100 d=Mg7`gQ@OafWKGeYXfN=3
+R6
+31
+R7
+!i10b 1
+R8
+Z84 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd|
+Z85 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd|
+!i113 1
+R11
+R12
+Adata
+R2
+R3
+DEx4 work 7 mux3_16 0 22 >B<Q>^CVQeTSQL>kT00:71
+l14
+L13
+VUg:[b;Y?2VWo9PeUc;GIb3
+!s100 3?2SV5C5gg:EFDn2YkDbo0
+R6
+31
+R7
+!i10b 1
+R8
+R84
+R85
+!i113 1
+R11
+R12
+Emux4_16
+Z86 w1543001590
+R2
+R3
+R0
+Z87 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd
+Z88 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd
+l0
+L7
+VMTlZ:nJnA4<Eg1Gj[NQH91
+!s100 MbzWiK>`0Q>eINUd7M9l;3
+R6
+31
+R7
+!i10b 1
+R8
+Z89 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd|
+Z90 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd|
+!i113 1
+R11
+R12
+Adata
+R2
+R3
+DEx4 work 7 mux4_16 0 22 MTlZ:nJnA4<Eg1Gj[NQH91
+l14
+L13
+V09n7QIYT]5[<7B[7[<EMa3
+!s100 7Lz9EgK4<CM5DGVE6FD`12
+R6
+31
+R7
+!i10b 1
+R8
+R89
+R90
+!i113 1
+R11
+R12
+Emux4_3
+Z91 w1543001306
+R2
+R3
+R0
+Z92 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd
+Z93 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd
+l0
+L7
+V_^aS_nh9k?Ce96og<k[N=1
+!s100 eS3Pei]YF=ee0SeY86`O^0
+R6
+31
+R7
+!i10b 1
+R8
+Z94 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd|
+Z95 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd|
+!i113 1
+R11
+R12
+Adata
+R2
+R3
+DEx4 work 6 mux4_3 0 22 _^aS_nh9k?Ce96og<k[N=1
+l14
+L13
+VE`PJTS=^hUHIY2gaoZ0mA1
+!s100 :P^SEO2;AUTfIo8h6XA8D0
+R6
+31
+R7
+!i10b 1
+R8
+R94
+R95
+!i113 1
+R11
+R12
+Emux6_16
+Z96 w1543170709
+R2
+R3
+R0
+Z97 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd
+Z98 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd
+l0
+L7
+V^D@T?[l?<?`k^JE3Ea=?k2
+!s100 <W3<>=b_nTni0:FTzc=J63
+R6
+31
+R7
+!i10b 1
+R8
+Z99 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd|
+Z100 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd|
+!i113 1
+R11
+R12
+Adata
+R2
+R3
+DEx4 work 7 mux6_16 0 22 ^D@T?[l?<?`k^JE3Ea=?k2
+l14
+L13
+VY`WM;23mEmlbG4SlT0dKQ2
+!s100 k8T5Zc]^V73IfWBnIQ`>@2
+R6
+31
+R7
+!i10b 1
+R8
+R99
+R100
+!i113 1
+R11
+R12
+Epc_mux
+Z101 w1542988225
+R2
+R3
+R0
+Z102 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd
+Z103 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd
+l0
+L4
+V>>K7zOdU?=fe919`1UzA]1
+!s100 P0IT=oWT=dh9R4Icim9PI0
+R6
+31
+R7
+!i10b 1
+R8
+Z104 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd|
+Z105 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd|
+!i113 1
+R11
+R12
+Awhatdoyoucare
+R2
+R3
+DEx4 work 6 pc_mux 0 22 >>K7zOdU?=fe919`1UzA]1
+l15
+L14
+VBCz^E_8JNkgTJg^d`7jMG0
+!s100 FIK2_Ff10C9Joo_2OUmMj2
+R6
+31
+R7
+!i10b 1
+R8
+R104
+R105
+!i113 1
+R11
+R12
+Epen
+Z106 w1543144711
+R2
+R3
+R0
+Z107 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd
+Z108 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd
+l0
+L7
+VH13l71iNQf=bbSjg<>>0Y3
+!s100 7zN^58KU2L7VQVBVg]d`G2
+R6
+31
+R7
+!i10b 1
+R8
+Z109 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd|
+Z110 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd|
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 3 pen 0 22 H13l71iNQf=bbSjg<>>0Y3
+l16
+L13
+VMih;jlViZG0@@FEHg@hdG3
+!s100 UXnbmLG^G<]iI;jLeXi_=2
+R6
+31
+R7
+!i10b 1
+R8
+R109
+R110
+!i113 1
+R11
+R12
+Epipelinedup
+Z111 w1543177561
+R2
+R3
+R0
+Z112 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd
+Z113 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd
+l0
+L7
+VCXLF_I4UIWXJMfgA;affh1
+!s100 dcLN:MkV3=]SPl<_VNiR>2
+R6
+31
+R7
+!i10b 1
+R8
+Z114 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd|
+Z115 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 11 pipelinedup 0 22 CXLF_I4UIWXJMfgA;affh1
+l324
+L11
+V=a5ZL@S_H@D8dY8;X9nH_1
+!s100 bN1K>BQOSgjg7I6^LCYVA0
+R6
+31
+R7
+!i10b 1
+R8
+R114
+R115
+!i113 1
+R11
+R12
+Epr1
+Z116 w1543156242
+R2
+R3
+R0
+Z117 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd
+Z118 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd
+l0
+L7
+VX>aPDk[E`RNg]9NblCU[12
+!s100 9afE8i38;GN<5g40@[nNb3
+R6
+31
+R7
+!i10b 1
+R8
+Z119 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd|
+Z120 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd|
+!i113 1
+R11
+R12
+Adescription
+R2
+R3
+DEx4 work 3 pr1 0 22 X>aPDk[E`RNg]9NblCU[12
+l22
+L20
+VkLela<<>Cmz_1I3fb^:J<2
+!s100 b3S`53GSS`WnV2A^NTZ6X3
+R6
+31
+R7
+!i10b 1
+R8
+R119
+R120
+!i113 1
+R11
+R12
+Epr2
+Z121 w1543064072
+R2
+R3
+R0
+Z122 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd
+Z123 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd
+l0
+L7
+V`QWFZ=TKYXcdhl0Ma5IoZ1
+!s100 =V^i=>Nld1UC>^>:7[Xc10
+R6
+31
+R7
+!i10b 1
+R8
+Z124 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd|
+Z125 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd|
+!i113 1
+R11
+R12
+Adescription
+R2
+R3
+DEx4 work 3 pr2 0 22 `QWFZ=TKYXcdhl0Ma5IoZ1
+l24
+L22
+VCz3IG[:Pi9h4:n=962VXj0
+!s100 dfI^eIOdc=JSnCzd8V9L12
+R6
+31
+R7
+!i10b 1
+R8
+R124
+R125
+!i113 1
+R11
+R12
+Epr3
+Z126 w1543170514
+R2
+R3
+R0
+Z127 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd
+Z128 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd
+l0
+L7
+V2T97Y9GfC=k6mLEVeg>f:3
+!s100 MC[U2zT7`8PR@Sh36M6PE3
+R6
+31
+R7
+!i10b 1
+Z129 !s108 1543177600.000000
+Z130 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd|
+Z131 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd|
+!i113 1
+R11
+R12
+Adescription
+R2
+R3
+DEx4 work 3 pr3 0 22 2T97Y9GfC=k6mLEVeg>f:3
+l38
+L36
+VjIBI9XmG::FVEXPaIN;a22
+!s100 ]R@N8IST41JfKcDJj_8A11
+R6
+31
+R7
+!i10b 1
+R129
+R130
+R131
+!i113 1
+R11
+R12
+Epr4
+Z132 w1543170522
+R2
+R3
+R0
+Z133 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd
+Z134 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd
+l0
+L7
+V6fcSW2FFGCF_ST`@545LW1
+!s100 B>F34Y_nd:M0E3eAH@b=S1
+R6
+31
+Z135 !s110 1543177600
+!i10b 1
+R129
+Z136 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd|
+Z137 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd|
+!i113 1
+R11
+R12
+Adescription
+R2
+R3
+DEx4 work 3 pr4 0 22 6fcSW2FFGCF_ST`@545LW1
+l42
+L40
+V2KR<aa>M@3KJb6J6nSgz;3
+!s100 dZM8AOf6i[2B9DUW;gdGU3
+R6
+31
+R135
+!i10b 1
+R129
+R136
+R137
+!i113 1
+R11
+R12
+Epr5
+Z138 w1543170548
+R2
+R3
+R0
+Z139 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd
+Z140 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd
+l0
+L7
+VOE[?EG8UPl3ek07E[[N1@1
+!s100 QTdzAUY2Y8GP^]o4Nc;ja3
+R6
+31
+R135
+!i10b 1
+R129
+Z141 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd|
+Z142 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd|
+!i113 1
+R11
+R12
+Adescription
+R2
+R3
+DEx4 work 3 pr5 0 22 OE[?EG8UPl3ek07E[[N1@1
+l40
+L38
+VlBiSVdClc<z0ji`CjJUKV3
+!s100 [1S;0U=>A7J2:aCa5MG9E0
+R6
+31
+R135
+!i10b 1
+R129
+R141
+R142
+!i113 1
+R11
+R12
+Ereg16
+Z143 w1543135352
+R2
+R3
+R0
+Z144 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd
+Z145 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd
+l0
+L7
+VmRoJ;[V8Ugam7^<6[MJ5;0
+!s100 KKOz?F?hgC6lQN=6A`j782
+R6
+31
+R135
+!i10b 1
+R129
+Z146 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd|
+Z147 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd|
+!i113 1
+R11
+R12
+Adescription
+R2
+R3
+DEx4 work 5 reg16 0 22 mRoJ;[V8Ugam7^<6[MJ5;0
+l18
+L16
+VDkC0;Al9F<a0NYS63AT]R2
+!s100 _Z>O[1:RJY2@VjGob8_TJ3
+R6
+31
+R135
+!i10b 1
+R129
+R146
+R147
+!i113 1
+R11
+R12
+Ereg8
+Z148 w1543082123
+R2
+R3
+R0
+Z149 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd
+Z150 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd
+l0
+L7
+VFRKdNSRmn=]X]95KQOOYc0
+!s100 KzX00c;EU[zj7T]G5UF9M2
+R6
+31
+R135
+!i10b 1
+R129
+Z151 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd|
+Z152 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd|
+!i113 1
+R11
+R12
+Adescription
+R2
+R3
+DEx4 work 4 reg8 0 22 FRKdNSRmn=]X]95KQOOYc0
+l18
+L16
+VoScQDj;GIncBYM;C0W>W^1
+!s100 gHa2JNhzn[PeNK6P5J0R10
+R6
+31
+R135
+!i10b 1
+R129
+R151
+R152
+!i113 1
+R11
+R12
+Erf
+Z153 w1543142742
+R29
+R2
+R3
+R0
+Z154 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd
+Z155 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd
+l0
+L8
+VL@_chC?1lBc5PV]?b]EGE1
+!s100 F1Bhob[nTRSH:bziIOaeS2
+R6
+31
+R135
+!i10b 1
+R129
+Z156 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd|
+Z157 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd|
+!i113 1
+R11
+R12
+Abehave
+R29
+R2
+R3
+DEx4 work 2 rf 0 22 L@_chC?1lBc5PV]?b]EGE1
+l37
+L19
+V9:a3VnQ7;FG<Q^ePz:7VR0
+!s100 fi=_8]HZET7Y^GCdRJmOJ1
+R6
+31
+R135
+!i10b 1
+R129
+R156
+R157
+!i113 1
+R11
+R12
+Ese6
+Z158 w1543082257
+R2
+R3
+R0
+Z159 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd
+Z160 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd
+l0
+L7
+VV^_zJ1CNRCGoX8Ba7INO@1
+!s100 DNRmDdJSfBW8Yhi3aSGDD2
+R6
+31
+R135
+!i10b 1
+R129
+Z161 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd|
+Z162 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 3 se6 0 22 V^_zJ1CNRCGoX8Ba7INO@1
+l14
+L12
+VT^eMKdNXdb]m?Z2Jf4Q=W2
+!s100 >O2]5A1DjkhVE_gn7gH;@2
+R6
+31
+R135
+!i10b 1
+R129
+R161
+R162
+!i113 1
+R11
+R12
+Ese9
+Z163 w1543082191
+R2
+R3
+R0
+Z164 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd
+Z165 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd
+l0
+L7
+Va]GN8D>?BXD7=<8R?PPRY1
+!s100 :V3Gi:Yia1R;LF:=TE6Mc3
+R6
+31
+R135
+!i10b 1
+R129
+Z166 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd|
+Z167 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 3 se9 0 22 a]GN8D>?BXD7=<8R?PPRY1
+l14
+L12
+VCnN=;]cC=8bZHLEYUMH;62
+!s100 n56gH>=HK2cMR7T>JQkBf0
+R6
+31
+R135
+!i10b 1
+R129
+R166
+R167
+!i113 1
+R11
+R12
+Eshift7
+Z168 w1543081957
+R2
+R3
+R0
+Z169 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd
+Z170 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd
+l0
+L7
+V0F>:hXHU=4ahX0HQBIUHN2
+!s100 S0^2:B^]7Q4gCKHTdgm[z2
+R6
+31
+R135
+!i10b 1
+R129
+Z171 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd|
+Z172 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 6 shift7 0 22 0F>:hXHU=4ahX0HQBIUHN2
+l14
+L12
+Vc=iGZY1=c@0UMI3KPM:Z`1
+!s100 Fmb]_z:3hBnT0jC92SUTQ3
+R6
+31
+R135
+!i10b 1
+R129
+R171
+R172
+!i113 1
+R11
+R12
+Etrfwrd
+Z173 w1542981382
+R2
+R3
+R0
+Z174 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd
+Z175 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd
+l0
+L4
+V^;A9_]c<6XKLjlZ^ZHN1_0
+!s100 _9<hz]QNaa[2;zWAEVTg:1
+R6
+31
+R135
+!i10b 1
+R129
+Z176 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd|
+Z177 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd|
+!i113 1
+R11
+R12
+Awhatdoyoucare
+R2
+R3
+DEx4 work 6 trfwrd 0 22 ^;A9_]c<6XKLjlZ^ZHN1_0
+l12
+L11
+Vce>ATLAE4]nm@]njEgX1K3
+!s100 Rffg8Yd4`XHzA:=dDOLFO3
+R6
+31
+R135
+!i10b 1
+R129
+R176
+R177
+!i113 1
+R11
+R12
+Ezerodetector
+Z178 w1543039195
+R2
+R3
+R0
+Z179 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd
+Z180 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd
+l0
+L7
+Vc55KeEaISE4czMeXU6ek@3
+!s100 cf8YRRi92;Z38a0J=TTg[3
+R6
+31
+R135
+!i10b 1
+R129
+Z181 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd|
+Z182 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd|
+!i113 1
+R11
+R12
+Adata
+R2
+R3
+DEx4 work 12 zerodetector 0 22 c55KeEaISE4czMeXU6ek@3
+l13
+L12
+VUk<XIDL1`Di9E3WgoDALE0
+!s100 fn1Eo<[?ZJS<ElMO_];A<3
+R6
+31
+R135
+!i10b 1
+R129
+R181
+R182
+!i113 1
+R11
+R12
