@@ -18,11 +18,12 @@ entity pr4 is
          pr4z_i : in std_logic;
          pr4trfwr_i : in std_logic;
          pr4shift7out_i : in std_logic_vector(15 DOWNTO 0);
-
+			pentz_i: in std_logic;
          en  : in std_logic; -- load/enable.
          rst : in std_logic; -- async. clear.
          clk : in std_logic; -- clock.
-            
+         
+			pentz_o: out std_logic;
          t1_o   : out std_logic_vector(15 DOWNTO 0);
          pr4pen_o : out std_logic_vector(2 DOWNTO 0);
          pc_o   : out std_logic_vector(15 DOWNTO 0);
@@ -43,6 +44,7 @@ begin
     process(clk, rst, en, t1_i, pr4pen_i, pc_i, ir_i, invalid_i, cw_i, pr4a_i, pr4d_i, pr4c_i, pr4z_i, pr4trfwr_i, pr4shift7out_i)
     begin
         if rst = '1' then
+				pentz_o <= '0';
             t1_o <= "0000000000000000";
             pr4pen_o <= "000";
             pc_o <= "0000000000000000";
@@ -57,6 +59,7 @@ begin
             pr4shift7out_o <= "0000000000000000"; 
         elsif rising_edge(clk) then
             if en = '1' then
+					 pentz_o<=pentz_i;
                 t1_o <= t1_i;
                 pr4pen_o <= pr4pen_i;
                 pc_o <= pc_i;

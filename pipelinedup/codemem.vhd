@@ -24,3 +24,4 @@ addr <= mem_a(4 downto 0);
 mem_out <= RAM(to_integer(unsigned(addr)));
 
 end structure;
+	

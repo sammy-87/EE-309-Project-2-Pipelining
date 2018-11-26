@@ -6,21 +6,20 @@ entity  hazard_null is
  		pr3ir : in std_logic_vector(15 downto 0);
  		pr4ir : in std_logic_vector(15 downto 0);
  		pr2invalid, pr3invalid, pr4invalid : in std_logic;
- 		trfwr, pr3tz : in std_logic;
+ 		trfwr, pr3tz,pr3pentz,pr4pentz : in std_logic;
  		pr4trfwr : in std_logic;
- 		pennew : in std_logic_vector(7 downto 0);
 
  		--pr5ir : in std_logic_vector(15 downto 0);
  		reset : in std_logic;
  		controlword : in std_logic_vector(24 downto 0);
  		Q: out std_logic_vector(24 downto 0);
- 		pr1en, pr2en, pcen, pr1invalid_o, pr2invalid_o, pr3invalid_o : out std_logic); --controlsignal is the Enable signal
+ 		pr1en, pr2en, pcen, pr1invalid_o, pr2invalid_o, pr3invalid_o, pr4invalid_o, pr5invalid_o : out std_logic); --controlsignal is the Enable signal
 end  hazard_null;
 
 architecture WhatDoYouCare of hazard_null is
 begin
 
-process(reset, pr2ir, pr3ir, pr4ir, trfwr, pr4trfwr, pr3invalid, pennew, pr4invalid, controlword, pr3tz, pr2invalid)
+process(reset, pr2ir, pr3ir, pr4ir, trfwr, pr4trfwr, pr3pentz,pr4pentz,pr3invalid, pr4invalid, controlword, pr3tz, pr2invalid)
 	variable temp_control_variable :  std_logic_vector(24 DOWNTO 0) := (others => '0');
 	variable pr1en_var : std_logic := '1';
 	variable pr2en_var : std_logic := '1';
@@ -28,9 +27,13 @@ process(reset, pr2ir, pr3ir, pr4ir, trfwr, pr4trfwr, pr3invalid, pennew, pr4inva
 	variable pr1invalid_o_var : std_logic := '0';
 	variable pr2invalid_o_var : std_logic := '0';
 	variable pr3invalid_o_var : std_logic := '0';
+	variable pr4invalid_o_var : std_logic := '0';
+	variable pr5invalid_o_var : std_logic := '0';
 	
 begin
-
+		pr4invalid_o_var := '0';
+		pr5invalid_o_var := '0';
+		
 	if pr2ir(15 downto 12) = "0011" or pr2ir(15 downto 12) = "1000" then --current instruction is LHI,JAL (require no operand - so no hazard)
 		temp_control_variable := controlword;
 		pr1en_var := '1';
@@ -55,11 +58,13 @@ begin
 			pr2invalid_o_var := '0';
 			pr3invalid_o_var := '0';
 
-			if pennew = "00000000" then  --end of LM/SM - destall pr1, pr2, enable pc
+			if (pr3pentz='1' and pr4pentz='1') and (pr3ir(15 downto 13) = "011") and (pr4ir(15 downto 13) = "011")  then  --end of LM/SM - destall pr1, pr2, enable pc
 				pr1en_var := '1';
 				pr2en_var := '1';
 				pcen_var := '1';
 				temp_control_variable(24 downto 23) := "00";
+			   pr4invalid_o_var := '0';
+			   pr5invalid_o_var := '0';
 			else --stall pr2, pr1, disable pc, change inputs of T1 and PENreg
 				pr1en_var := '0';
 				pr2en_var := '0';
@@ -324,6 +329,8 @@ begin
 	pr1invalid_o <= pr1invalid_o_var;
 	pr2invalid_o <= pr2invalid_o_var;
 	pr3invalid_o <= pr3invalid_o_var;
+	pr4invalid_o <= pr4invalid_o_var;
+	pr5invalid_o <= pr5invalid_o_var;
 
 end process;
 end WhatDoYouCare;

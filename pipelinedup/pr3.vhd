@@ -16,11 +16,11 @@ entity pr3 is
          pr3b_i : in std_logic_vector(15 DOWNTO 0);
          tz_i : in std_logic;
          pr3shift7out_i : in std_logic_vector(15 DOWNTO 0);
-
+			pentz_i: in std_logic;
          en  : in std_logic; -- load/enable.
          rst : in std_logic; -- async. clear.
          clk : in std_logic; -- clock.
-
+			pentz_o: out std_logic;
          t1_o   : out std_logic_vector(15 DOWNTO 0);
          pr3pen_o : out std_logic_vector(2 DOWNTO 0);
          pc_o   : out std_logic_vector(15 DOWNTO 0);
@@ -39,6 +39,7 @@ begin
     process(clk, rst, en, t1_i, pr3pen_i, pc_i, ir_i, invalid_i, cw_i, pr3a_i, pr3b_i, tz_i, pr3shift7out_i)
     begin
         if rst = '1' then
+				pentz_o<= '0';
             t1_o <= "0000000000000000";
             pr3pen_o <= "000";
             pc_o <= "0000000000000000";
@@ -51,8 +52,10 @@ begin
             pr3shift7out_o <= "0000000000000000"; 
         elsif rising_edge(clk) then
             if en = '1' then
+						
                 t1_o <= t1_i;
-                pr3pen_o <= pr3pen_i;
+                pentz_o<=pentz_i;
+					 pr3pen_o <= pr3pen_i;
                 pc_o <= pc_i;
                 ir_o <= ir_i;
                 invalid_o <= invalid_i;

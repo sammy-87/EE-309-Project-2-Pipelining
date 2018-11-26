@@ -3,6 +3,7 @@ use std.standard.all;
 
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.std_logic_misc.all;
 
 entity pipelinedup is
    port(clk, rst : in std_logic);
@@ -49,11 +50,11 @@ component pr3 is
          pr3b_i : in std_logic_vector(15 DOWNTO 0);
          tz_i : in std_logic;
          pr3shift7out_i : in std_logic_vector(15 DOWNTO 0);
-
+			pentz_i: in std_logic;
          en  : in std_logic; -- load/enable.
          rst : in std_logic; -- async. clear.
          clk : in std_logic; -- clock.
-
+			pentz_o: out std_logic;
          t1_o   : out std_logic_vector(15 DOWNTO 0);
          pr3pen_o : out std_logic_vector(2 DOWNTO 0);
          pc_o   : out std_logic_vector(15 DOWNTO 0);
@@ -80,11 +81,12 @@ component pr4 is
          pr4z_i : in std_logic;
          pr4trfwr_i : in std_logic;
          pr4shift7out_i : in std_logic_vector(15 DOWNTO 0);
-
+			pentz_i: in std_logic;
          en  : in std_logic; -- load/enable.
          rst : in std_logic; -- async. clear.
          clk : in std_logic; -- clock.
-            
+         
+			pentz_o: out std_logic;
          t1_o   : out std_logic_vector(15 DOWNTO 0);
          pr4pen_o : out std_logic_vector(2 DOWNTO 0);
          pc_o   : out std_logic_vector(15 DOWNTO 0);
@@ -232,15 +234,14 @@ component  hazard_null is
  		pr3ir : in std_logic_vector(15 downto 0);
  		pr4ir : in std_logic_vector(15 downto 0);
  		pr2invalid, pr3invalid, pr4invalid : in std_logic;
- 		trfwr, pr3tz : in std_logic;
+ 		trfwr, pr3tz,pr3pentz,pr4pentz : in std_logic;
  		pr4trfwr : in std_logic;
- 		pennew : in std_logic_vector(7 downto 0);
 
  		--pr5ir : in std_logic_vector(15 downto 0);
  		reset : in std_logic;
  		controlword : in std_logic_vector(24 downto 0);
  		Q: out std_logic_vector(24 downto 0);
- 		pr1en, pr2en, pcen, pr1invalid_o, pr2invalid_o, pr3invalid_o : out std_logic); --controlsignal is the Enable signal
+ 		pr1en, pr2en, pcen, pr1invalid_o, pr2invalid_o, pr3invalid_o, pr4invalid_o, pr5invalid_o : out std_logic);
 end  component;
 ---------
 component mux2_1 is
@@ -321,7 +322,7 @@ signal pr4c_i,pr4z_i,pr4c,pr4z,pr5c,pr5z_i,pr5z,c,z,trfwr,pr4trfwr,pr5trfwr,pr1i
 signal rf_a1,rf_a2,rf_a3,pen_out,pr3pen,pr4pen,pr5pen : std_logic_vector(2 downto 0);
 signal newpen,penupdate,pen_mux_out : std_logic_vector(7 downto 0);
 signal controlword_out,pr2cw,pr3cw_i,pr3cw,pr4cw,pr5cw : std_logic_vector(24 downto 0); 
-signal temp_rdbar,temp_wrbar,temp_D_sel : std_logic;
+signal temp_rdbar,temp_wrbar,temp_D_sel,pr3pentz_i,pr3pentz,pr4pentz,temp_invalid5,pr4invalid_hazard,pr5invalid_hazard : std_logic;
 
 begin
 pr3_en<='1';
@@ -330,7 +331,9 @@ pr5_en<='1';
 temp_invalid1 <= pr1invalid_pc or pr1invalid_hazard;
 temp_invalid2 <= pr1invalid or pr2invalid_pc or pr2invalid_hazard;
 temp_invalid3 <= pr2invalid or pr3invalid_pc or pr3invalid_hazard;
-temp_invalid4 <= pr3invalid or pr4invalid_pc;
+temp_invalid4 <= pr3invalid or pr4invalid_pc or pr4invalid_hazard;
+temp_invalid5 <= pr4invalid or pr5invalid_hazard ;
+
 
 temp_wrc <= pr5cw(1) and (not(pr5invalid)) and (not(((not(pr5ir(15))) and (not(pr5ir(14))) and (not(pr5ir(12))) and (pr5ir(0) xor pr5ir(1))) and (not(pr5trfwr)) ) ); 
 temp_wrz <= pr5cw(0) and (not(pr5invalid)) and (not(((not(pr5ir(15))) and (not(pr5ir(14))) and (not(pr5ir(12))) and (pr5ir(0) xor pr5ir(1))) and (not(pr5trfwr)) ) ); 
@@ -351,6 +354,7 @@ pen_inst : pen port map(penin=>newpen, pennext=>penupdate, penout=>pen_out);
 pr2_inst : pr2 port map(pc_i=>pr1pc, ir_i=>pr1ir, invalid_i=>temp_invalid2, cw_i=>controlword_out, en=>pr2_en, rst=>rst, clk=>clk, pc_o=>pr2pc, ir_o=>pr2ir, invalid_o=>pr2invalid, cw_o=>pr2cw);
 
 --OR
+pr3pentz_i<= not (or_reduce(penupdate));
 shift7_inst : Shift7 port map(ip=>pr2ir(8 downto 0), op=>shift7_out);
 rfa2_mux : mux2_3 port map(S0=>pr3cw_i(22), D0=>pr2ir(8 downto 6), D1=>pen_out, Y=>rf_a2);
 rf_inst : rf port map(rfa1=>pr2ir(11 downto 9), rfa2=>rf_a2, rfa3=>rf_a3, rst=>rst, clk=>clk, rfwr=>pr5cw(2), pr5invalid=>pr5invalid, pr5trfwr=>pr5trfwr, pr4invalid=>pr4invalid, newpc=>pr4pc, rfd3=>rf_d3, pr5ir=>pr5ir,pr2pc=>pr2pc, rfd2=>rf_d2, rfd1=>rf_d1);
@@ -358,9 +362,9 @@ pr3a_mux : mux6_16 port map(S0=>pr3cw_i(19),S1=>pr3cw_i(20),S2=>pr3cw_i(21),D0=>
 pr3b_mux : mux6_16 port map(S0=>pr3cw_i(16),S1=>pr3cw_i(17),S2=>pr3cw_i(18),D0=>rf_d2,D1=>alu2_out,D2=>datamem_out,D3=>pr4a,D4=>pr3shift7_out,D5=>pr4shift7_out, Y=>pr3b_i);
 comparator : comp port map(alu_a=>pr3a_i, alu_b=>pr3b_i, tz=>tz);
 
-hazard_inst : hazard_null port map(pr2ir=>pr2ir, pr3ir=>pr3ir, pr4ir=>pr4ir, pr2invalid=>pr2invalid, pr3invalid=>pr3invalid, pr4invalid=>pr4invalid, trfwr=>trfwr, pr3tz=>pr3tz, pr4trfwr=>pr4trfwr, pennew=>penupdate, reset=>rst, controlword=>pr2cw, Q=>pr3cw_i, pr1en=>pr1_en, pr2en=>pr2_en, pcen=>pc_en, pr1invalid_o=>pr1invalid_hazard, pr2invalid_o=>pr2invalid_hazard, pr3invalid_o=>pr3invalid_hazard);
+hazard_inst : hazard_null port map(pr4invalid_o=>pr4invalid_hazard,pr5invalid_o=>pr5invalid_hazard,pr3pentz=>pr3pentz,pr4pentz=>pr4pentz,pr2ir=>pr2ir, pr3ir=>pr3ir, pr4ir=>pr4ir, pr2invalid=>pr2invalid, pr3invalid=>pr3invalid, pr4invalid=>pr4invalid, trfwr=>trfwr, pr3tz=>pr3tz, pr4trfwr=>pr4trfwr, reset=>rst, controlword=>pr2cw, Q=>pr3cw_i, pr1en=>pr1_en, pr2en=>pr2_en, pcen=>pc_en, pr1invalid_o=>pr1invalid_hazard, pr2invalid_o=>pr2invalid_hazard, pr3invalid_o=>pr3invalid_hazard);
 
-pr3_inst : pr3 port map(t1_i=>t1, pr3pen_i=>pen_out, pc_i=>pr2pc, ir_i=>pr2ir, invalid_i=>temp_invalid3, cw_i=>pr3cw_i, pr3a_i=>pr3a_i, pr3b_i=>pr3b_i, tz_i=>tz, pr3shift7out_i=>shift7_out, en=>pr3_en, rst=>rst, clk=>clk, t1_o=>pr3t1, pr3pen_o=>pr3pen, pc_o=>pr3pc, ir_o=>pr3ir, invalid_o=>pr3invalid, cw_o=>pr3cw, pr3a_o=>pr3a, pr3b_o=>pr3b, tz_o=>pr3tz, pr3shift7out_o=>pr3shift7_out);
+pr3_inst : pr3 port map(pentz_i=>pr3pentz_i,pentz_o=>pr3pentz,t1_i=>t1, pr3pen_i=>pen_out, pc_i=>pr2pc, ir_i=>pr2ir, invalid_i=>temp_invalid3, cw_i=>pr3cw_i, pr3a_i=>pr3a_i, pr3b_i=>pr3b_i, tz_i=>tz, pr3shift7out_i=>shift7_out, en=>pr3_en, rst=>rst, clk=>clk, t1_o=>pr3t1, pr3pen_o=>pr3pen, pc_o=>pr3pc, ir_o=>pr3ir, invalid_o=>pr3invalid, cw_o=>pr3cw, pr3a_o=>pr3a, pr3b_o=>pr3b, tz_o=>pr3tz, pr3shift7out_o=>pr3shift7_out);
 
 --EX
 t1_mux : mux2_16 port map(S0=>pr3cw(23), D0=>pr3a_i, D1=>add1_t1_out, Y=>t1_i);
@@ -374,9 +378,9 @@ se6_inst  : SE6 port map(ip=>pr3ir(5 downto 0), op=> se6_out);
 alu2 : ALU port map(alu_a=>alu2_a, alu_b=>alu2_b, op=>pr3cw(11), alu_out=>alu2_out, c_out=>pr4c_i, z_out=> pr4z_i);
 trfwrd_inst : trfwrd port map(pr3ir=>pr3ir, pr4ir=>pr4ir, pr5ir=>pr5ir, pr4c=>pr4c, pr4z=>pr4z, pr5c=>pr5c, pr5z=>pr5z, muxzout=>pr5z_i, pr4trfwr=>pr4trfwr, pr5trfwr=>pr5trfwr, c=>c, z=>z, reset=>rst, trfwr=>trfwr);
 
-temp_D_sel <= (not pr3ir(15)) and pr3ir(14) and pr3ir(14) and pr3ir(14);
+temp_D_sel <= (not pr3ir(15)) and pr3ir(14) and pr3ir(13) and pr3ir(12);
 D_mux: mux2_16 port map(S0=>temp_D_sel, D0=>pr3a, D1=>pr3b, Y=>pr4d_i);
-pr4_inst : pr4 port map(t1_i=>t1, pr4pen_i=>pr3pen, pc_i=>pr3pc, ir_i=>pr3ir, invalid_i=>temp_invalid4, cw_i=>pr3cw, pr4a_i=>alu2_out, pr4d_i=>pr4d_i, pr4c_i=>pr4c_i, pr4z_i=>pr4z_i, pr4trfwr_i=>trfwr, pr4shift7out_i=>pr3shift7_out, en=>pr4_en, rst=>rst, clk=>clk, t1_o=>pr4t1, pr4pen_o=>pr4pen, pc_o=>pr4pc, ir_o=>pr4ir, invalid_o=>pr4invalid, cw_o=>pr4cw, pr4a_o=>pr4a, pr4d_o=>pr4d, pr4c_o=>pr4c, pr4z_o=>pr4z, pr4trfwr_o=>pr4trfwr, pr4shift7out_o=>pr4shift7_out);
+pr4_inst : pr4 port map(pentz_i=>pr3pentz,pentz_o=>pr4pentz,t1_i=>t1, pr4pen_i=>pr3pen, pc_i=>pr3pc, ir_i=>pr3ir, invalid_i=>temp_invalid4, cw_i=>pr3cw, pr4a_i=>alu2_out, pr4d_i=>pr4d_i, pr4c_i=>pr4c_i, pr4z_i=>pr4z_i, pr4trfwr_i=>trfwr, pr4shift7out_i=>pr3shift7_out, en=>pr4_en, rst=>rst, clk=>clk, t1_o=>pr4t1, pr4pen_o=>pr4pen, pc_o=>pr4pc, ir_o=>pr4ir, invalid_o=>pr4invalid, cw_o=>pr4cw, pr4a_o=>pr4a, pr4d_o=>pr4d, pr4c_o=>pr4c, pr4z_o=>pr4z, pr4trfwr_o=>pr4trfwr, pr4shift7out_o=>pr4shift7_out);
 
 
 
@@ -387,7 +391,7 @@ datamem_a_mux : mux2_16 port map(S0=>pr4cw(10), D0=>pr4a, D1=>pr4t1, Y=>datamem_
 datamem_inst : datamem port map(mem_d=>pr4d, mem_a=>datamem_a, rd_bar=>temp_rdbar, wr_bar=>temp_wrbar, rst=>rst, clk=>clk, mem_out=>datamem_out);
 zd : zerodetector port map(mem2d=>datamem_out, z=>zd_out);
 muxz : mux2_1 port map(n1=>zd_out, n0=>pr4z, s=>pr4cw(9), b=>pr5z_i);
-pr5_inst : pr5 port map(pr5pen_i=>pr4pen, pc_i=>pr4pc, ir_i=>pr4ir, invalid_i=>pr4invalid, cw_i=>pr4cw, pr5a_i=>pr4a, pr5b_i=>datamem_out, pr5c_i=>pr4c, pr5z_i=>pr5z_i, pr5trfwr_i=>pr4trfwr, pr5shift7out_i=>pr4shift7_out, en=>pr5_en, rst=>rst, clk=>clk, pr5pen_o=>pr5pen, pc_o=>pr5pc, ir_o=>pr5ir, invalid_o=>pr5invalid, cw_o=>pr5cw, pr5a_o=>pr5a, pr5b_o=>pr5b, pr5c_o=>pr5c, pr5z_o=>pr5z, pr5trfwr_o=>pr5trfwr, pr5shift7out_o=>pr5shift7_out);
+pr5_inst : pr5 port map(pr5pen_i=>pr4pen, pc_i=>pr4pc, ir_i=>pr4ir, invalid_i=>temp_invalid5, cw_i=>pr4cw, pr5a_i=>pr4a, pr5b_i=>datamem_out, pr5c_i=>pr4c, pr5z_i=>pr5z_i, pr5trfwr_i=>pr4trfwr, pr5shift7out_i=>pr4shift7_out, en=>pr5_en, rst=>rst, clk=>clk, pr5pen_o=>pr5pen, pc_o=>pr5pc, ir_o=>pr5ir, invalid_o=>pr5invalid, cw_o=>pr5cw, pr5a_o=>pr5a, pr5b_o=>pr5b, pr5c_o=>pr5c, pr5z_o=>pr5z, pr5trfwr_o=>pr5trfwr, pr5shift7out_o=>pr5shift7_out);
 
 --WB
 rfd3_mux : mux4_16 port map(S0=>pr5cw(5), S1=>pr5cw(6), D0=>pr5b, D1=>pr5a, D2=>pr5shift7_out, D3=>pr5pc, Y=>rf_d3);
