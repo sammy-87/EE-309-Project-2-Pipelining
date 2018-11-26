@@ -61,10 +61,10 @@ begin
 
 	if reset = '1' then
 		pc_out_var := "0000000000000000";
-		pr1invalid_o_var := '0';
-		pr2invalid_o_var := '0';
-		pr3invalid_o_var := '0';
-		pr4invalid_o_var := '0';
+		pr1invalid_o_var := '1';
+		pr2invalid_o_var := '1';
+		pr3invalid_o_var := '1';
+		pr4invalid_o_var := '1';
 	end if;
 
 	pc_out <= pc_out_var;

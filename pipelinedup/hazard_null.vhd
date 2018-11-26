@@ -309,9 +309,9 @@ begin
 		pcen_var := '1';
 		pr1en_var := '1';
 		pr2en_var := '1';
-		pr1invalid_o_var := '0';
-		pr2invalid_o_var := '0';
-		pr3invalid_o_var := '0';
+		pr1invalid_o_var := '1';
+		pr2invalid_o_var := '1';
+		pr3invalid_o_var := '1';
 	end if;
 	
 	Q <= temp_control_variable;

@@ -13,9 +13,12 @@ begin
 process(reset, ir)
 	variable control_variable :  std_logic_vector(24 DOWNTO 0) := (others => '0');
 begin
-	
+	if reset='1' then
+		control_variable := (others => '0'); 
+		control_variable(8) := '1';
+		control_variable(7) := '1';
 
-	if ir(15 downto 12) = "0000" then
+	elsif ir(15 downto 12) = "0000" then
 		control_variable := (others => '0'); 
 		control_variable(8) := '1';
 		control_variable(7) := '1';

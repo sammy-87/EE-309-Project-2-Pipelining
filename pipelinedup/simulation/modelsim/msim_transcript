@@ -1,3 +1,5 @@
+# Reading C:/altera_lite/16.0/modelsim_ase/tcl/vsim/pref.tcl
+# ERROR: No extended dataflow license exists
 # do pipelinedup_run_msim_rtl_vhdl.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -6,324 +8,325 @@
 # vmap work rtl_work
 # Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
 # vmap work rtl_work 
-# Copying /home/pranil/altera_lite/16.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Copying C:/altera_lite/16.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:46 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd 
+# Start time: 10:05:38 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity zerodetector
 # -- Compiling architecture data of zerodetector
-# End time: 14:41:46 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:38 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:46 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd 
+# Start time: 10:05:38 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity trfwrd
 # -- Compiling architecture WhatDoYouCare of trfwrd
-# End time: 14:41:46 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:38 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:46 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd 
+# Start time: 10:05:38 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Shift7
 # -- Compiling architecture Struct of Shift7
-# End time: 14:41:46 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:38 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:46 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd 
+# Start time: 10:05:38 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity SE9
 # -- Compiling architecture Struct of SE9
-# End time: 14:41:46 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:38 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:46 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd 
+# Start time: 10:05:38 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity SE6
 # -- Compiling architecture Struct of SE6
-# End time: 14:41:46 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:38 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:46 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd 
+# Start time: 10:05:38 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity rf
 # -- Compiling architecture behave of rf
-# End time: 14:41:46 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:39 on Nov 26,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:46 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd 
+# Start time: 10:05:39 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Reg16
 # -- Compiling architecture description of Reg16
-# End time: 14:41:46 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:39 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:46 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd 
+# Start time: 10:05:39 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Reg8
 # -- Compiling architecture description of Reg8
-# End time: 14:41:46 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:39 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:46 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd 
+# Start time: 10:05:39 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity pr5
 # -- Compiling architecture description of pr5
-# End time: 14:41:46 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:39 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:46 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd 
+# Start time: 10:05:39 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity pr4
 # -- Compiling architecture description of pr4
-# End time: 14:41:46 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:39 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:46 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd 
+# Start time: 10:05:39 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity pr3
 # -- Compiling architecture description of pr3
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:01
+# End time: 10:05:39 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd 
+# Start time: 10:05:39 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity pr2
 # -- Compiling architecture description of pr2
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:39 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd 
+# Start time: 10:05:39 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity pr1
 # -- Compiling architecture description of pr1
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:39 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd 
+# Start time: 10:05:39 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity pipelinedup
 # -- Compiling architecture Struct of pipelinedup
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:39 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd 
+# Start time: 10:05:39 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity PEN
 # -- Compiling architecture behave of PEN
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:40 on Nov 26,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd 
+# Start time: 10:05:40 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity pc_mux
 # -- Compiling architecture WhatDoYouCare of pc_mux
-# ** Warning: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd(18): (vcom-1013) Initial value of "pc_out_var" depends on value of signal "pc_in".
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# ** Warning: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd(18): (vcom-1013) Initial value of "pc_out_var" depends on value of signal "pc_in".
+# 
+# End time: 10:05:40 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd 
+# Start time: 10:05:40 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux6_16
 # -- Compiling architecture data of mux6_16
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:40 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd 
+# Start time: 10:05:40 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux4_16
 # -- Compiling architecture data of mux4_16
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:40 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd 
+# Start time: 10:05:40 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux4_3
 # -- Compiling architecture data of mux4_3
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:40 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd 
+# Start time: 10:05:40 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux3_16
 # -- Compiling architecture data of mux3_16
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:40 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd 
+# Start time: 10:05:40 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux2_16
 # -- Compiling architecture data of mux2_16
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:40 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd 
+# Start time: 10:05:41 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux2_8
 # -- Compiling architecture data of mux2_8
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:41 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd 
+# Start time: 10:05:41 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux2_3
 # -- Compiling architecture data of mux2_3
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:41 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd 
+# Start time: 10:05:41 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux2_1
 # -- Compiling architecture Struct of mux2_1
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:41 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd 
+# Start time: 10:05:41 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity hazard_null
 # -- Compiling architecture WhatDoYouCare of hazard_null
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:41 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd 
+# Start time: 10:05:41 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity FullAdder
 # -- Compiling architecture Struct of FullAdder
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:41 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd 
+# Start time: 10:05:41 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity datamem
 # -- Compiling architecture structure of datamem
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:41 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd 
+# Start time: 10:05:41 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity controlword
 # -- Compiling architecture WhatDoYouCare of controlword
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:42 on Nov 26,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd 
+# Start time: 10:05:42 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -331,70 +334,68 @@
 # -- Loading package std_logic_misc
 # -- Compiling entity comp
 # -- Compiling architecture Struct of comp
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:42 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd 
+# Start time: 10:05:42 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity codemem
 # -- Compiling architecture structure of codemem
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:42 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:47 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd 
+# Start time: 10:05:42 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity bit_reg
 # -- Compiling architecture WhatDoYouCare of bit_reg
-# End time: 14:41:47 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:42 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:48 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd 
+# Start time: 10:05:42 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity ALU
 # -- Compiling architecture Struct of ALU
-# End time: 14:41:48 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:42 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:48 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd 
+# Start time: 10:05:42 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity add1
 # -- Compiling architecture Struct of add1
-# End time: 14:41:48 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:42 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add.vhd}
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:41:48 on Nov 26,2018
-# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add.vhd 
+# Start time: 10:05:42 on Nov 26,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Add
 # -- Compiling architecture Struct of Add
-# End time: 14:41:48 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 10:05:42 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# 
-# stdin: <EOF>
 vsim work.pipelinedup
 # vsim work.pipelinedup 
-# Start time: 14:42:17 on Nov 26,2018
+# Start time: 10:05:56 on Nov 26,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -436,6 +437,15 @@ vsim work.pipelinedup
 # Loading work.mux4_3(data)
 # Loading work.bit_reg(whatdoyoucare)
 add wave -position insertpoint sim:/pipelinedup/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: unknown  Hostname: pranil-lenovo-ideapad-310-15ikb  ProcessID: 9729
+# 
+#           Attempting to use alternate WLF file "./wlftk2qr35".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftk2qr35
+# 
 force -freeze sim:/pipelinedup/clk 0 0, 1 {50 ps} -r 100
 force -freeze sim:/pipelinedup/rst 1 0
 run
@@ -449,6 +459,7 @@ run
 #    Time: 0 ps  Iteration: 1  Instance: /pipelinedup/rf_inst
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 1  Instance: /pipelinedup/rf_inst
+run
 force -freeze sim:/pipelinedup/rst 0 0
 run
 run
@@ -458,3 +469,52 @@ run
 run
 run
 run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 10:25:38 on Nov 26,2018, Elapsed time: 0:19:42
+# Errors: 0, Warnings: 7
