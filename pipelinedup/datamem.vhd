@@ -20,7 +20,7 @@ architecture structure of datamem is
 
 
 type memarr is array(0 to 31) of std_logic_vector(15 downto 0);
-signal RAM : memarr := (others => (X"F000"));
+signal RAM : memarr := ((X"FF0F"),(X"FF1F"),(X"2FFF"),(X"FF3F"),(X"4FFF"),(X"FFF5"),others => (X"F000"));
 signal addr : std_logic_vector(4 downto 0);
 
 
