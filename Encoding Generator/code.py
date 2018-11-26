@@ -672,5 +672,6 @@ for line in lines:
 
 
 
-	ofile.write("\""+output+"\""+", ")
+	ofile.write("\""+output+"\""+",")
+ofile.write(" others => X"+"\""+"F000"+"\"")
 # pdb.set_trace()
