@@ -11,8 +11,8 @@ entity rf is
 			 rst : in std_logic; -- async. clear.
 			 clk : in std_logic; -- clock.
 			 rfwr  : in std_logic; -- write
-			 pr5invalid, pr5trfwr : in std_logic; -- enable for register 7
-			 newpc, rfd3, pr5ir : in std_logic_vector(15 downto 0);
+			 pr5invalid, pr5trfwr, pr4invalid : in std_logic; -- enable for register 7
+			 newpc, rfd3, pr5ir, pr2pc : in std_logic_vector(15 downto 0);
 			 rfd1,rfd2 : out std_logic_vector(15 DOWNTO 0)); -- output
 end rf;
 
@@ -33,6 +33,7 @@ type bitarr is array(0 to 7) of std_logic;
 signal wr_rf : std_logic;
 signal wrarr1 : bitarr := "00000000";
 signal reg7 : std_logic_vector(15 downto 0);
+signal temp : std_logic;
 signal wrarr7 : std_logic;
 begin
 
@@ -51,11 +52,13 @@ process (clk, rst, wr_rf,rfa3,rfa1,rfa2,rfd3,pr5invalid,pr5trfwr,pr5ir, register
 	variable wrarr_temp : bitarr := "00000000";
 	variable rfd1_var, rfd2_var : std_logic_vector(15 downto 0);
 	variable r7_var : std_logic_vector(15 downto 0);
+	variable temp_var := '0';
 
 	begin	
 		
 		r7_var := newpc;
 		wrarr_temp := (others =>'0');
+		temp_var := '0';
 
 		if wr_rf = '1' then
 			wrarr_temp := (others =>'0');
@@ -65,6 +68,7 @@ process (clk, rst, wr_rf,rfa3,rfa1,rfa2,rfd3,pr5invalid,pr5trfwr,pr5ir, register
 
 			if rfa3 = "111" then
 				r7_var := rfd3;
+				temp_var := '1';
 			end if;
 
 			if rfa3 = rfa1 then
@@ -77,13 +81,13 @@ process (clk, rst, wr_rf,rfa3,rfa1,rfa2,rfd3,pr5invalid,pr5trfwr,pr5ir, register
 		end if;	
 
 		if rfa1 = "111" then
-			rfd1_var := newpc;
+			rfd1_var := pr2pc;
 		else
 			rfd1_var := registers(to_integer(unsigned(rfa1)));	
 		end if ;
 		
 		if rfa2 = "111" then
-			rfd2_var := newpc;
+			rfd2_var := pr2pc;
 		else
 			rfd2_var := registers(to_integer(unsigned(rfa2)));	
 		end if ;
@@ -94,10 +98,11 @@ process (clk, rst, wr_rf,rfa3,rfa1,rfa2,rfd3,pr5invalid,pr5trfwr,pr5ir, register
 		--	rfd1_var := (others => '0');
 		--	rfd2_var := (others => '0');
 		--end if ;
-
+		
+		temp <= temp_var;
 		reg7 <= r7_var;
 		wrarr1 <= wrarr_temp;
-		wrarr7 <= not(pr5invalid);
+		wrarr7 <= (not(pr4invalid)) or ((not(pr5invalid)) and temp );
 		rfd1 <= rfd1_var;
 		rfd2 <= rfd2_var;
 
