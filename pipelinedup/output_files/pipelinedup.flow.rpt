@@ -1,5 +1,5 @@
 Flow report for pipelinedup
-Mon Nov 26 16:08:04 2018
+Mon Nov 26 21:58:19 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Nov 26 16:08:04 2018       ;
+; Flow Status                        ; Successful - Mon Nov 26 21:58:19 2018       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; pipelinedup                                 ;
 ; Top-level Entity Name              ; pipelinedup                                 ;
@@ -65,26 +65,26 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/26/2018 16:07:38 ;
+; Start date & time ; 11/26/2018 21:58:00 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pipelinedup         ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                     ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 220295154634473.154322865816096 ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                            ; --            ; --          ; eda_simulation ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; --          ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --             ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
++-------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                            ;
++-------------------------------------+------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                  ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 0.154324968024341      ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                   ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL) ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                   ; --            ; --          ; eda_simulation ;
+; PARTITION_COLOR                     ; 16764057               ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING  ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                 ; --            ; --          ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files           ; --            ; --          ; --             ;
++-------------------------------------+------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -92,26 +92,26 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:14     ; 1.0                     ; 5032 MB             ; 00:00:30                           ;
-; Fitter                    ; 00:00:04     ; 1.0                     ; 5520 MB             ; 00:00:05                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4898 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4999 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4872 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:22     ; --                      ; --                  ; 00:00:39                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 1240 MB             ; 00:00:27                           ;
+; Fitter                    ; 00:00:03     ; 1.0                     ; 1359 MB             ; 00:00:03                           ;
+; Assembler                 ; 00:00:00     ; 1.0                     ; 1060 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 1076 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 1306 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:15     ; --                      ; --                  ; 00:00:32                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; LAPTOP-5F776IAH  ; Windows 8 ; 6.2        ; x86_64         ;
-; Fitter                    ; LAPTOP-5F776IAH  ; Windows 8 ; 6.2        ; x86_64         ;
-; Assembler                 ; LAPTOP-5F776IAH  ; Windows 8 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; LAPTOP-5F776IAH  ; Windows 8 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LAPTOP-5F776IAH  ; Windows 8 ; 6.2        ; x86_64         ;
-+---------------------------+------------------+-----------+------------+----------------+
++------------------------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                                            ;
++---------------------------+---------------------------------+----------------+------------+----------------+
+; Module Name               ; Machine Hostname                ; OS Name        ; OS Version ; Processor type ;
++---------------------------+---------------------------------+----------------+------------+----------------+
+; Analysis & Synthesis      ; pranil-lenovo-ideapad-310-15ikb ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; Fitter                    ; pranil-lenovo-ideapad-310-15ikb ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; Assembler                 ; pranil-lenovo-ideapad-310-15ikb ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; TimeQuest Timing Analyzer ; pranil-lenovo-ideapad-310-15ikb ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; EDA Netlist Writer        ; pranil-lenovo-ideapad-310-15ikb ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
++---------------------------+---------------------------------+----------------+------------+----------------+
 
 
 ------------

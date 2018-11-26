@@ -315,8 +315,8 @@ component  bit_reg is
  port (D, CLK ,reset, controlsignal : in std_logic; Q: out std_logic); --controlsignal is the Enable signal
 end  component;
 -------------------------------------------------------------------------------------
-signal pr3a_i,pr3b_i,pr1ir,pr2ir,pr3ir,pr4ir,pr5ir,pc_out,pr1pc,pr2pc,pr3pc,pr4pc,pr5pc,rf_d1,rf_d2,rf_d3,alu2_out,se9_out,se6_out,pr3shift7_out,codemem_out,add1_pc_out,pr4a,add1_t1_out,t1_i,t1,pr3t1,pr3a,pr3b,alu2_a,alu2_b,pr4t1,pr4d,pr4shift7_out,datamem_a,pr5a,pr5b,pr5shift7_out,pr3b_i,datamem_out,shift7_out,pc_in : std_logic_vector(15 downto 0);
-signal pr4c_i,pr4z_i,pr4c,pr4z,pr5c,pr5z_i,pr5z,c,z,trfwr,pr4trfwr,pr5trfwr,pr1invalid_hazard,pr2invalid_hazard,pr3invalid_hazard,pr1invalid_pc,pr2invalid_pc,pr3invalid_pc,pr4invalid_pc,pr1invalid,pr2invalid,pr3invalid,pr4invalid,pr5invalid,temp_invalid1,temp_invalid2,temp_invalid3,tz,pr3tz,temp_wrc,temp_wrz,temp_invalid4,pc_en,pr1_en,pr2_en,pr3_en,pr4_en,pr5_en,zd_out, : std_logic;
+signal pr3a_i,pr3b_i,pr1ir,pr2ir,pr3ir,pr4ir,pr5ir,pc_out,pr1pc,pr2pc,pr3pc,pr4pc,pr5pc,rf_d1,rf_d2,rf_d3,alu2_out,se9_out,se6_out,pr3shift7_out,codemem_out,add1_pc_out,pr4a,add1_t1_out,t1_i,t1,pr3t1,pr3a,pr3b,alu2_a,alu2_b,pr4t1,pr4d,pr4shift7_out,datamem_a,pr5a,pr5b,pr5shift7_out,datamem_out,shift7_out,pc_in : std_logic_vector(15 downto 0);
+signal pr4c_i,pr4z_i,pr4c,pr4z,pr5c,pr5z_i,pr5z,c,z,trfwr,pr4trfwr,pr5trfwr,pr1invalid_hazard,pr2invalid_hazard,pr3invalid_hazard,pr1invalid_pc,pr2invalid_pc,pr3invalid_pc,pr4invalid_pc,pr1invalid,pr2invalid,pr3invalid,pr4invalid,pr5invalid,temp_invalid1,temp_invalid2,temp_invalid3,tz,pr3tz,temp_wrc,temp_wrz,temp_invalid4,pc_en,pr1_en,pr2_en,pr3_en,pr4_en,pr5_en,zd_out : std_logic;
 signal rf_a1,rf_a2,rf_a3,pen_out,pr3pen,pr4pen,pr5pen : std_logic_vector(2 downto 0);
 signal newpen,penupdate,pen_mux_out : std_logic_vector(7 downto 0);
 signal controlword_out,pr2cw,pr3cw_i,pr3cw,pr4cw,pr5cw : std_logic_vector(24 downto 0); 
