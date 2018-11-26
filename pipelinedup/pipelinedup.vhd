@@ -315,7 +315,7 @@ component  bit_reg is
  port (D, CLK ,reset, controlsignal : in std_logic; Q: out std_logic); --controlsignal is the Enable signal
 end  component;
 -------------------------------------------------------------------------------------
-signal temp_invalid1,temp_invalid2,temp_invalid3,temp_invalid4,pr4_en,pr2_en,tz,pr3tz,pr3_en,pr4c_i,pr4z_i,pr4c,pr4z,pr5z,pr5c,pr5z_i,pr4trfwr,pr5trfwr,zd_out,pr5_en,c,z, pr1invalid_hazard,pr2invalid_hazard,pr3invalid_hazard, pr1_en,trfwr,pr1invalid_pc,pr2invalid_pc,pr3invalid_pc,pr4invalid_pc,pr1invalid,pr2invalid,pr3invalid,pr4invalid,pr5invalid, pc_en : std_logic;
+signal temp_wrc,temp_wrz,temp_invalid1,temp_invalid2,temp_invalid3,temp_invalid4,pr4_en,pr2_en,tz,pr3tz,pr3_en,pr4c_i,pr4z_i,pr4c,pr4z,pr5z,pr5c,pr5z_i,pr4trfwr,pr5trfwr,zd_out,pr5_en,c,z, pr1invalid_hazard,pr2invalid_hazard,pr3invalid_hazard, pr1_en,trfwr,pr1invalid_pc,pr2invalid_pc,pr3invalid_pc,pr4invalid_pc,pr1invalid,pr2invalid,pr3invalid,pr4invalid,pr5invalid, pc_en : std_logic;
 signal pc_out,codemem_out,add1_pc_out,pr3a_i,pr2pc,add1_r7_out,rf_d3,rf_d2,rf_d1,pr4a,add1_t1_out,t1_i,t1,pr3t1,pr3pc,pr3a,pr3b,alu2_a,alu2_b,alu2_out,se9_out,se6_out,pr3shift7_out,pr4t1,pr4pc,pr4d,pr4shift7_out,datamem_a,pr5pc,pr5a,pr5b,pr5shift7_out, pr1ir,pr1pc,pr3ir,pr4ir,pr2ir,pr5ir,pr3b_i,datamem_out,shift7_out,pc_in : std_logic_vector(15 downto 0);
 signal pr4pen,pen_out, rf_a1, rf_a2, rf_a3, pr3pen,pr5pen : std_logic_vector(2 downto 0);
 signal newpen, penupdate, pen_mux_out : std_logic_vector(7 downto 0);
@@ -330,6 +330,10 @@ temp_invalid1 <= pr1invalid_pc or pr1invalid_hazard;
 temp_invalid2 <= pr1invalid or pr2invalid_pc or pr2invalid_hazard;
 temp_invalid3 <= pr2invalid or pr3invalid_pc or pr3invalid_hazard;
 temp_invalid4 <= pr3invalid or pr4invalid_pc;
+
+temp_wrc <= pr5cw(1) and (not(pr5invalid)) and (not(((not(pr5ir(15))) and (not(pr5ir(14))) and (not(pr5ir(12))) and (pr5ir(0) xor pr5ir(1))) and (not(pr5trfwr)) ) ); 
+temp_wrz <= pr5cw(0) and (not(pr5invalid)) and (not(((not(pr5ir(15))) and (not(pr5ir(14))) and (not(pr5ir(12))) and (pr5ir(0) xor pr5ir(1))) and (not(pr5trfwr)) ) ); 
+
 
 --IF
 codemem_inst : codemem port map(mem_a=>pc_out, mem_out=>codemem_out);
@@ -378,8 +382,8 @@ pr5_inst : pr5 port map(pr5pen_i=>pr4pen, pc_i=>pr4pc, ir_i=>pr4ir, invalid_i=>p
 rfd3_mux : mux4_16 port map(S0=>pr5cw(5), S1=>pr5cw(6), D0=>pr5b, D1=>pr5a, D2=>pr5shift7_out, D3=>pr5pc, Y=>rf_d3);
 rfa3_mux : mux4_3 port map(S0=>pr5cw(3), S1=>pr5cw(4), D0=>pr5ir(5 downto 3), D1=>pr5ir(11 downto 9), D2=>pr5ir(8 downto 6), D3=>pr5pen, Y=>rf_a3);
 add1_r7 : add1 port map(alu_a=>pr5pc, alu_out=>add1_r7_out);
-c_inst : bit_reg port map(D=>pr5c, CLK=>clk ,reset=>rst, controlsignal=>pr5cw(1), Q=>c);
-z_inst : bit_reg port map(D=>pr5z, CLK=>clk ,reset=>rst, controlsignal=>pr5cw(0), Q=>z);
+c_inst : bit_reg port map(D=>pr5c, CLK=>clk ,reset=>rst, controlsignal=>temp_wrc, Q=>c);
+z_inst : bit_reg port map(D=>pr5z, CLK=>clk ,reset=>rst, controlsignal=>temp_wrz, Q=>z);
 
 
 end Struct;
