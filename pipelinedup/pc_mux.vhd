@@ -4,7 +4,7 @@ use ieee.std_logic_1164.all;
 entity  pc_mux is 
  port (pc_in, pr3ir, pr4ir, pr2ir, b, alu_out, mem2_out, shift7out : in std_logic_vector(15 downto 0);
  		trfwr : in std_logic;
- 		pr2invalid, pr3invalid, pr4invalid : in std_logic;
+ 		pr2invalid, pr3invalid, pr4invalid,pr3tz : in std_logic;
  		pr4penout : in std_logic_vector(2 downto 0);
   		reset : in std_logic;
   		pc_out: out std_logic_vector(15 downto 0);
@@ -14,7 +14,7 @@ end pc_mux;
 architecture WhatDoYouCare of pc_mux is
 begin
 
-process(reset, pc_in, pr3ir, pr4ir, pr2ir, b, alu_out, mem2_out, shift7out, trfwr, pr2invalid, pr3invalid, pr4invalid, pr4penout)
+process(pr3tz,reset, pc_in, pr3ir, pr4ir, pr2ir, b, alu_out, mem2_out, shift7out, trfwr, pr2invalid, pr3invalid, pr4invalid, pr4penout)
 	variable pc_out_var : std_logic_vector(15 downto 0) := pc_in;
 	variable pr1invalid_o_var : std_logic := '0';
 	variable pr2invalid_o_var : std_logic := '0';
@@ -36,7 +36,7 @@ begin
 		pr3invalid_o_var := '1';
 		pr4invalid_o_var := '1';
 
-	elsif ( ((pr3ir(15 downto 12) = "0000" or pr3ir(15 downto 12) = "0010") and pr3ir(1 downto 0) = "00" and pr3ir(5 downto 3) = "111") or ((pr3ir(15 downto 12) = "0000" or pr3ir(15 downto 12) = "0010") and (pr3ir(1 downto 0) = "01" or pr3ir(1 downto 0) = "10") and trfwr = '1' and pr3ir(5 downto 3) = "111") or (pr3ir(15 downto 12) = "0001" and pr3ir(8 downto 6) = "111") or pr3ir(15 downto 12) = "1100" or pr3ir(15 downto 12) = "1000" ) and pr3invalid = '0' then -- instruction in pr3ir is ADD,NDU,ADI,ADC,ADZ,NDC,NDZ(coditional instructions are executing) with their destination as r7 or the instructions are BEQ,JAL
+	elsif ( ((pr3ir(15 downto 12) = "0000" or pr3ir(15 downto 12) = "0010") and pr3ir(1 downto 0) = "00" and pr3ir(5 downto 3) = "111") or ((pr3ir(15 downto 12) = "0000" or pr3ir(15 downto 12) = "0010") and (pr3ir(1 downto 0) = "01" or pr3ir(1 downto 0) = "10") and trfwr = '1' and pr3ir(5 downto 3) = "111") or (pr3ir(15 downto 12) = "0001" and pr3ir(8 downto 6) = "111") or (pr3ir(15 downto 12) = "1100" and pr3tz='1') or pr3ir(15 downto 12) = "1000" ) and pr3invalid = '0' then -- instruction in pr3ir is ADD,NDU,ADI,ADC,ADZ,NDC,NDZ(coditional instructions are executing) with their destination as r7 or the instructions are BEQ,JAL
 		pc_out_var := alu_out;
 		pr1invalid_o_var := '1';
 		pr2invalid_o_var := '1';

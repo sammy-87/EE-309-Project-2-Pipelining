@@ -47,7 +47,7 @@ R7 :Reg16 port map (d => reg7, en => wrarr7, rst => rst, clk => clk, q => regist
 wr_rf <= rfwr and (not(pr5invalid)) and (not(((not(pr5ir(15))) and (not(pr5ir(14))) and (not(pr5ir(12))) and (pr5ir(0) xor pr5ir(1))) and (not(pr5trfwr)) ) ); 
 
 
-process (clk, rst, wr_rf,rfa3,rfa1,rfa2,rfd3,pr5invalid,pr5trfwr,pr5ir, registers,wrarr1,newpc)
+process (clk, rst, wr_rf,rfa3,rfa1,rfa2,rfd3,pr5invalid,pr5trfwr,pr5ir, registers,wrarr1,newpc,pr2pc,pr4invalid,temp)
 
 	variable wrarr_temp : bitarr := "00000000";
 	variable rfd1_var, rfd2_var : std_logic_vector(15 downto 0);
@@ -83,13 +83,21 @@ process (clk, rst, wr_rf,rfa3,rfa1,rfa2,rfd3,pr5invalid,pr5trfwr,pr5ir, register
 		if rfa1 = "111" then
 			rfd1_var := pr2pc;
 		else
-			rfd1_var := registers(to_integer(unsigned(rfa1)));	
+			if wr_rf ='1' and (rfa3=rfa1) then
+				rfd1_var:=rfd3;
+			else
+				rfd1_var := registers(to_integer(unsigned(rfa1)));
+			end if;	
 		end if ;
 		
 		if rfa2 = "111" then
 			rfd2_var := pr2pc;
 		else
-			rfd2_var := registers(to_integer(unsigned(rfa2)));	
+			if wr_rf ='1' and (rfa3=rfa2) then
+				rfd2_var:=rfd3;
+			else
+				rfd2_var := registers(to_integer(unsigned(rfa2)));
+			end if;	
 		end if ;
 		
 		--if rst = '1' then

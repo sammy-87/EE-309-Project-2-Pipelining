@@ -298,7 +298,7 @@ end component;
 component  pc_mux is 
  port (pc_in, pr3ir, pr4ir, pr2ir, b, alu_out, mem2_out, shift7out : in std_logic_vector(15 downto 0);
  		trfwr : in std_logic;
- 		pr2invalid, pr3invalid, pr4invalid : in std_logic;
+ 		pr2invalid, pr3invalid, pr4invalid,pr3tz : in std_logic;
  		pr4penout : in std_logic_vector(2 downto 0);
   		reset : in std_logic;
   		pc_out: out std_logic_vector(15 downto 0);
@@ -339,7 +339,7 @@ temp_wrz <= pr5cw(0) and (not(pr5invalid)) and (not(((not(pr5ir(15))) and (not(p
 codemem_inst : codemem port map(mem_a=>pc_out, mem_out=>codemem_out);
 add1_pc : add1 port map(alu_a=>pc_out, alu_out=>add1_pc_out);
 pc_i : Reg16 port map(d=>pc_in,en=>pc_en,rst=>rst,clk=>clk,q=>pc_out);
-pc_mux_i : pc_mux port map(pc_in=>add1_pc_out, pr3ir=>pr3ir, pr4ir=>pr4ir, pr2ir=>pr2ir, b=>pr3b_i, alu_out=>alu2_out, mem2_out=>datamem_out, shift7out=>shift7_out, trfwr=>trfwr, pr2invalid=>pr2invalid, pr3invalid=>pr3invalid, pr4invalid=>pr4invalid, pr4penout=>pr4pen, reset=>rst, pc_out=>pc_in, pr1invalid_o=>pr1invalid_pc, pr2invalid_o=>pr2invalid_pc, pr3invalid_o=>pr3invalid_pc, pr4invalid_o=>pr4invalid_pc);  --b is output of rfd2 mux
+pc_mux_i : pc_mux port map(pc_in=>add1_pc_out, pr3ir=>pr3ir, pr4ir=>pr4ir, pr2ir=>pr2ir, b=>pr3b_i, alu_out=>alu2_out, mem2_out=>datamem_out, shift7out=>shift7_out, trfwr=>trfwr, pr2invalid=>pr2invalid, pr3invalid=>pr3invalid, pr4invalid=>pr4invalid, pr3tz=>pr3tz, pr4penout=>pr4pen, reset=>rst, pc_out=>pc_in, pr1invalid_o=>pr1invalid_pc, pr2invalid_o=>pr2invalid_pc, pr3invalid_o=>pr3invalid_pc, pr4invalid_o=>pr4invalid_pc);  --b is output of rfd2 mux
 pr1_i : pr1 port map(pc_i=>pc_out, ir_i=>codemem_out, invalid_i=>temp_invalid1, en=>pr1_en, rst=>rst, clk=>clk, pc_o=>pr1pc, ir_o=>pr1ir, invalid_o=>pr1invalid);
 
 --ID
@@ -355,7 +355,7 @@ rfa1_mux : mux2_3 port map(S0=>pr3cw_i(22), D0=>pr2ir(11 downto 9), D1=>pen_out,
 rf_inst : rf port map(rfa1=>rf_a1, rfa2=>rf_a2, rfa3=>rf_a3, rst=>rst, clk=>clk, rfwr=>pr5cw(2), pr5invalid=>pr5invalid, pr5trfwr=>pr5trfwr, pr4invalid=>pr4invalid, newpc=>pr4pc, rfd3=>rf_d3, pr5ir=>pr5ir,pr2pc=>pr2pc, rfd2=>rf_d2, rfd1=>rf_d1);
 pr3a_mux : mux6_16 port map(S0=>pr3cw_i(19),S1=>pr3cw_i(20),S2=>pr3cw_i(21),D0=>rf_d1,D1=>alu2_out,D2=>datamem_out,D3=>pr4a,D4=>pr3shift7_out,D5=>pr4shift7_out, Y=>pr3a_i);
 pr3b_mux : mux6_16 port map(S0=>pr3cw_i(16),S1=>pr3cw_i(17),S2=>pr3cw_i(18),D0=>rf_d2,D1=>alu2_out,D2=>datamem_out,D3=>pr4a,D4=>pr3shift7_out,D5=>pr4shift7_out, Y=>pr3b_i);
-comparator : comp port map(alu_a=>rf_d1, alu_b=>rf_d2, tz=>tz);
+comparator : comp port map(alu_a=>pr3a_i, alu_b=>pr3b_i, tz=>tz);
 t1_mux : mux2_16 port map(S0=>pr3cw_i(23), D0=>rf_d1, D1=>add1_t1_out, Y=>t1_i);
 t1_inst : Reg16 port map(d=>t1_i,en=>'1',rst=>rst,clk=>clk,q=>t1);
 hazard_inst : hazard_null port map(pr2ir=>pr2ir, pr3ir=>pr3ir, pr4ir=>pr4ir, pr2invalid=>pr2invalid, pr3invalid=>pr3invalid, pr4invalid=>pr4invalid, trfwr=>trfwr, pr3tz=>pr3tz, pr4trfwr=>pr4trfwr, pennew=>penupdate, reset=>rst, controlword=>pr2cw, Q=>pr3cw_i, pr1en=>pr1_en, pr2en=>pr2_en, pcen=>pc_en, pr1invalid_o=>pr1invalid_hazard, pr2invalid_o=>pr2invalid_hazard, pr3invalid_o=>pr3invalid_hazard);

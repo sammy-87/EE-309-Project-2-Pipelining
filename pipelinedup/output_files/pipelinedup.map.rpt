@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipelinedup
-Mon Nov 26 18:06:44 2018
+Mon Nov 26 14:49:05 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -50,7 +50,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 26 18:06:44 2018       ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 26 14:49:05 2018       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; pipelinedup                                 ;
 ; Top-level Entity Name              ; pipelinedup                                 ;
@@ -153,57 +153,62 @@ agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                  ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------+---------+
-; zerodetector.vhd                 ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd ;         ;
-; trfwrd.vhd                       ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd       ;         ;
-; shift7.vhd                       ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd       ;         ;
-; se9.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd          ;         ;
-; se6.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd          ;         ;
-; rf.vhd                           ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd           ;         ;
-; reg16.vhd                        ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd        ;         ;
-; Reg8.vhd                         ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd         ;         ;
-; pr5.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd          ;         ;
-; pr4.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd          ;         ;
-; pr3.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd          ;         ;
-; pr2.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd          ;         ;
-; pr1.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd          ;         ;
-; pipelinedup.vhd                  ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd  ;         ;
-; pen.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd          ;         ;
-; pc_mux.vhd                       ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd       ;         ;
-; mux6_16.vhd                      ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd      ;         ;
-; mux4_16.vhd                      ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd      ;         ;
-; mux4_3.vhd                       ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd       ;         ;
-; mux3_16.vhd                      ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd      ;         ;
-; mux2_16.vhd                      ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd      ;         ;
-; mux2_8.vhd                       ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd       ;         ;
-; mux2_3.vhd                       ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd       ;         ;
-; mux2_1.vhd                       ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd       ;         ;
-; hazard_null.vhd                  ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd  ;         ;
-; FullAdder.vhd                    ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd    ;         ;
-; datamem.vhd                      ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd      ;         ;
-; controlword.vhd                  ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd  ;         ;
-; comp.vhd                         ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd         ;         ;
-; codemem.vhd                      ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd      ;         ;
-; bit_reg.vhd                      ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd      ;         ;
-; alu.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd          ;         ;
-; add1.vhd                         ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd         ;         ;
-; add.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add.vhd          ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                           ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------+---------+
+; zerodetector.vhd                 ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd ;         ;
+; trfwrd.vhd                       ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd       ;         ;
+; shift7.vhd                       ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd       ;         ;
+; se9.vhd                          ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd          ;         ;
+; se6.vhd                          ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd          ;         ;
+; rf.vhd                           ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd           ;         ;
+; reg16.vhd                        ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd        ;         ;
+; Reg8.vhd                         ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd         ;         ;
+; pr5.vhd                          ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd          ;         ;
+; pr4.vhd                          ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd          ;         ;
+; pr3.vhd                          ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd          ;         ;
+; pr2.vhd                          ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd          ;         ;
+; pr1.vhd                          ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd          ;         ;
+; pipelinedup.vhd                  ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd  ;         ;
+; pen.vhd                          ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd          ;         ;
+; pc_mux.vhd                       ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd       ;         ;
+; mux6_16.vhd                      ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd      ;         ;
+; mux4_16.vhd                      ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd      ;         ;
+; mux4_3.vhd                       ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd       ;         ;
+; mux3_16.vhd                      ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd      ;         ;
+; mux2_16.vhd                      ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd      ;         ;
+; mux2_8.vhd                       ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd       ;         ;
+; mux2_3.vhd                       ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd       ;         ;
+; mux2_1.vhd                       ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd       ;         ;
+; hazard_null.vhd                  ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd  ;         ;
+; FullAdder.vhd                    ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd    ;         ;
+; datamem.vhd                      ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd      ;         ;
+; controlword.vhd                  ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd  ;         ;
+; comp.vhd                         ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd         ;         ;
+; codemem.vhd                      ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd      ;         ;
+; bit_reg.vhd                      ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd      ;         ;
+; alu.vhd                          ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd          ;         ;
+; add1.vhd                         ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd         ;         ;
+; add.vhd                          ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add.vhd          ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -355,165 +360,162 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Mon Nov 26 18:06:30 2018
+    Info: Processing started: Mon Nov 26 14:48:52 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipelinedup -c pipelinedup
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file zerodetector.vhd
-    Info (12022): Found design unit 1: zerodetector-data File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd Line: 12
-    Info (12023): Found entity 1: zerodetector File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd Line: 7
+    Info (12022): Found design unit 1: zerodetector-data File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd Line: 12
+    Info (12023): Found entity 1: zerodetector File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file trfwrd.vhd
-    Info (12022): Found design unit 1: trfwrd-WhatDoYouCare File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd Line: 11
-    Info (12023): Found entity 1: trfwrd File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd Line: 4
+    Info (12022): Found design unit 1: trfwrd-WhatDoYouCare File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd Line: 11
+    Info (12023): Found entity 1: trfwrd File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file shift7.vhd
-    Info (12022): Found design unit 1: Shift7-Struct File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd Line: 12
-    Info (12023): Found entity 1: Shift7 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd Line: 7
+    Info (12022): Found design unit 1: Shift7-Struct File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd Line: 12
+    Info (12023): Found entity 1: Shift7 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file se9.vhd
-    Info (12022): Found design unit 1: SE9-Struct File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd Line: 12
-    Info (12023): Found entity 1: SE9 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd Line: 7
+    Info (12022): Found design unit 1: SE9-Struct File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd Line: 12
+    Info (12023): Found entity 1: SE9 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file se6.vhd
-    Info (12022): Found design unit 1: SE6-Struct File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd Line: 12
-    Info (12023): Found entity 1: SE6 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd Line: 7
+    Info (12022): Found design unit 1: SE6-Struct File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd Line: 12
+    Info (12023): Found entity 1: SE6 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file rf.vhd
-    Info (12022): Found design unit 1: rf-behave File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd Line: 19
-    Info (12023): Found entity 1: rf File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd Line: 8
+    Info (12022): Found design unit 1: rf-behave File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd Line: 19
+    Info (12023): Found entity 1: rf File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file reg16.vhd
-    Info (12022): Found design unit 1: Reg16-description File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd Line: 16
-    Info (12023): Found entity 1: Reg16 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file Reg8.vhd
-    Info (12022): Found design unit 1: Reg8-description File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd Line: 16
-    Info (12023): Found entity 1: Reg8 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd Line: 7
+    Info (12022): Found design unit 1: Reg16-description File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd Line: 16
+    Info (12023): Found entity 1: Reg16 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file reg8.vhd
+    Info (12022): Found design unit 1: Reg8-description File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd Line: 16
+    Info (12023): Found entity 1: Reg8 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file pr5.vhd
-    Info (12022): Found design unit 1: pr5-description File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd Line: 38
-    Info (12023): Found entity 1: pr5 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd Line: 7
+    Info (12022): Found design unit 1: pr5-description File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd Line: 38
+    Info (12023): Found entity 1: pr5 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file pr4.vhd
-    Info (12022): Found design unit 1: pr4-description File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd Line: 40
-    Info (12023): Found entity 1: pr4 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd Line: 7
+    Info (12022): Found design unit 1: pr4-description File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd Line: 40
+    Info (12023): Found entity 1: pr4 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file pr3.vhd
-    Info (12022): Found design unit 1: pr3-description File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd Line: 36
-    Info (12023): Found entity 1: pr3 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd Line: 7
+    Info (12022): Found design unit 1: pr3-description File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd Line: 36
+    Info (12023): Found entity 1: pr3 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file pr2.vhd
-    Info (12022): Found design unit 1: pr2-description File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd Line: 22
-    Info (12023): Found entity 1: pr2 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd Line: 7
+    Info (12022): Found design unit 1: pr2-description File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd Line: 22
+    Info (12023): Found entity 1: pr2 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file pr1.vhd
-    Info (12022): Found design unit 1: pr1-description File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd Line: 20
-    Info (12023): Found entity 1: pr1 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd Line: 7
+    Info (12022): Found design unit 1: pr1-description File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd Line: 20
+    Info (12023): Found entity 1: pr1 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file pipelinedup.vhd
-    Info (12022): Found design unit 1: pipelinedup-Struct File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 11
-    Info (12023): Found entity 1: pipelinedup File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 7
+    Info (12022): Found design unit 1: pipelinedup-Struct File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 11
+    Info (12023): Found entity 1: pipelinedup File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file pen.vhd
-    Info (12022): Found design unit 1: PEN-behave File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd Line: 13
-    Info (12023): Found entity 1: PEN File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd Line: 7
+    Info (12022): Found design unit 1: PEN-behave File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd Line: 13
+    Info (12023): Found entity 1: PEN File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file pc_mux.vhd
-    Info (12022): Found design unit 1: pc_mux-WhatDoYouCare File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd Line: 14
-    Info (12023): Found entity 1: pc_mux File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd Line: 4
+    Info (12022): Found design unit 1: pc_mux-WhatDoYouCare File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd Line: 14
+    Info (12023): Found entity 1: pc_mux File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux6_16.vhd
-    Info (12022): Found design unit 1: mux6_16-data File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd Line: 13
-    Info (12023): Found entity 1: mux6_16 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd Line: 7
+    Info (12022): Found design unit 1: mux6_16-data File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd Line: 13
+    Info (12023): Found entity 1: mux6_16 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file mux5_16.vhd
-    Info (12022): Found design unit 1: mux5_16-data File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux5_16.vhd Line: 13
-    Info (12023): Found entity 1: mux5_16 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux5_16.vhd Line: 7
+    Info (12022): Found design unit 1: mux5_16-data File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux5_16.vhd Line: 13
+    Info (12023): Found entity 1: mux5_16 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux5_16.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file mux4_16.vhd
-    Info (12022): Found design unit 1: mux4_16-data File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd Line: 13
-    Info (12023): Found entity 1: mux4_16 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd Line: 7
+    Info (12022): Found design unit 1: mux4_16-data File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd Line: 13
+    Info (12023): Found entity 1: mux4_16 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file mux4_3.vhd
-    Info (12022): Found design unit 1: mux4_3-data File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd Line: 13
-    Info (12023): Found entity 1: mux4_3 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd Line: 7
+    Info (12022): Found design unit 1: mux4_3-data File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd Line: 13
+    Info (12023): Found entity 1: mux4_3 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file mux3_16.vhd
-    Info (12022): Found design unit 1: mux3_16-data File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd Line: 13
-    Info (12023): Found entity 1: mux3_16 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd Line: 7
+    Info (12022): Found design unit 1: mux3_16-data File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd Line: 13
+    Info (12023): Found entity 1: mux3_16 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file mux2_16.vhd
-    Info (12022): Found design unit 1: mux2_16-data File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd Line: 13
-    Info (12023): Found entity 1: mux2_16 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd Line: 7
+    Info (12022): Found design unit 1: mux2_16-data File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd Line: 13
+    Info (12023): Found entity 1: mux2_16 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file mux2_8.vhd
-    Info (12022): Found design unit 1: mux2_8-data File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd Line: 13
-    Info (12023): Found entity 1: mux2_8 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd Line: 7
+    Info (12022): Found design unit 1: mux2_8-data File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd Line: 13
+    Info (12023): Found entity 1: mux2_8 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file mux2_3.vhd
-    Info (12022): Found design unit 1: mux2_3-data File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd Line: 13
-    Info (12023): Found entity 1: mux2_3 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd Line: 7
+    Info (12022): Found design unit 1: mux2_3-data File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd Line: 13
+    Info (12023): Found entity 1: mux2_3 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file mux2_1.vhd
-    Info (12022): Found design unit 1: mux2_1-Struct File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd Line: 11
-    Info (12023): Found entity 1: mux2_1 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd Line: 7
+    Info (12022): Found design unit 1: mux2_1-Struct File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd Line: 11
+    Info (12023): Found entity 1: mux2_1 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file hazard_null.vhd
-    Info (12022): Found design unit 1: hazard_null-WhatDoYouCare File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd Line: 20
-    Info (12023): Found entity 1: hazard_null File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file FullAdder.vhd
-    Info (12022): Found design unit 1: FullAdder-Struct File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd Line: 11
-    Info (12023): Found entity 1: FullAdder File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd Line: 7
+    Info (12022): Found design unit 1: hazard_null-WhatDoYouCare File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd Line: 20
+    Info (12023): Found entity 1: hazard_null File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file fulladder.vhd
+    Info (12022): Found design unit 1: FullAdder-Struct File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd Line: 11
+    Info (12023): Found entity 1: FullAdder File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file datamem.vhd
-    Info (12022): Found design unit 1: datamem-structure File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd Line: 19
-    Info (12023): Found entity 1: datamem File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd Line: 8
+    Info (12022): Found design unit 1: datamem-structure File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd Line: 19
+    Info (12023): Found entity 1: datamem File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file controlword.vhd
-    Info (12022): Found design unit 1: controlword-WhatDoYouCare File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd Line: 10
-    Info (12023): Found entity 1: controlword File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd Line: 4
+    Info (12022): Found design unit 1: controlword-WhatDoYouCare File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd Line: 10
+    Info (12023): Found entity 1: controlword File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file comp.vhd
-    Info (12022): Found design unit 1: comp-Struct File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd Line: 13
-    Info (12023): Found entity 1: comp File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd Line: 8
+    Info (12022): Found design unit 1: comp-Struct File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd Line: 13
+    Info (12023): Found entity 1: comp File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file codemem.vhd
-    Info (12022): Found design unit 1: codemem-structure File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd Line: 14
-    Info (12023): Found entity 1: codemem File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd Line: 8
+    Info (12022): Found design unit 1: codemem-structure File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd Line: 14
+    Info (12023): Found entity 1: codemem File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file bit_reg.vhd
-    Info (12022): Found design unit 1: bit_reg-WhatDoYouCare File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd Line: 8
-    Info (12023): Found entity 1: bit_reg File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd Line: 4
+    Info (12022): Found design unit 1: bit_reg-WhatDoYouCare File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd Line: 8
+    Info (12023): Found entity 1: bit_reg File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
-    Info (12022): Found design unit 1: ALU-Struct File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd Line: 15
-    Info (12023): Found entity 1: ALU File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd Line: 7
+    Info (12022): Found design unit 1: ALU-Struct File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd Line: 15
+    Info (12023): Found entity 1: ALU File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file add1.vhd
-    Info (12022): Found design unit 1: add1-Struct File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd Line: 12
-    Info (12023): Found entity 1: add1 File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd Line: 7
+    Info (12022): Found design unit 1: add1-Struct File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd Line: 12
+    Info (12023): Found entity 1: add1 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file add.vhd
-    Info (12022): Found design unit 1: Add-Struct File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add.vhd Line: 14
-    Info (12023): Found entity 1: Add File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add.vhd Line: 7
+    Info (12022): Found design unit 1: Add-Struct File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add.vhd Line: 14
+    Info (12023): Found entity 1: Add File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add.vhd Line: 7
 Info (12127): Elaborating entity "pipelinedup" for the top level hierarchy
-Info (12128): Elaborating entity "codemem" for hierarchy "codemem:codemem_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 339
-Info (12128): Elaborating entity "add1" for hierarchy "add1:add1_pc" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 340
-Warning (10036): Verilog HDL or VHDL warning at add1.vhd(21): object "c_out" assigned a value but never read File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd Line: 21
-Info (12128): Elaborating entity "Add" for hierarchy "add1:add1_pc|Add:A1" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd Line: 24
-Info (12128): Elaborating entity "FullAdder" for hierarchy "add1:add1_pc|Add:A1|FullAdder:F0" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add.vhd Line: 25
-Info (12128): Elaborating entity "Reg16" for hierarchy "Reg16:pc_i" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 341
-Info (12128): Elaborating entity "pc_mux" for hierarchy "pc_mux:pc_mux_i" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 342
-Info (12128): Elaborating entity "pr1" for hierarchy "pr1:pr1_i" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 343
-Info (12128): Elaborating entity "controlword" for hierarchy "controlword:controlword_i" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 346
-Info (12128): Elaborating entity "mux2_8" for hierarchy "mux2_8:pen_mux" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 347
-Info (12128): Elaborating entity "Reg8" for hierarchy "Reg8:pen_reg" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 348
-Info (12128): Elaborating entity "PEN" for hierarchy "PEN:pen_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 349
-Info (12128): Elaborating entity "pr2" for hierarchy "pr2:pr2_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 350
-Info (12128): Elaborating entity "Shift7" for hierarchy "Shift7:shift7_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 353
-Info (12128): Elaborating entity "mux2_3" for hierarchy "mux2_3:rfa1_mux" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 354
-Info (12128): Elaborating entity "rf" for hierarchy "rf:rf_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 355
-Warning (10492): VHDL Process Statement warning at rf.vhd(84): signal "pr2pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd Line: 84
-Warning (10492): VHDL Process Statement warning at rf.vhd(90): signal "pr2pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd Line: 90
-Warning (10492): VHDL Process Statement warning at rf.vhd(105): signal "pr4invalid" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd Line: 105
-Warning (10492): VHDL Process Statement warning at rf.vhd(105): signal "temp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd Line: 105
-Info (12128): Elaborating entity "mux6_16" for hierarchy "mux6_16:pr3a_mux" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 356
-Info (12128): Elaborating entity "comp" for hierarchy "comp:comparator" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 358
-Info (12128): Elaborating entity "mux2_16" for hierarchy "mux2_16:t1_mux" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 359
-Info (12128): Elaborating entity "hazard_null" for hierarchy "hazard_null:hazard_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 361
-Info (12128): Elaborating entity "pr3" for hierarchy "pr3:pr3_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 363
-Info (12128): Elaborating entity "mux3_16" for hierarchy "mux3_16:alu_a_mux" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 366
-Info (12128): Elaborating entity "SE9" for hierarchy "SE9:se9_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 368
-Info (12128): Elaborating entity "SE6" for hierarchy "SE6:se6_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 369
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu2" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 370
-Info (12128): Elaborating entity "trfwrd" for hierarchy "trfwrd:trfwrd_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 371
-Info (12128): Elaborating entity "pr4" for hierarchy "pr4:pr4_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 372
-Info (12128): Elaborating entity "datamem" for hierarchy "datamem:datamem_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 376
-Info (12128): Elaborating entity "zerodetector" for hierarchy "zerodetector:zd" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 377
-Info (12128): Elaborating entity "mux2_1" for hierarchy "mux2_1:muxz" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 378
-Info (12128): Elaborating entity "pr5" for hierarchy "pr5:pr5_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 379
-Info (12128): Elaborating entity "mux4_16" for hierarchy "mux4_16:rfd3_mux" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 382
-Info (12128): Elaborating entity "mux4_3" for hierarchy "mux4_3:rfa3_mux" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 383
-Info (12128): Elaborating entity "bit_reg" for hierarchy "bit_reg:c_inst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 384
+Info (12128): Elaborating entity "codemem" for hierarchy "codemem:codemem_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 339
+Info (12128): Elaborating entity "add1" for hierarchy "add1:add1_pc" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 340
+Warning (10036): Verilog HDL or VHDL warning at add1.vhd(21): object "c_out" assigned a value but never read File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd Line: 21
+Info (12128): Elaborating entity "Add" for hierarchy "add1:add1_pc|Add:A1" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd Line: 24
+Info (12128): Elaborating entity "FullAdder" for hierarchy "add1:add1_pc|Add:A1|FullAdder:F0" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add.vhd Line: 25
+Info (12128): Elaborating entity "Reg16" for hierarchy "Reg16:pc_i" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 341
+Info (12128): Elaborating entity "pc_mux" for hierarchy "pc_mux:pc_mux_i" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 342
+Info (12128): Elaborating entity "pr1" for hierarchy "pr1:pr1_i" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 343
+Info (12128): Elaborating entity "controlword" for hierarchy "controlword:controlword_i" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 346
+Info (12128): Elaborating entity "mux2_8" for hierarchy "mux2_8:pen_mux" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 347
+Info (12128): Elaborating entity "Reg8" for hierarchy "Reg8:pen_reg" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 348
+Info (12128): Elaborating entity "PEN" for hierarchy "PEN:pen_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 349
+Info (12128): Elaborating entity "pr2" for hierarchy "pr2:pr2_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 350
+Info (12128): Elaborating entity "Shift7" for hierarchy "Shift7:shift7_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 353
+Info (12128): Elaborating entity "mux2_3" for hierarchy "mux2_3:rfa1_mux" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 354
+Info (12128): Elaborating entity "rf" for hierarchy "rf:rf_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 355
+Info (12128): Elaborating entity "mux6_16" for hierarchy "mux6_16:pr3a_mux" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 356
+Info (12128): Elaborating entity "comp" for hierarchy "comp:comparator" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 358
+Info (12128): Elaborating entity "mux2_16" for hierarchy "mux2_16:t1_mux" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 359
+Info (12128): Elaborating entity "hazard_null" for hierarchy "hazard_null:hazard_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 361
+Info (12128): Elaborating entity "pr3" for hierarchy "pr3:pr3_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 363
+Info (12128): Elaborating entity "mux3_16" for hierarchy "mux3_16:alu_a_mux" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 366
+Info (12128): Elaborating entity "SE9" for hierarchy "SE9:se9_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 368
+Info (12128): Elaborating entity "SE6" for hierarchy "SE6:se6_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 369
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu2" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 370
+Info (12128): Elaborating entity "trfwrd" for hierarchy "trfwrd:trfwrd_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 371
+Info (12128): Elaborating entity "pr4" for hierarchy "pr4:pr4_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 372
+Info (12128): Elaborating entity "datamem" for hierarchy "datamem:datamem_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 376
+Info (12128): Elaborating entity "zerodetector" for hierarchy "zerodetector:zd" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 377
+Info (12128): Elaborating entity "mux2_1" for hierarchy "mux2_1:muxz" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 378
+Info (12128): Elaborating entity "pr5" for hierarchy "pr5:pr5_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 379
+Info (12128): Elaborating entity "mux4_16" for hierarchy "mux4_16:rfd3_mux" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 382
+Info (12128): Elaborating entity "mux4_3" for hierarchy "mux4_3:rfa3_mux" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 383
+Info (12128): Elaborating entity "bit_reg" for hierarchy "bit_reg:c_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 384
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 8
-    Warning (15610): No output dependent on input pin "rst" File: /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 8
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 8
+    Warning (15610): No output dependent on input pin "rst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd Line: 8
 Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 1245 megabytes
-    Info: Processing ended: Mon Nov 26 18:06:44 2018
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:37
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 5034 megabytes
+    Info: Processing ended: Mon Nov 26 14:49:05 2018
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:29
 
 
