@@ -7,25 +7,25 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim
+Z0 dC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/simulation/modelsim
 Eadd
-Z1 w1542990800
+Z1 w1543202549
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z4 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add.vhd
-Z5 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add.vhd
+Z4 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add.vhd
+Z5 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add.vhd
 l0
 L7
 V1l@Wh5BSTdL9bK@cZdFeY2
 !s100 k[;;V6b>1jONmC6CdRCmh1
 Z6 OV;C;10.4d;61
 31
-Z7 !s110 1543223508
+Z7 !s110 1543206942
 !i10b 1
-Z8 !s108 1543223508.000000
-Z9 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add.vhd|
-Z10 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add.vhd|
+Z8 !s108 1543206942.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add.vhd|
+Z10 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add.vhd|
 !i113 1
 Z11 o-93 -work work
 Z12 tExplicit 1
@@ -48,12 +48,12 @@ R10
 R11
 R12
 Eadd1
-Z13 w1543170680
+R1
 R2
 R3
 R0
-Z14 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd
-Z15 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd
+Z13 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd
+Z14 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd
 l0
 L7
 V7_Yjo:1N;IK_aCcC_hY>i0
@@ -63,8 +63,8 @@ R6
 R7
 !i10b 1
 R8
-Z16 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd|
-Z17 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd|
+Z15 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd|
+Z16 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/add1.vhd|
 !i113 1
 R11
 R12
@@ -81,18 +81,18 @@ R6
 R7
 !i10b 1
 R8
+R15
 R16
-R17
 !i113 1
 R11
 R12
 Ealu
-Z18 w1542993961
+R1
 R2
 R3
 R0
-Z19 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd
-Z20 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd
+Z17 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd
+Z18 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd
 l0
 L7
 V_SCOhU[3:Xm3_WeUZCTkH3
@@ -102,8 +102,8 @@ R6
 R7
 !i10b 1
 R8
-Z21 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd|
-Z22 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd|
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd|
+Z20 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/alu.vhd|
 !i113 1
 R11
 R12
@@ -120,29 +120,29 @@ R6
 R7
 !i10b 1
 R8
-R21
-R22
+R19
+R20
 !i113 1
 R11
 R12
 Ebit_reg
-Z23 w1543167678
+R1
 R2
 R3
 R0
-Z24 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd
-Z25 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd
+Z21 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd
+Z22 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd
 l0
 L4
 V`GWnHKX_]MOQDo_ccXTIa0
 !s100 UgRYcH[1V3RCIC?nV_C`e1
 R6
 31
-Z26 !s110 1543223507
+R7
 !i10b 1
-Z27 !s108 1543223507.000000
-Z28 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd|
-Z29 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd|
+R8
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd|
+Z24 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/bit_reg.vhd|
 !i113 1
 R11
 R12
@@ -156,81 +156,81 @@ V>0Y]^lQd[Z^RHCXjk8?iR0
 !s100 9BhUDHBoDZJ6ik34<7JF;0
 R6
 31
-R26
+R7
 !i10b 1
-R27
-R28
-R29
+R8
+R23
+R24
 !i113 1
 R11
 R12
 Ecodemem
-Z30 w1543209234
-Z31 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z25 w1543204919
+Z26 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R2
 R3
 R0
-Z32 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd
-Z33 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd
+Z27 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd
+Z28 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd
 l0
 L8
 VgN>mA8?3PUEaIJjD5IKRX2
 !s100 9=CQM74UGD_=ag:zDm[SZ0
 R6
 31
-R26
+R7
 !i10b 1
-R27
-Z34 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd|
-Z35 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd|
+R8
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd|
+Z30 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/codemem.vhd|
 !i113 1
 R11
 R12
 Astructure
-R31
+R26
 R2
 R3
 DEx4 work 7 codemem 0 22 gN>mA8?3PUEaIJjD5IKRX2
 l21
 L14
-VARjB=@oJ:0JAAo5mKadI80
-!s100 VcXnz17lb9]DO5m?8We9A1
+V?C;`hY626ZM_iDOVYF;?X0
+!s100 A`QTPma[bY]Z9B:k^kDOl1
 R6
 31
-R26
+R7
 !i10b 1
-R27
-R34
-R35
+R8
+R29
+R30
 !i113 1
 R11
 R12
 Ecomp
-Z36 w1542995913
-Z37 DPx8 synopsys 10 attributes 0 22 liCm]LV3<lX4Zl>o6^8IV1
-Z38 DPx4 ieee 14 std_logic_misc 0 22 BLzBaQbXS>Q1z>5YO]m[52
+R1
+Z31 DPx8 synopsys 10 attributes 0 22 liCm]LV3<lX4Zl>o6^8IV1
+Z32 DPx4 ieee 14 std_logic_misc 0 22 BLzBaQbXS>Q1z>5YO]m[52
 R2
 R3
 R0
-Z39 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd
-Z40 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd
+Z33 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd
+Z34 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd
 l0
 L8
 V6;Z[LF3?SFzmWLLa4TTHb1
 !s100 MlhP;^efbblH5kEk]`ka`2
 R6
 31
-R26
+R7
 !i10b 1
-R27
-Z41 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd|
-Z42 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd|
+R8
+Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd|
+Z36 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/comp.vhd|
 !i113 1
 R11
 R12
 Astruct
-R37
-R38
+R31
+R32
 R2
 R3
 DEx4 work 4 comp 0 22 6;Z[LF3?SFzmWLLa4TTHb1
@@ -240,32 +240,32 @@ VEnlk8Q3LT35`LeA2AoS`[2
 !s100 olPd95FgIXdPNXNECa0z]3
 R6
 31
-R26
+R7
 !i10b 1
-R27
-R41
-R42
+R8
+R35
+R36
 !i113 1
 R11
 R12
 Econtrolword
-Z43 w1543169891
+R1
 R2
 R3
 R0
-Z44 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd
-Z45 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd
+Z37 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd
+Z38 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd
 l0
 L4
 V0ghHaKV]o[KzAQFEhEC>L3
 !s100 `8ZmgD80_F=ZzgFHfc[QL3
 R6
 31
-R26
+R7
 !i10b 1
-R27
-Z46 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd|
-Z47 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd|
+Z39 !s108 1543206941.000000
+Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd|
+Z41 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/controlword.vhd|
 !i113 1
 R11
 R12
@@ -279,38 +279,38 @@ V08H2O4BbZeI^=hgn1;7C@1
 !s100 d<W]oYdIN=0<eh?Y<MThl3
 R6
 31
-R26
+R7
 !i10b 1
-R27
-R46
-R47
+R39
+R40
+R41
 !i113 1
 R11
 R12
 Edatamem
-Z48 w1543177098
-R31
+R1
+R26
 R2
 R3
 R0
-Z49 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd
-Z50 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd
+Z42 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd
+Z43 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd
 l0
 L8
 VlVMZ5_<7Qi5A6AQgaNDnB2
 !s100 X]_cA1aR_B5fB`ShkhU><3
 R6
 31
-R26
+Z44 !s110 1543206941
 !i10b 1
-R27
-Z51 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd|
-Z52 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd|
+R39
+Z45 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd|
+Z46 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/datamem.vhd|
 !i113 1
 R11
 R12
 Astructure
-R31
+R26
 R2
 R3
 DEx4 work 7 datamem 0 22 lVMZ5_<7Qi5A6AQgaNDnB2
@@ -320,32 +320,32 @@ VFGE80fY13V>Jlf209V9Ql0
 !s100 NTNQkgHGU>g]eWDUi2VDD2
 R6
 31
-R26
+R44
 !i10b 1
-R27
-R51
-R52
+R39
+R45
+R46
 !i113 1
 R11
 R12
 Efulladder
-Z53 w1542990826
+R1
 R2
 R3
 R0
-Z54 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd
-Z55 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd
+Z47 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd
+Z48 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd
 l0
 L7
 V?4A<FNoCc:hh`bVMjK[Kb2
 !s100 gEG0cnmQi[>0]8CVT;NbU2
 R6
 31
-R26
+R44
 !i10b 1
-R27
-Z56 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd|
-Z57 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd|
+R39
+Z49 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd|
+Z50 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/FullAdder.vhd|
 !i113 1
 R11
 R12
@@ -359,32 +359,32 @@ VC<_=XnLeV=8`HHg0O]B1m3
 !s100 GYaLEWdbhXLHPDPZ1=WC02
 R6
 31
-R26
+R44
 !i10b 1
-R27
-R56
-R57
+R39
+R49
+R50
 !i113 1
 R11
 R12
 Ehazard_null
-Z58 w1543223274
+Z51 w1543206821
 R2
 R3
 R0
-Z59 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd
-Z60 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd
+Z52 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd
+Z53 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd
 l0
 L4
 V5S5ODzkTDdX@^T6ITT?nE1
 !s100 _ELldgT3ikG[3;R99=fH^0
 R6
 31
-R26
+R44
 !i10b 1
-R27
-Z61 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd|
-Z62 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd|
+R39
+Z54 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd|
+Z55 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/hazard_null.vhd|
 !i113 1
 R11
 R12
@@ -394,36 +394,36 @@ R3
 DEx4 work 11 hazard_null 0 22 5S5ODzkTDdX@^T6ITT?nE1
 l21
 L20
-V=JXf=kjiki:J;6oNc@14Y1
-!s100 CeOPD:OTL9030nMdLZfkW3
+VAKC7=2lWcbggV?O^nGWa:3
+!s100 3Whdj>]]oBYX6XnH`EbY62
 R6
 31
-R26
+R44
 !i10b 1
-R27
-R61
-R62
+R39
+R54
+R55
 !i113 1
 R11
 R12
 Emux2_1
-Z63 w1543001139
+R1
 R2
 R3
 R0
-Z64 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd
-Z65 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd
+Z56 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd
+Z57 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd
 l0
 L7
 VfMggkKFoc0O1oVCB;SUDW3
 !s100 BEXK?S>Olo7HYlmPz5>>z2
 R6
 31
-R26
+R44
 !i10b 1
-R27
-Z66 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd|
-Z67 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd|
+R39
+Z58 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd|
+Z59 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_1.vhd|
 !i113 1
 R11
 R12
@@ -437,32 +437,32 @@ VlP;kaW`=2H:JIij;;Cc__3
 !s100 X<;]7]f;QEDD5bcQQJzcD2
 R6
 31
-R26
+R44
 !i10b 1
-R27
-R66
-R67
+R39
+R58
+R59
 !i113 1
 R11
 R12
 Emux2_16
-Z68 w1543001315
+R1
 R2
 R3
 R0
-Z69 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd
-Z70 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd
+Z60 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd
+Z61 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd
 l0
 L7
 V0bM9^BULIz4<iKJRDP[=N3
 !s100 za9TCOVTMQ=DdQNnNM1B^2
 R6
 31
-R26
+Z62 !s110 1543206940
 !i10b 1
-R27
-Z71 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd|
-Z72 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd|
+Z63 !s108 1543206940.000000
+Z64 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd|
+Z65 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_16.vhd|
 !i113 1
 R11
 R12
@@ -476,32 +476,32 @@ VT@2UdUD^7RaT2C_74Lk[_0
 !s100 fEGT>zKzQMAmd2z8eSX`n1
 R6
 31
-R26
+R62
 !i10b 1
-R27
-R71
-R72
+R63
+R64
+R65
 !i113 1
 R11
 R12
 Emux2_3
-Z73 w1543001137
+R1
 R2
 R3
 R0
-Z74 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd
-Z75 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd
+Z66 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd
+Z67 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd
 l0
 L7
 V2:G9b3iI?gOgP:T0gjeZV0
 !s100 To=Yk9l0`Q>J_XRDCZ1B92
 R6
 31
-R26
+R44
 !i10b 1
-R27
-Z76 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd|
-Z77 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd|
+R39
+Z68 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd|
+Z69 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_3.vhd|
 !i113 1
 R11
 R12
@@ -515,32 +515,32 @@ VZ8WIgZQ?_2oVKN0l95<3C1
 !s100 UROAbR4@J`gT?<B8c[9b51
 R6
 31
-R26
+R44
 !i10b 1
-R27
-R76
-R77
+R39
+R68
+R69
 !i113 1
 R11
 R12
 Emux2_8
-Z78 w1543001184
+R1
 R2
 R3
 R0
-Z79 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd
-Z80 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd
+Z70 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd
+Z71 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd
 l0
 L7
 VF`KNk38e2fjN<zXeUd_Tm3
 !s100 2<8=^TNS]ZjQPVEeIhHZI1
 R6
 31
-R26
+R44
 !i10b 1
-R27
-Z81 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd|
-Z82 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd|
+R39
+Z72 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd|
+Z73 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux2_8.vhd|
 !i113 1
 R11
 R12
@@ -554,32 +554,32 @@ Vaf8>b=V`cmh=L]4o>^YFK0
 !s100 H7zWVPDALn8?zQfnAj4?30
 R6
 31
-R26
+R44
 !i10b 1
-R27
-R81
-R82
+R39
+R72
+R73
 !i113 1
 R11
 R12
 Emux3_16
-Z83 w1543001527
+R1
 R2
 R3
 R0
-Z84 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd
-Z85 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd
+Z74 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd
+Z75 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd
 l0
 L7
 V>B<Q>^CVQeTSQL>kT00:71
 !s100 d=Mg7`gQ@OafWKGeYXfN=3
 R6
 31
-R26
+R62
 !i10b 1
-R27
-Z86 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd|
-Z87 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd|
+R63
+Z76 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd|
+Z77 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux3_16.vhd|
 !i113 1
 R11
 R12
@@ -593,32 +593,32 @@ VUg:[b;Y?2VWo9PeUc;GIb3
 !s100 3?2SV5C5gg:EFDn2YkDbo0
 R6
 31
-R26
+R62
 !i10b 1
-R27
-R86
-R87
+R63
+R76
+R77
 !i113 1
 R11
 R12
 Emux4_16
-Z88 w1543001590
+R1
 R2
 R3
 R0
-Z89 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd
-Z90 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd
+Z78 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd
+Z79 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd
 l0
 L7
 VMTlZ:nJnA4<Eg1Gj[NQH91
 !s100 MbzWiK>`0Q>eINUd7M9l;3
 R6
 31
-R26
+R62
 !i10b 1
-R27
-Z91 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd|
-Z92 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd|
+R63
+Z80 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd|
+Z81 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_16.vhd|
 !i113 1
 R11
 R12
@@ -632,32 +632,32 @@ V09n7QIYT]5[<7B[7[<EMa3
 !s100 7Lz9EgK4<CM5DGVE6FD`12
 R6
 31
-R26
+R62
 !i10b 1
-R27
-R91
-R92
+R63
+R80
+R81
 !i113 1
 R11
 R12
 Emux4_3
-Z93 w1543001306
+R1
 R2
 R3
 R0
-Z94 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd
-Z95 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd
+Z82 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd
+Z83 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd
 l0
 L7
 V_^aS_nh9k?Ce96og<k[N=1
 !s100 eS3Pei]YF=ee0SeY86`O^0
 R6
 31
-R26
+R62
 !i10b 1
-R27
-Z96 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd|
-Z97 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd|
+R63
+Z84 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd|
+Z85 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux4_3.vhd|
 !i113 1
 R11
 R12
@@ -671,32 +671,32 @@ VE`PJTS=^hUHIY2gaoZ0mA1
 !s100 :P^SEO2;AUTfIo8h6XA8D0
 R6
 31
-R26
+R62
 !i10b 1
-R27
-R96
-R97
+R63
+R84
+R85
 !i113 1
 R11
 R12
 Emux6_16
-Z98 w1543170709
+Z86 w1543202550
 R2
 R3
 R0
-Z99 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd
-Z100 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd
+Z87 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd
+Z88 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd
 l0
 L7
 V^D@T?[l?<?`k^JE3Ea=?k2
 !s100 <W3<>=b_nTni0:FTzc=J63
 R6
 31
-R26
+R62
 !i10b 1
-R27
-Z101 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd|
-Z102 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd|
+R63
+Z89 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd|
+Z90 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/mux6_16.vhd|
 !i113 1
 R11
 R12
@@ -710,32 +710,32 @@ VY`WM;23mEmlbG4SlT0dKQ2
 !s100 k8T5Zc]^V73IfWBnIQ`>@2
 R6
 31
-R26
+R62
 !i10b 1
-R27
-R101
-R102
+R63
+R89
+R90
 !i113 1
 R11
 R12
 Epc_mux
-Z103 w1542988225
+Z91 w1543206798
 R2
 R3
 R0
-Z104 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd
-Z105 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd
+Z92 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd
+Z93 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd
 l0
 L4
 V>>K7zOdU?=fe919`1UzA]1
 !s100 P0IT=oWT=dh9R4Icim9PI0
 R6
 31
-R26
+R62
 !i10b 1
-R27
-Z106 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd|
-Z107 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd|
+R63
+Z94 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd|
+Z95 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pc_mux.vhd|
 !i113 1
 R11
 R12
@@ -745,36 +745,36 @@ R3
 DEx4 work 6 pc_mux 0 22 >>K7zOdU?=fe919`1UzA]1
 l15
 L14
-VBCz^E_8JNkgTJg^d`7jMG0
-!s100 FIK2_Ff10C9Joo_2OUmMj2
+Vjg6fFlMODeR3N3d4QCj>[2
+!s100 UeMoU_j`_hH]KfLf8S:e83
 R6
 31
-R26
+R62
 !i10b 1
-R27
-R106
-R107
+R63
+R94
+R95
 !i113 1
 R11
 R12
 Epen
-Z108 w1543144711
+R86
 R2
 R3
 R0
-Z109 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd
-Z110 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd
+Z96 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd
+Z97 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd
 l0
 L7
 VH13l71iNQf=bbSjg<>>0Y3
 !s100 7zN^58KU2L7VQVBVg]d`G2
 R6
 31
-R26
+R62
 !i10b 1
-R27
-Z111 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd|
-Z112 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd|
+Z98 !s108 1543206939.000000
+Z99 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd|
+Z100 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pen.vhd|
 !i113 1
 R11
 R12
@@ -788,32 +788,32 @@ VMih;jlViZG0@@FEHg@hdG3
 !s100 UXnbmLG^G<]iI;jLeXi_=2
 R6
 31
-R26
+R62
 !i10b 1
-R27
-R111
-R112
+R98
+R99
+R100
 !i113 1
 R11
 R12
 Epipelinedup
-Z113 w1543223449
+Z101 w1543204011
 R2
 R3
 R0
-Z114 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd
-Z115 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd
+Z102 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd
+Z103 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd
 l0
 L7
 VCXLF_I4UIWXJMfgA;affh1
 !s100 dcLN:MkV3=]SPl<_VNiR>2
 R6
 31
-R26
+Z104 !s110 1543206939
 !i10b 1
-R27
-Z116 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd|
-Z117 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd|
+R98
+Z105 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd|
+Z106 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pipelinedup.vhd|
 !i113 1
 R11
 R12
@@ -827,32 +827,32 @@ V3onm2_Z9b_d`LgogFAAfR2
 !s100 Z^RH9OQo@>T6Dm6NRfPb;2
 R6
 31
-R26
+R104
 !i10b 1
-R27
-R116
-R117
+R98
+R105
+R106
 !i113 1
 R11
 R12
 Epr1
-Z118 w1543156242
+Z107 w1543206462
 R2
 R3
 R0
-Z119 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd
-Z120 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd
+Z108 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd
+Z109 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd
 l0
 L7
 VX>aPDk[E`RNg]9NblCU[12
 !s100 9afE8i38;GN<5g40@[nNb3
 R6
 31
-R26
+R104
 !i10b 1
-R27
-Z121 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd|
-Z122 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd|
+R98
+Z110 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd|
+Z111 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr1.vhd|
 !i113 1
 R11
 R12
@@ -862,36 +862,36 @@ R3
 DEx4 work 3 pr1 0 22 X>aPDk[E`RNg]9NblCU[12
 l22
 L20
-VkLela<<>Cmz_1I3fb^:J<2
-!s100 b3S`53GSS`WnV2A^NTZ6X3
+V>QF0z_MAnhWJElNZ^lnoN3
+!s100 7]k1TLkn[;5f_^Kokb][81
 R6
 31
-R26
+R104
 !i10b 1
-R27
-R121
-R122
+R98
+R110
+R111
 !i113 1
 R11
 R12
 Epr2
-Z123 w1543064072
+Z112 w1543206445
 R2
 R3
 R0
-Z124 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd
-Z125 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd
+Z113 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd
+Z114 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd
 l0
 L7
 V`QWFZ=TKYXcdhl0Ma5IoZ1
 !s100 =V^i=>Nld1UC>^>:7[Xc10
 R6
 31
-R26
+R104
 !i10b 1
-R27
-Z126 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd|
-Z127 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd|
+R98
+Z115 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd|
+Z116 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr2.vhd|
 !i113 1
 R11
 R12
@@ -901,36 +901,36 @@ R3
 DEx4 work 3 pr2 0 22 `QWFZ=TKYXcdhl0Ma5IoZ1
 l24
 L22
-VCz3IG[:Pi9h4:n=962VXj0
-!s100 dfI^eIOdc=JSnCzd8V9L12
+VO>;n^]U]CK8MXUoT_VkG@3
+!s100 FJkJJH?mgS;LoMzU@3Cm_2
 R6
 31
-R26
+R104
 !i10b 1
-R27
-R126
-R127
+R98
+R115
+R116
 !i113 1
 R11
 R12
 Epr3
-Z128 w1543170514
+Z117 w1543206425
 R2
 R3
 R0
-Z129 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd
-Z130 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd
+Z118 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd
+Z119 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd
 l0
 L7
 V2T97Y9GfC=k6mLEVeg>f:3
 !s100 MC[U2zT7`8PR@Sh36M6PE3
 R6
 31
-R26
+R104
 !i10b 1
-Z131 !s108 1543223506.000000
-Z132 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd|
-Z133 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd|
+R98
+Z120 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd|
+Z121 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr3.vhd|
 !i113 1
 R11
 R12
@@ -940,36 +940,36 @@ R3
 DEx4 work 3 pr3 0 22 2T97Y9GfC=k6mLEVeg>f:3
 l38
 L36
-VjIBI9XmG::FVEXPaIN;a22
-!s100 ]R@N8IST41JfKcDJj_8A11
+VBodL0b]TFL_ZCUg:=aoRH0
+!s100 IJz6ICXOcWVVOz`UVj5Mo1
 R6
 31
-R26
+R104
 !i10b 1
-R131
-R132
-R133
+R98
+R120
+R121
 !i113 1
 R11
 R12
 Epr4
-Z134 w1543170522
+Z122 w1543206402
 R2
 R3
 R0
-Z135 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd
-Z136 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd
+Z123 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd
+Z124 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd
 l0
 L7
 V6fcSW2FFGCF_ST`@545LW1
 !s100 B>F34Y_nd:M0E3eAH@b=S1
 R6
 31
-Z137 !s110 1543223506
+R104
 !i10b 1
-R131
-Z138 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd|
-Z139 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd|
+R98
+Z125 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd|
+Z126 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr4.vhd|
 !i113 1
 R11
 R12
@@ -979,36 +979,36 @@ R3
 DEx4 work 3 pr4 0 22 6fcSW2FFGCF_ST`@545LW1
 l42
 L40
-V2KR<aa>M@3KJb6J6nSgz;3
-!s100 dZM8AOf6i[2B9DUW;gdGU3
+V8A89]`=7VW58XMBI>YcZ@1
+!s100 ?K=V6XTaW6_>?a2NHda571
 R6
 31
-R137
+R104
 !i10b 1
-R131
-R138
-R139
+R98
+R125
+R126
 !i113 1
 R11
 R12
 Epr5
-Z140 w1543170548
+Z127 w1543206387
 R2
 R3
 R0
-Z141 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd
-Z142 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd
+Z128 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd
+Z129 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd
 l0
 L7
 VOE[?EG8UPl3ek07E[[N1@1
 !s100 QTdzAUY2Y8GP^]o4Nc;ja3
 R6
 31
-R137
+R104
 !i10b 1
-R131
-Z143 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd|
-Z144 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd|
+R98
+Z130 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd|
+Z131 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/pr5.vhd|
 !i113 1
 R11
 R12
@@ -1018,36 +1018,36 @@ R3
 DEx4 work 3 pr5 0 22 OE[?EG8UPl3ek07E[[N1@1
 l40
 L38
-VlBiSVdClc<z0ji`CjJUKV3
-!s100 [1S;0U=>A7J2:aCa5MG9E0
+VmRE5Q>m^b?n@>ULSUPP`Q3
+!s100 LFh64?]^j]f0Q<=B0LgC70
 R6
 31
-R137
+R104
 !i10b 1
+R98
+R130
 R131
-R143
-R144
 !i113 1
 R11
 R12
 Ereg16
-Z145 w1543135352
+R86
 R2
 R3
 R0
-Z146 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd
-Z147 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd
+Z132 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd
+Z133 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd
 l0
 L7
 VmRoJ;[V8Ugam7^<6[MJ5;0
 !s100 KKOz?F?hgC6lQN=6A`j782
 R6
 31
-R137
+R104
 !i10b 1
-R131
-Z148 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd|
-Z149 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd|
+R98
+Z134 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd|
+Z135 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/reg16.vhd|
 !i113 1
 R11
 R12
@@ -1061,32 +1061,32 @@ VDkC0;Al9F<a0NYS63AT]R2
 !s100 _Z>O[1:RJY2@VjGob8_TJ3
 R6
 31
-R137
+R104
 !i10b 1
-R131
-R148
-R149
+R98
+R134
+R135
 !i113 1
 R11
 R12
 Ereg8
-Z150 w1543082123
+R1
 R2
 R3
 R0
-Z151 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd
-Z152 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd
+Z136 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd
+Z137 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd
 l0
 L7
 VFRKdNSRmn=]X]95KQOOYc0
 !s100 KzX00c;EU[zj7T]G5UF9M2
 R6
 31
-R137
+R104
 !i10b 1
-R131
-Z153 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd|
-Z154 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd|
+R98
+Z138 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd|
+Z139 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/Reg8.vhd|
 !i113 1
 R11
 R12
@@ -1100,38 +1100,38 @@ VoScQDj;GIncBYM;C0W>W^1
 !s100 gHa2JNhzn[PeNK6P5J0R10
 R6
 31
-R137
+R104
 !i10b 1
-R131
-R153
-R154
+R98
+R138
+R139
 !i113 1
 R11
 R12
 Erf
-Z155 w1543142742
-R31
+R86
+R26
 R2
 R3
 R0
-Z156 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd
-Z157 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd
+Z140 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd
+Z141 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd
 l0
 L8
 VL@_chC?1lBc5PV]?b]EGE1
 !s100 F1Bhob[nTRSH:bziIOaeS2
 R6
 31
-R137
+R104
 !i10b 1
-R131
-Z158 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd|
-Z159 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd|
+Z142 !s108 1543206938.000000
+Z143 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd|
+Z144 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/rf.vhd|
 !i113 1
 R11
 R12
 Abehave
-R31
+R26
 R2
 R3
 DEx4 work 2 rf 0 22 L@_chC?1lBc5PV]?b]EGE1
@@ -1141,32 +1141,32 @@ V9:a3VnQ7;FG<Q^ePz:7VR0
 !s100 fi=_8]HZET7Y^GCdRJmOJ1
 R6
 31
-R137
+R104
 !i10b 1
-R131
-R158
-R159
+R142
+R143
+R144
 !i113 1
 R11
 R12
 Ese6
-Z160 w1543082257
+R86
 R2
 R3
 R0
-Z161 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd
-Z162 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd
+Z145 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd
+Z146 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd
 l0
 L7
 VV^_zJ1CNRCGoX8Ba7INO@1
 !s100 DNRmDdJSfBW8Yhi3aSGDD2
 R6
 31
-R137
+Z147 !s110 1543206938
 !i10b 1
-R131
-Z163 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd|
-Z164 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd|
+R142
+Z148 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd|
+Z149 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se6.vhd|
 !i113 1
 R11
 R12
@@ -1180,32 +1180,32 @@ VT^eMKdNXdb]m?Z2Jf4Q=W2
 !s100 >O2]5A1DjkhVE_gn7gH;@2
 R6
 31
-R137
+R147
 !i10b 1
-R131
-R163
-R164
+R142
+R148
+R149
 !i113 1
 R11
 R12
 Ese9
-Z165 w1543082191
+R86
 R2
 R3
 R0
-Z166 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd
-Z167 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd
+Z150 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd
+Z151 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd
 l0
 L7
 Va]GN8D>?BXD7=<8R?PPRY1
 !s100 :V3Gi:Yia1R;LF:=TE6Mc3
 R6
 31
-R137
+R147
 !i10b 1
-R131
-Z168 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd|
-Z169 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd|
+R142
+Z152 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd|
+Z153 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/se9.vhd|
 !i113 1
 R11
 R12
@@ -1219,32 +1219,32 @@ VCnN=;]cC=8bZHLEYUMH;62
 !s100 n56gH>=HK2cMR7T>JQkBf0
 R6
 31
-R137
+R147
 !i10b 1
-R131
-R168
-R169
+R142
+R152
+R153
 !i113 1
 R11
 R12
 Eshift7
-Z170 w1543081957
+R86
 R2
 R3
 R0
-Z171 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd
-Z172 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd
+Z154 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd
+Z155 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd
 l0
 L7
 V0F>:hXHU=4ahX0HQBIUHN2
 !s100 S0^2:B^]7Q4gCKHTdgm[z2
 R6
 31
-R137
+R147
 !i10b 1
-R131
-Z173 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd|
-Z174 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd|
+R142
+Z156 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd|
+Z157 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/shift7.vhd|
 !i113 1
 R11
 R12
@@ -1258,32 +1258,32 @@ Vc=iGZY1=c@0UMI3KPM:Z`1
 !s100 Fmb]_z:3hBnT0jC92SUTQ3
 R6
 31
-R137
+R147
 !i10b 1
-R131
-R173
-R174
+R142
+R156
+R157
 !i113 1
 R11
 R12
 Etrfwrd
-Z175 w1542981382
+R86
 R2
 R3
 R0
-Z176 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd
-Z177 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd
+Z158 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd
+Z159 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd
 l0
 L4
 V^;A9_]c<6XKLjlZ^ZHN1_0
 !s100 _9<hz]QNaa[2;zWAEVTg:1
 R6
 31
-R137
+R147
 !i10b 1
-R131
-Z178 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd|
-Z179 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd|
+R142
+Z160 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd|
+Z161 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/trfwrd.vhd|
 !i113 1
 R11
 R12
@@ -1297,32 +1297,32 @@ Vce>ATLAE4]nm@]njEgX1K3
 !s100 Rffg8Yd4`XHzA:=dDOLFO3
 R6
 31
-R137
+R147
 !i10b 1
-R131
-R178
-R179
+R142
+R160
+R161
 !i113 1
 R11
 R12
 Ezerodetector
-Z180 w1543039195
+R86
 R2
 R3
 R0
-Z181 8/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd
-Z182 F/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd
+Z162 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd
+Z163 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd
 l0
 L7
 Vc55KeEaISE4czMeXU6ek@3
 !s100 cf8YRRi92;Z38a0J=TTg[3
 R6
 31
-R137
+R147
 !i10b 1
-R131
-Z183 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd|
-Z184 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Pipeline/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd|
+R142
+Z164 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd|
+Z165 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-2-Pipelining/pipelinedup/zerodetector.vhd|
 !i113 1
 R11
 R12
@@ -1336,11 +1336,11 @@ VUk<XIDL1`Di9E3WgoDALE0
 !s100 fn1Eo<[?ZJS<ElMO_];A<3
 R6
 31
-R137
+R147
 !i10b 1
-R131
-R183
-R184
+R142
+R164
+R165
 !i113 1
 R11
 R12
