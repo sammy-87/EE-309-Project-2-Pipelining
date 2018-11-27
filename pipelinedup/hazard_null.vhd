@@ -123,7 +123,7 @@ begin
 			end if ;
 		end if;
 
-	elsif pr2ir(15 downto 12) = "1001" or pr2ir(15 downto 13) = "010" then -- current instruction is LW, SW, JLR
+	elsif pr2ir(15 downto 12) = "1001" or pr2ir(15 downto 12) = "0100" then -- current instruction is LW, JLR
 		temp_control_variable:=controlword;
 		pr1en_var := '1';
 		pr2en_var := '1';
@@ -182,7 +182,7 @@ begin
 			end if ;
 		end if;
 		
-	else   -- Current instructions have two operands - ADD, ADC, ADZ, NDU, NDC, NDZ, BEQ
+	else   -- Current instructions have two operands - ADD, ADC, ADZ, NDU, NDC, NDZ, BEQ, SW
 		temp_control_variable:=controlword;
 		pr1en_var := '1';
 		pr2en_var := '1';
@@ -198,7 +198,7 @@ begin
 			temp_control_variable(21 downto 19) := "001"; --operand from alu2out
 
 		elsif pr3ir(15 downto 12) = "0011" and pr3invalid = '0' and pr2ir(11 downto 9) = pr3ir(11 downto 9) then --previous instr is LHI
-			temp_control_variable(21 downto 19) := "100"; -- operand from 7S
+			temp_control_variable(21 downto 19) := "100"; -- operand from pr37S
 
 		elsif (pr3ir(15 downto 12) = "0000" or pr3ir(15 downto 12) = "0010" ) and ( pr3ir(1 downto 0) = "10" or pr3ir(1 downto 0) = "01" ) and pr3invalid = '0' and pr2ir(11 downto 9) = pr3ir(5 downto 3) and trfwr ='1' then -- previous instruction is ADC,ADZ,NDC,NDZ, which are going to be executed	
 			temp_control_variable(21 downto 19) := "001";
@@ -250,7 +250,7 @@ begin
 			temp_control_variable(18 downto 16) := "001"; --operand from alu2out
 
 		elsif pr3ir(15 downto 12) = "0011" and pr3invalid = '0' and pr2ir(8 downto 6) = pr3ir(11 downto 9) then --previous instr is LHI
-			temp_control_variable(18 downto 16) := "100"; -- operand from 7S
+			temp_control_variable(18 downto 16) := "100"; -- operand from pr37S
 
 		elsif (pr3ir(15 downto 12) = "0000" or pr3ir(15 downto 12) = "0010" ) and ( pr3ir(1 downto 0) = "10" or pr3ir(1 downto 0) = "01" ) and pr3invalid = '0' and pr2ir(8 downto 6) = pr3ir(5 downto 3) and trfwr ='1' then -- previous instruction is ADC,ADZ,NDC,NDZ, which are going to be executed	
 			temp_control_variable(18 downto 16) := "001";
