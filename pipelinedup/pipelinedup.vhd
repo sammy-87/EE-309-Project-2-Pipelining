@@ -6,7 +6,7 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_misc.all;
 
 entity pipelinedup is
-   port(clk, rst : in std_logic);
+   port(rst,CLK50MHZ : in std_logic);
 end entity;
 ----------------
 architecture Struct of pipelinedup is
@@ -322,9 +322,10 @@ signal pr4c_i,pr4z_i,pr4c,pr4z,pr5c,pr5z_i,pr5z,c,z,trfwr,pr4trfwr,pr5trfwr,pr1i
 signal rf_a1,rf_a2,rf_a3,pen_out,pr3pen,pr4pen,pr5pen : std_logic_vector(2 downto 0);
 signal newpen,penupdate,pen_mux_out : std_logic_vector(7 downto 0);
 signal controlword_out,pr2cw,pr3cw_i,pr3cw,pr4cw,pr5cw : std_logic_vector(24 downto 0); 
-signal temp_rdbar,temp_wrbar,temp_D_sel,pr3pentz_i,pr3pentz,pr4pentz,temp_invalid5,pr4invalid_hazard,pr5invalid_hazard : std_logic;
+signal temp_rdbar,temp_wrbar,temp_D_sel,pr3pentz_i,pr3pentz,pr4pentz,temp_invalid5,pr4invalid_hazard,pr5invalid_hazard,clk : std_logic;
 
 begin
+clk<=CLK50MHZ;
 pr3_en<='1';
 pr4_en<='1';
 pr5_en<='1';
